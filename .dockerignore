@@ -1,0 +1,8 @@
+# Only these files enter the PokéAPI build context.
+**
+!pokeapi/
+!pokeapi/Dockerfile
+!pokeapi/settings.py
+!pokeapi/urls.py
+!agents/
+!agents/openapi.yml

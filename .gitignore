@@ -1,0 +1,9 @@
+/evals/results/*
+/evals/**/results/
+/.state/
+__pycache__/
+/slides.pdf
+.DS_Store
+
+/evals/**/working_dirs/
+.ruff_cache/

@@ -1,0 +1,45 @@
+agents:
+  root:
+    model: openai/gpt-5.6-luna
+    instruction: |
+      For every pokemon_list call, set q="" explicitly (never null) to keep the catalog unfiltered.
+      Start with pokemon_list using limit=1, offset=0 and q=""; read the returned count.
+      Require a positive integer count of at least three, with count-1 within the random tool's bound.
+      Call random_integer with max=count-1 to draw each zero-based catalog index.
+      Keep unique indices and retry duplicates, with at most 20 draws total.
+      Resolve each index using pokemon_list with limit=1, offset=index and q=""; use results[0].name.
+      Never assume index+1 is a Pokémon ID: the catalog can contain gaps and alternate forms.
+      If count changes, a page is empty or any tool fails, explain and stop rather than inventing a draw.
+      Do not restrict the draw to arena species or discard an entry because you dislike it.
+      Report the three returned names; distinct entries may include forms of the same species.
+      If facts are requested, use pokemon_retrieve with each returned name as id.
+      Use returned types and sum stats[].base_stat; never invent stats, legality or strength.
+    toolsets:
+      - type: script
+        shell:
+          random_integer:
+            cmd: shuf -i "0-$max" -n 1
+            description: Return one random integer from 0 to max, inclusive. Uses shuf; no network or writes.
+            args:
+              max:
+                type: integer
+                minimum: 0
+                maximum: 1000000
+            required: [ max ]
+      - type: openapi
+        url: http://127.0.0.1:8000/openapi.yml
+        allow_private_ips: true
+        max_output_bytes: 0
+        tools: [ pokemon_list, pokemon_retrieve ]
+        timeout: 15
+    hooks:
+      tool_response_transform:
+        - matcher: pokemon_retrieve
+          hooks:
+            - type: builtin
+              command: transform_json
+              args: [ name, types, stats ]
+permissions:
+  allow: [ random_integer ]
+runtime:
+  safety: restricted

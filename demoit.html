@@ -1,0 +1,901 @@
+<h1>Specialized AI Agents<br/>from concept<br/>to production</h1>
+
+<p class="subtitle">From a hello world to a useful service in 3h</p>
+
+---
+
+<h1>Specialized agents are everywhere</h1>
+<p class="subtitle">Different jobs. Focused tools, context and boundaries.</p>
+<table>
+    <thead><tr><th>Agent</th><th>What it helps with</th></tr></thead>
+    <tbody>
+        <tr><td>Coding agent</td><td>Implement a change and run tests</td></tr>
+        <tr><td>PR review agent</td><td>Review a diff and flag potential bugs</td></tr>
+        <tr><td>Support chatbot</td><td>Answer from docs and escalate when needed</td></tr>
+        <tr><td>Fraud detection agent</td><td>Investigate signals and flag cases for review</td></tr>
+        <tr><td>Business workflow agent</td><td>Coordinate requests, approvals and follow-ups</td></tr>
+    </tbody>
+</table>
+<p class="takeaway">Which task in your business would you give to an agent?</p>
+<img class="slide-corner corner-small" src="/images/question-mark.svg" alt="" width="240" height="240" />
+
+---
+
+<h1>The model is not the product</h1>
+<p class="subtitle">AI Agents are not all Coding Agents</p>
+<blockquote>I hear a lot: “For our [...] agent, we are going to use Claude”</blockquote>
+<div class="cards">
+    <article>
+        <h3>Coding Agent</h3>
+        <p>Broad tasks</p>
+        <p>Many tools</p>
+        <p>Large context</p>
+    </article>
+    <article>
+        <h3>Specialized Agent</h3>
+        <p>Solves one focused business task</p>
+        <p>Cost is under control</p>
+        <p>Lightweight to deploy</p>
+        <p><strong>Possibly the same underlying models</strong></p>
+    </article>
+</div>
+<img class="slide-corner" src="/images/model-component.svg" alt="Model chip inside a larger machine" width="240" height="240" />
+
+---
+
+<h1>David Gageot</h1>
+<p class="subtitle">Senior Principal Engineer at Docker</p>
+<div class="cards">
+    <article>
+        <h3>Working on <code>docker-agent</code></h3>
+        <p>At the core of this presentation</p>
+    </article>
+    <article>
+        <h3>Working on <code>Gordon</code>, Docker's AI assistant</h3>
+        <p>Based on docker-agent</p>
+        <p>Shipped to millions of users</p>
+    </article>
+</div>
+<img class="gordon-corner" src="/images/gordon.png" alt="Gordon, Docker's AI assistant" width="720" height="717" />
+
+---
+
+<h1>docker-agent</h1>
+
+<p class="subtitle">Open-source, no-code, AI harness</p>
+
+<strong>
+  Quickly create specialized and affordable AI agents:
+</strong>
+
+<ul>
+  <li>Get started in seconds</li>
+  <li>Iterate quickly</li>
+  <li>Adapt to your needs</li>
+  <li>Run evals and optimizations</li>
+  <li>Work with supported providers and compatible endpoints</li>
+  <li>Configured with YAML or a Go SDK</li>
+</ul>
+
+<a href="https://docker.github.io/docker-agent/">
+    <img id="qr" src="/qrcode?url=https://docker.github.io/docker-agent/" />
+</a>
+
+---
+
+<h1>Our three-hour journey</h1>
+<p class="subtitle">Build → Connect → Prove → Serve</p>
+<div class="cards">
+    <article><h3>Build</h3><p>One useful task</p></article>
+    <article><h3>Connect</h3><p>Facts, guidance and tools</p></article>
+    <article><h3>Prove</h3><p>Measure before changing</p></article>
+    <article><h3>Serve</h3><p>Put the agent to work</p></article>
+</div>
+<p class="takeaway">Break midway<br/>Questions any time</p>
+<div class="qr-links qr-corner">
+    <a href="https://github.com/dgageot/devoxx-be-2026">
+        <img src="/qrcode?url=https%3A%2F%2Fgithub.com%2Fdgageot%2Fdevoxx-be-2026" alt="QR code for the presentation on GitHub"/>
+        <span>Presentation</span>
+    </a>
+</div>
+
+---
+
+<p class="kicker"><span class="stage">01</span>Build</p>
+<h1>How an agent works</h1>
+<p class="subtitle">Instructions, model and tools play different roles</p>
+<p>The <strong>model</strong> chooses a tool or answers.</p>
+<div class="service-diagram">
+    <img src="/images/agent-loop.svg" alt="Instructions guide the model. The user asks a question; the model requests a tool or answers. Docker Agent executes requested tools and returns their results to the model, which can repeat the loop or answer the user." width="1786" height="540" />
+</div>
+<p class="takeaway"><code>docker-agent</code> runs the loop and calls tools</p>
+
+---
+
+<p class="kicker"><span class="stage">01</span>Build</p>
+<h1>Ahoy, World!</h1>
+<p class="subtitle">Instructions set the behavior</p>
+<split-view>
+    <source-code folder="agents" files="01-pirate.yaml" start-lines="4" end-lines="4"></source-code>
+    <web-term path="agents" command="docker agent run --lean 01-pirate.yaml"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">01</span>Build</p>
+<h1>No Docker engine required</h1>
+<p class="subtitle">docker-agent is a standalone binary</p>
+
+<web-term path="agents" command="docker-agent"></web-term>
+
+Standalone: <code>docker-agent</code> or docker CLI plugin: <code>docker agent</code>
+
+<p class="takeaway">Can also run in a Container or a Sandbox</p>
+<img class="slide-corner" src="/images/docker.svg" alt="Docker whale" width="340" height="340" />
+
+---
+
+<p class="kicker"><span class="stage">01</span>Build</p>
+<h1>You do need a model</h1>
+<p class="subtitle">Choose how your agent connects to at least one model</p>
+<div class="cards">
+    <article>
+        <h3>Provider credentials</h3>
+        <p>Connect directly to a supported provider</p>
+        <p>Supply credentials outside the YAML</p>
+    </article>
+    <article>
+        <h3>AI gateway</h3>
+        <p>Route through a compatible endpoint</p>
+        <p>Centralize access and usage controls</p>
+    </article>
+    <article>
+        <h3>Local models</h3>
+        <p>Docker Model Runner (DMR) or Ollama</p>
+        <p>No cloud API key required</p>
+    </article>
+</div>
+<p class="takeaway">Let's play with models a bit!</p>
+<img class="slide-corner" src="/images/model-chip.svg" alt="AI model chip" width="240" height="240" />
+
+---
+
+<p class="kicker"><span class="stage">01</span>Build</p>
+<h1>You do need a model</h1>
+<p class="subtitle">Choose how your agent connects to at least one LLM</p>
+<split-view>
+    <web-browser src="https://modles.dev"></web-browser>
+    <web-term path="agents" command="docker agent run --model=anthropic/claude-haiku-4-5 default"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">01</span>Build</p>
+<h1>A more useful agent</h1>
+<p class="subtitle">Watch out for the cost</p>
+<split-view>
+    <source-code folder="agents" files="02-polite.yaml" start-lines="4" end-lines="6"></source-code>
+    <web-term path="agents" command="docker agent run --lean 02-polite.yaml &quot;we need this thing fixed asap its broken again&quot;"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">01</span>Build</p>
+<h1>One agent. Several interfaces.</h1>
+<p class="subtitle">The same YAML works interactively, headlessly, over HTTP and more</p>
+<div class="cards">
+    <article>
+        <h3>Interactive</h3>
+        <p>Explore in the TUI.</p>
+    </article>
+    <article>
+        <h3>Headless</h3>
+        <p>Run once, pipe the input, collect the result.</p>
+    </article>
+</div>
+<pre class="command">docker agent run 02-polite.yaml
+docker agent run --exec 02-polite.yaml &quot;Make this clearer&quot;
+echo &quot;Make this clearer&quot; | docker agent run --exec 02-polite.yaml -</pre>
+<p class="takeaway">Same YAML. Let's try it without the TUI.</p>
+
+---
+
+<p class="kicker"><span class="stage">01</span>Build</p>
+<h1>One agent. Several interfaces.</h1>
+<p class="subtitle">The same YAML works interactively, headlessly, over HTTP and more</p>
+<split-view>
+    <web-term path="agents" command="docker agent run 02-polite.yaml &quot;Make this clearer&quot;"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">01</span>Build</p>
+<h1>A rich TUI</h1>
+<p class="subtitle">Inspect the conversation, tools and cost</p>
+<split-view>
+    <web-term path="agents" command="docker agent run 03-gopher.yaml"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>When I say Pokémon…</h1>
+<p class="subtitle">Think “My business use case”</p>
+<div class="pokemon-analogy">
+    <div>
+        <p>We could automate expense reports.<br><strong>I'd rather build a Pokémon Arena.</strong></p>
+        <p>Picture your own products, customers or decisions as we go.</p>
+        <p class="takeaway">Different creatures. Same business challenges.</p>
+    </div>
+    <img src="/images/pikachu.png" alt="Pikachu" width="475" height="475" />
+</div>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>Pokemon Arena</h1>
+<p class="subtitle">Two existing services. One agent to create.</p>
+<div class="cards">
+    <article><h3>Pokémon catalog</h3><p>Species, types and stats</p></article>
+    <article><h3>Arena backend</h3><p>Practice and judge matches</p></article>
+    <article><h3>Our agent</h3><p>Build and test a team</p></article>
+</div>
+<img class="slide-corner" src="/images/pokeball.svg" alt="Poké Ball" width="240" height="240" />
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>Use existing Web APIs as tools</h1>
+<p class="subtitle">A Pokédex lookup is an OpenAPI toolset</p>
+<split-view>
+    <source-code folder="agents" files="04-pokemon.yaml openapi.yml 05-pokemon.yaml" start-lines="8;;8" end-lines="11;;19"></source-code>
+    <web-term path="agents" command="docker agent debug toolsets 04-pokemon.yaml"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>Keep only the facts we need</h1>
+<p class="subtitle">A hook trims JSON before it reaches the model</p>
+<split-view>
+    <source-code folder="agents" files="05-pokemon.yaml" start-lines="" end-lines="" focus-lines="13-19"></source-code>
+    <div>
+        <h3>Keep three fields</h3>
+        <p><code>name</code>, <code>types</code> and <code>stats</code>.</p>
+        <p>Leave their nested objects and arrays unchanged.</p>
+    </div>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>What type is Pikachu?</h1>
+<p class="subtitle">One question, one lookup, one factual answer</p>
+<split-view>
+    <web-term path="agents" command="docker agent run 05-pokemon.yaml &quot;What type is Pikachu?&quot;"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>Now compare three Pokémon</h1>
+<p class="subtitle">The same tool can answer a richer question</p>
+<split-view>
+    <web-term path="agents" command="docker agent run 05-pokemon.yaml &quot;Compare the three Kanto starters by base stat total. Produce a nice table output&quot;"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>One toolset. One job.</h1>
+<p class="subtitle">Many built-in toolset types are available</p>
+<table><thead><tr><th>Toolset</th><th>Job</th></tr></thead><tbody><tr><td>OpenAPI</td><td>Species inventory and stats</td></tr><tr><td>Script</td><td>Draw a random number locally</td></tr><tr><td>Filesystem</td><td>Read strategy guidelines</td></tr><tr><td>API</td><td>Practice and compete</td></tr></tbody></table>
+
+<a href="https://docker.github.io/docker-agent/tools/file/">
+    <img id="qr" src="/qrcode?url=https://docker.github.io/docker-agent/tools/file/" />
+</a>
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>Give the agent a local tool</h1>
+<p class="subtitle">A shell command supplies randomness</p>
+<split-view>
+    <source-code folder="agents" files="06-random.yaml" start-lines="" end-lines="" focus-lines="16-27"></source-code>
+    <web-term path="agents" command="docker agent run 06-random.yaml &quot;Give me 3 random Pokemon&quot;"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>Add team-building guidelines</h1>
+<p class="subtitle">Always-loaded context or an on-demand file tool</p>
+<split-view>
+    <source-code folder="agents" files="07-guidelines-prompt.yaml team-building.md" start-lines=";" end-lines=";"></source-code>
+    <source-code folder="agents" files="08-guidelines-file.yaml" start-lines="" end-lines=""></source-code>
+</split-view>
+<p class="takeaway">Left one is usually more for AGENTS.md, CLAUDE.md files<br/>Right one for source files</p>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>Build a team under constraints</h1>
+<p class="subtitle">Three distinct Pokémon, at most 1,000 stats, include Water</p>
+<split-view>
+    <source-code folder="agents" files="09-team-request.yaml" start-lines="" end-lines="" focus-lines="4-20"></source-code>
+    <web-term path="." command="docker agent run agents/09-team-request.yaml &quot;Choose 3 distinct Pokemon with at most 1000 combined base stats and at least one Water type.&quot;"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>From facts to a business action</h1>
+<p class="subtitle">Let's introduce our Sparring service</p>
+<div class="cards">
+    <article>
+        <h3>Catalog lookup</h3>
+        <p>“What do we know?”</p>
+        <p>GET species, types and stats</p>
+    </article>
+    <article>
+        <h3>Business operation</h3>
+        <p>“Does this plan work?”</p>
+        <p>POST a team → run a practice match</p>
+        <p>Get a measured result, not an opinion</p>
+    </article>
+</div>
+<p class="takeaway">Think pricing a quote or simulating a plan—not fetching another record.</p>
+<img class="slide-corner" src="/images/sparring-gloves.svg" alt="Crossed sparring gloves" width="240" height="240" />
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>Call the business API with curl</h1>
+<p class="subtitle">A fixed illustrative team. No agent or model involved</p>
+<split-view>
+    <div>
+        <h3>POST /spar</h3>
+        <p><code>challenge_id</code>: water-budget</p>
+        <p><code>team</code>: three canonical names</p>
+        <p><code>level</code>: beginner</p>
+        <h3>Read the result</h3>
+        <p>Eligibility, opponent, scores<br>and win / loss / draw.</p>
+    </div>
+    <web-term path="." command="curl --fail-with-body -sS http://127.0.0.1:8090/spar -H 'Content-Type: application/json' --data '{&quot;challenge_id&quot;:&quot;water-budget&quot;,&quot;team&quot;:[&quot;bulbasaur&quot;,&quot;charmander&quot;,&quot;squirtle&quot;],&quot;level&quot;:&quot;beginner&quot;}' | jq"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>Give the agent the same API call</h1>
+<p class="subtitle">Fresh session: build a team, then test that same team</p>
+<split-view>
+    <source-code folder="agents" files="10-sparring.yaml" start-lines="" end-lines="" focus-lines="37-60"></source-code>
+    <web-term path="." command="docker agent run agents/10-sparring.yaml &quot;Build a team for water-budget and spar with that same team against beginner.&quot;"></web-term>
+</split-view>
+<p class="takeaway">One scoped HTTP tool—no OpenAPI spec needed.</p>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<svg class="optional-marker" viewBox="0 0 24 24" role="img" aria-label="Optional slide"><title>Optional slide</title><path d="m12 3 2.8 5.7 6.3.9-4.5 4.4 1.1 6.2-5.7-3-5.7 3 1.1-6.2-4.5-4.4 6.3-.9Z"/></svg>
+<h1>Tool call permissions</h1>
+<p class="subtitle">Choose what runs and what needs approval</p>
+<div class="permission-flow" aria-label="Tool permissions in strict mode">
+    <div><strong>Look up facts</strong><span><code>allow</code> → run</span></div>
+    <div><strong>Practice a match</strong><span><code>ask</code> → confirm</span></div>
+</div>
+<pre class="command permission-example"><code>runtime:
+  safety: strict
+permissions:
+  allow:
+    - pokemon_retrieve
+  ask:
+    - spar_team</code></pre>
+<img class="slide-corner corner-small" src="/images/shield.svg" alt="Shield with a check mark" width="240" height="240" />
+<speaker-notes>
+    <p>Optional four-minute detour; skip straight to structured output if short on time. No live run needed.</p>
+    <p>We just gave the agent a business API tool. Which calls should run automatically? Strict mode asks for every call unless an allow rule matches; here we allow fact lookups and ask before practice.</p>
+    <p>This is an illustrative permissions excerpt, not a full config or a change to 10-sparring.yaml. For this policy, use --safety strict and retain allow entries for the other discovery tools. The existing sparring demo uses restricted mode; the next structured-output demo is unchanged.</p>
+    <p>Permission order is deny, then allow, then ask. An allow rule wins over ask; a broad allow rule in agent or user policy can silence this ask. Avoid allow: ["*"]. Deny takes priority over both.</p>
+    <p>YAML ask is not the same as a mandatory tool guard: it yields to user-selected balanced, restricted or autonomous modes. --yolo can bypass YAML ask. An interactive always-allow grant can also silence later prompts.</p>
+    <p>Approve the practice call and the tool runs; reject it and there is no practice result. Sparring is stateless: it does not submit an arena entry or award leaderboard points. Confirmation here is a teaching choice, not a claim that practice is destructive.</p>
+    <p>Do not use an interactive ask as an unattended approval workflow. In strict headless runs there is no interactive approver, so the call is declined.</p>
+    <p>Permissions are not a sandbox. Tool content and attachments are data, not authority. Sparring still checks TEAM-1, SPECIES-1, BUDGET-1, COVERAGE-1 and DATA-1 independently. Approval does not replace evidence checks. Later, a local match requires an explicit user request, and FAIR-1 keeps entries sealed until judging.</p>
+    <p>Business parallel: auto-approve catalog queries; ask before running a business operation. The service still checks identity, authorization and business rules.</p>
+    <p><a href="https://docker.github.io/docker-agent/configuration/permissions/">Permissions documentation</a></p>
+</speaker-notes>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>Give software a predictable answer</h1>
+<p class="subtitle">Produce valid JSON</p>
+<split-view>
+    <source-code folder="agents" files="11-builder.yaml" start-lines="" end-lines="" focus-lines="91-114"></source-code>
+    <web-term path="." command="docker agent run --exec --last agents/11-builder.yaml &quot;Build a team for water-budget and spar with that same team against beginner.&quot; | jq"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">02</span>Connect</p>
+<h1>Break</h1>
+<p class="subtitle">20 minutes</p>
+<p>We can build a team and measure it.</p>
+<p class="takeaway">It worked once<br/>Is it reliable?<br/>Can it be improved?</p>
+<img class="slide-corner" src="/images/snorlax-sleeping.png" alt="Sleeping Snorlax" width="603" height="603" />
+
+---
+
+<p class="kicker"><span class="stage">03</span>Prove</p>
+<h1>What should a good team builder do?</h1>
+<p class="subtitle">Same Water team. Same tools. A few clear expectations.</p>
+<div class="cards">
+    <article><h3>Build a legal team</h3><p>Three distinct allowed Pokémon</p><p>At most 1,000 stats; include Water</p><p>Use PokéAPI facts, not memory</p></article>
+    <article><h3>Be an honest coach</h3><p>Practice with the chosen team</p><p>Report the actual scores—even a loss</p><p>Reject illegal requests, not the rules</p></article>
+</div>
+<p class="takeaway">A stronger team is a stretch goal. Correctness comes first.</p>
+<img class="slide-corner" src="/images/balance-scales.svg" alt="Balanced scales" width="240" height="240" />
+
+---
+
+<p class="kicker"><span class="stage">03</span>Prove</p>
+<h1>Turn requests into eval cases</h1>
+<p class="subtitle">Small variations on the demo we just ran</p>
+<div class="cards">
+    <article><h3>Everyday requests</h3><p>Propose a legal Water team</p><p>Build and spar against beginner</p><p>Report a known losing matchup</p></article>
+    <article><h3>Reject illegal requests</h3><p>Reject an over-budget team</p><p>Reject duplicate members</p><p>Advanced wins: separate stretch suite</p></article>
+</div>
+<img class="slide-corner" src="/images/eval-checklist.svg" alt="Evaluation checklist" width="240" height="240" />
+
+---
+
+<p class="kicker"><span class="stage">03</span>Prove</p>
+<h1>Run the evals</h1>
+<p class="subtitle">Five correctness cases × five repeats. Luna, no thinking.</p>
+<split-view>
+    <source-code folder="evals/arena" files="water-proposal.json water-beginner.json duplicate-team.json honest-loss.json over-budget.json" start-lines="" end-lines=""></source-code>
+    <web-term path="." command="docker agent eval agents/11-builder.yaml evals/arena --repeat 5 --judge-model openai/gpt-5.6-terra"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">03</span>Prove</p>
+<h1>Inspect the failures</h1>
+<p class="subtitle">Captured repeat-5 baseline. Arithmetic errors recur across repeats.</p>
+<split-view>
+    <source-code folder="evals" files="baselines/arena.json" start-lines="" end-lines="" focus-lines="154-174"></source-code>
+    <web-term path="." command="jq '.sessions[] | select(.eval_result.passed == false) | {case: .title, failures: .eval_result.failures}' evals/baselines/arena.json"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">03</span>Prove</p>
+<h1>Change one thing. Run again.</h1>
+<p class="subtitle">Tool-backed arithmetic</p>
+<split-view>
+    <source-code folder="agents" files="11-builder.yaml" start-lines="" end-lines="" focus-lines="171-197"></source-code>
+    <web-term path="." command="docker agent eval agents/11-builder.yaml evals/arena --flavor checked-totals --baseline evals/baselines/arena.json --repeat 5 --judge-model openai/gpt-5.6-terra"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">03</span>Prove</p>
+<h1>Same task. Different model.</h1>
+<p class="subtitle">Sol, no thinking: same prompt</p>
+<split-view>
+    <source-code folder="agents" files="11-builder.yaml" start-lines="" end-lines="" focus-lines="198-211"></source-code>
+    <web-term path="." command="docker agent eval agents/11-builder.yaml evals/arena --flavor alternate-model --baseline evals/baselines/arena.json --repeat 5 --judge-model openai/gpt-5.6-terra"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">03</span>Prove</p>
+<h1>Keep it only if it helps</h1>
+<p class="subtitle">Two rehearsals, repeat 5. Compare the pattern—not an exact score.</p>
+<div class="cards">
+    <article><h3>Baseline → patched</h3><p>17–18/25 → 24–25/25 passed</p><p>Median agent: ~7.5s → 9–10s</p><p>Arithmetic failures recur, then largely disappear</p></article>
+    <article><h3>Model-only alternative</h3><p>21–24/25 passed; median 8–9s</p><p>Better overall; duplicate arithmetic still varies</p><p>Repeat-5 is evidence, not a guarantee</p></article>
+</div>
+<img class="slide-corner" src="/images/improvement-chart.svg" alt="Chart showing an improving trend" width="240" height="240" />
+
+---
+
+<p class="kicker"><span class="stage">03</span>Prove</p>
+<svg class="optional-marker" viewBox="0 0 24 24" role="img" aria-label="Optional slide"><title>Optional slide</title><path d="m12 3 2.8 5.7 6.3.9-4.5 4.4 1.1 6.2-5.7-3-5.7 3 1.1-6.2-4.5-4.4 6.3-.9Z"/></svg>
+<h1>An agent improves the prompt</h1>
+<p class="subtitle">Inspect failures → edit a candidate → rerun the same evals</p>
+<split-view>
+    <source-code folder="agents" files="11-prompt-optimizer.yaml" start-lines="" end-lines="" focus-lines="20-46"></source-code>
+    <web-term path="." command="docker agent run agents/11-prompt-optimizer.yaml &quot;Improve the builder prompt using development evals. Try at most three candidates.&quot;"></web-term>
+</split-view>
+<speaker-notes>
+    <p>Optional live detour; skip straight to the final-exam boundary if short on time. This dedicated optimizer is a development agent, not a coordinator for building teams. It edits a disposable copy of 11-builder.yaml and invokes the native eval CLI; there is no built-in optimizer tool.</p>
+    <p>Run from the repository root with the same Docker Desktop, prepared PokéAPI, healthy arena and provider access as the previous evals. The shell asks for approval in strict mode: inspect each command before allowing it. Each full eval uses a 600-second shell timeout. Do not use --yolo or an always-allow shell grant.</p>
+    <p>The agent creates a unique .state/prompt-loop/run.* workspace and copies the builder, team-building.md and eval-setup.sh together. Native eval mounts the candidate's parent at /configs, so omitting the support files would break setup. The source builder and captured baselines remain untouched.</p>
+    <p>First measure a fresh baseline: the same five development cases, five repeats, judge and unchanged model/tools. Then form one hypothesis per attempt and change only agents.root.instruction. Save each attempt's YAML and native results separately; compare with the best accepted Sessions JSON via --baseline. That native file contains summary metrics and per-session eval results. A nonzero exit can indicate regression or infrastructure failure: inspect the report rather than retrying until green.</p>
+    <p>Keep an edit only if it passes more repetitions and the native gate reports no regression; inspect per-case failures, cost and latency too. Stop at three candidate runs or 25/25. If nothing improves, keep the baseline. These are live results, not a captured claim of prompt-only gains or guaranteed reliability.</p>
+    <p>Filesystem tools read only the source/support files, development cases and workspace, and write only within the workspace. Those limits do not sandbox shell access: held-out exclusion, prompt-only edits and immutable raw results also depend on instructions and human command review. Do not read credentials or frozen old/ examples.</p>
+    <p>The optimizer's budget caps its own metered model calls, not the child eval processes or their judge calls; up to four repeat-5 suites incur separate spend. External commands may outlive a timeout or interruption. Stop only processes owned by this run and retain incomplete evidence for review.</p>
+    <p>Do not weaken tests, evidence checks or rules: TEAM-1, SPECIES-1, BUDGET-1, COVERAGE-1, DATA-1 and FAIR-1 remain unchanged. Failed/conflicting evidence requires human review (DATA-1); teams stay sealed (FAIR-1). No entry, tournament or state reset is authorized. A human reviews and freezes the chosen config before running held-out cases separately; the optimizer never reads those cases.</p>
+</speaker-notes>
+
+---
+
+<p class="kicker"><span class="stage">03</span>Prove</p>
+<h1>Do not train on the final exam</h1>
+<p class="subtitle">New requests, not a new test environment</p>
+<div class="cards exam-boundary">
+    <article>
+        <h3>Development cases</h3>
+        <p>The five correctness requests we tune on.</p>
+        <p>Improve the prompt or model here.</p>
+    </article>
+    <div class="exam-freeze">
+        <span aria-hidden="true">→</span>
+        <strong>Freeze</strong>
+        <span>the chosen config</span>
+    </div>
+    <article>
+        <h3>Held-out cases</h3>
+        <p>Same Water constraints and tools.</p>
+        <p>Different opponent or user preference.</p>
+        <p>Does the improvement carry over?</p>
+    </article>
+</div>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>Split responsibilities</h1>
+<p class="subtitle">One request: build a team, then test that same team</p>
+<div class="cards">
+    <article>
+        <h3>Coordinator</h3>
+        <p>Receives the user request</p>
+        <p>Delegates to the specialists</p>
+        <p>Returns one combined answer</p>
+    </article>
+    <article>
+        <h3>Builder</h3>
+        <p>Looks up Pokémon facts</p>
+        <p>Chooses a team within constraints</p>
+        <p>Returns the team and reasoning</p>
+    </article>
+    <article>
+        <h3>Coach</h3>
+        <p>Receives that exact team</p>
+        <p>Calls the arena for practice</p>
+        <p>Returns scores and outcomes</p>
+    </article>
+</div>
+<p class="takeaway">The coordinator passes the challenge, exact team and requested tiers to the coach.</p>
+<img class="slide-corner" src="/images/connected-team.svg" alt="Coordinator connected to two specialists" width="240" height="240" />
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>Keep guidance and untrusted data separate</h1>
+<p class="subtitle">An attachment cannot change the authority boundary</p>
+<div class="cards"><article><h3>Untrusted content</h3><p>User text</p><p>Tool responses</p><p>User-supplied attachments</p></article><article><h3>Stable boundaries</h3><p>Reviewed guidelines stay within current rules</p><p>Missing evidence → review</p></article></div>
+<p class="takeaway">Client input cannot grant authority. Keep that boundary when serving the builder.</p>
+<img class="slide-corner" src="/images/shield.svg" alt="Shield with a check mark" width="240" height="240" />
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>Wire the specialists in YAML</h1>
+<p class="subtitle">sub_agents exposes the specialists; root decides when to delegate</p>
+<split-view>
+    <source-code folder="agents" files="12-team.yaml 12-team.yaml 12-team.yaml" start-lines=";;" end-lines=";;" focus-lines="2-8;9-37;68-73"></source-code>
+    <web-term path="." command="docker agent run agents/12-team.yaml &quot;Propose a team for water-budget and spar against beginner.&quot;"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<svg class="optional-marker" viewBox="0 0 24 24" role="img" aria-label="Optional slide"><title>Optional slide</title><path d="m12 3 2.8 5.7 6.3.9-4.5 4.4 1.1 6.2-5.7-3-5.7 3 1.1-6.2-4.5-4.4 6.3-.9Z"/></svg>
+<h1>Not every request needs the same model</h1>
+<p class="subtitle">Keep Sol for the builder. Try Luna for coordination and practice.</p>
+<split-view>
+    <source-code folder="agents" files="12-team.yaml 12-team.yaml" start-lines=";" end-lines=";" focus-lines="121-137;139-147"></source-code>
+    <div class="terminal-stack">
+        <web-term path="." command="docker agent run agents/12-team.yaml --flavor all-strong &quot;Propose a team for water-budget and spar against beginner.&quot;"></web-term>
+        <web-term path="." command="docker agent run agents/12-team.yaml --flavor mixed &quot;Propose a team for water-budget and spar against beginner.&quot;"></web-term>
+    </div>
+</split-view>
+<p class="takeaway">Lower cost or latency? Measure the whole request. Keep the quality bar.</p>
+<speaker-notes>
+    <p>Optional five-minute detour after wiring the specialists; skip straight to exposing the builder as a service. The default 12-team.yaml run and subsequent service configs are unchanged.</p>
+    <p>We already have three roles. Does coordinating the request or reporting a measured practice result need the same model as choosing a constrained team? Hypothesis: reserve Sol for the builder and use Luna for the coordinator and coach to lower cost or latency without losing correctness.</p>
+    <p>This is a fixed model assignment by role, not an automatic complexity router, parallel execution or a fallback mechanism. Both flavors use the same agents, instructions, tools and handoffs; both named models disable thinking. The comparison baseline is all-strong, not the preceding default run, which already uses different models.</p>
+    <p>Run the top terminal to completion, then the bottom, using fresh sessions and the identical request. Each terminal waits for Enter. Click its green button (or use Command-Enter) to maximize the active terminal for the live run and cost inspection, then restore it to compare the YAML. The source tabs show model assignments and definitions; Full file exposes the complete runnable config. Open /cost in each TUI to inspect the session's estimated cost and its agent/model breakdown. Compare the whole request, not just one cheap call. Verify pricing is available for both models; an unknown or zero estimate is not evidence of a free run. Provider billing is authoritative.</p>
+    <p>For elapsed time, rehearse the identical commands with time docker agent run --exec instead of the TUI. Measure process start to exit, including CLI startup and tools; do not time an interactive session's human pauses or claim the TUI is a stopwatch. Repeat both variants at least five times, alternate their order and report medians with success counts. Provider latency and caching can affect the comparison.</p>
+    <p>Inspect correctness before price: three distinct Generation I default species, at most 1000 stats and at least one Water member (TEAM-1, SPECIES-1, BUDGET-1, COVERAGE-1). Each final member needs successful lookup evidence. The coach must receive the exact chosen team and return the actual beginner result, including a loss. Missing or conflicting evidence requires human review (DATA-1). Also inspect duplicate work: extra handoffs, repeated lookups or practice calls can erase any savings.</p>
+    <p>No measured savings or speedup are claimed here. Cheaper tokens do not guarantee a cheaper task, and multiple agents can be slower than one. Keep the mixed assignment only if repeated checks retain quality and improve the chosen cost or latency metric. The builder eval suite expects structured JSON; this coordinator returns prose, so it needs its own eval assertions before a production decision.</p>
+    <p>Only stateless practice is requested. Neither flavor has entry or tournament tools; no local match is authorized. FAIR-1 still keeps arena entries sealed until backend judging.</p>
+    <p><a href="https://docker.github.io/docker-agent/configuration/flavors/">Configuration flavors</a> · <a href="https://docker.github.io/docker-agent/features/tui/">Terminal UI</a></p>
+</speaker-notes>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>Expose the team builder as a service</h1>
+<p class="subtitle">One single-agent builder. Two kinds of client.</p>
+<div class="cards">
+    <article><h3>An application</h3><p>OpenAI-compatible HTTP / 8080</p><p>Request → result</p></article>
+    <article><h3>Another agent</h3><p>MCP / HTTP</p><p>Call the builder as a tool</p></article>
+</div>
+<p>The existing arena backend stays on 8090.</p>
+<p class="takeaway">Send the same Water request from an application or another agent.</p>
+<img class="slide-corner" src="/images/plug-socket.svg" alt="Plug and socket" width="240" height="240" />
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>An application calls the builder</h1>
+<p class="subtitle">A chat API at the front. HTTP tools behind the agent.</p>
+<div class="service-diagram">
+    <img src="/images/application-builder.svg" alt="A Python application sends an OpenAI-compatible HTTP chat request to Docker Agent on port 8080. Its root team builder calls PokéAPI on port 8000 for facts and the arena backend on port 8090 for rules and practice, then returns a structured plan in a chat completion." width="1786" height="600" />
+</div>
+<p class="takeaway">The app sends a chat request. Docker Agent runs the builder and returns its plan.</p>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>Call the agent from an application</h1>
+<p class="subtitle">Python client → OpenAI-compatible chat API on 8080 → structured plan</p>
+<split-view>
+    <source-code folder="scripts" files="api_client.py api_client.py" start-lines=";" end-lines=";" focus-lines="100-121;53-87"></source-code>
+    <div class="terminal-stack">
+        <web-term path="." command="docker agent serve chat agents/13-service.yaml --listen 127.0.0.1:8080"></web-term>
+        <web-term path="." command="python3 scripts/api_client.py"></web-term>
+    </div>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<svg class="optional-marker" viewBox="0 0 24 24" role="img" aria-label="Optional slide"><title>Optional slide</title><path d="m12 3 2.8 5.7 6.3.9-4.5 4.4 1.1 6.2-5.7-3-5.7 3 1.1-6.2-4.5-4.4 6.3-.9Z"/></svg>
+<h1>See the agent's trace</h1>
+<split-view>
+    <web-browser src="http://127.0.0.1:16686/search"></web-browser>
+    <div class="terminal-stack tracing-terminals">
+        <web-term path="." command="python3 scripts/trace_viewer.py"></web-term>
+        <web-term path="." command="OTEL_EXPORTER_OTLP_ENDPOINT=http://127.0.0.1:4318 OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT=false docker agent serve chat agents/13-service.yaml --listen 127.0.0.1:8082 --otel"></web-term>
+        <web-term path="." command="python3 scripts/api_client.py --url http://127.0.0.1:8082"></web-term>
+    </div>
+</split-view>
+<speaker-notes>
+    <p>Optional live detour; skip straight to MCP if short on time. Prepare the digest-pinned local Jaeger image before the talk: docker compose -p devoxx-tracing -f compose.tracing.yaml pull. No builds or pulls happen on stage.</p>
+    <p>Start terminals top to bottom: Jaeger, traced server, then client. Wait for Jaeger's viewer and the server's listening message before sending the request. The separate chat port 8082 avoids colliding with the previous application's server on 8080.</p>
+    <p>The endpoint enables OTLP/HTTP export to Jaeger on loopback 4318; --otel opts into tracing. Message content capture is explicitly false for this listener. Jaeger's viewer is on 16686. Both are local, not public services.</p>
+    <p>After the client completes, allow at least five seconds for batched spans to arrive. Choose the docker-agent service and click Find Traces; if the service is absent, refresh the embedded browser. Open the newest trace. Expand model and tool spans; compare durations, token usage when reported, lookup counts and errors. The search page does not auto-refresh results.</p>
+    <p>Trace hierarchy and timings are live observations, not a pre-captured score or a guarantee. An instrumented application can propagate trace context into the chat server; our Python client does not. PokéAPI and the arena need their own instrumentation to expose service-internal work.</p>
+    <p>The viewer helper stays attached to the first terminal. Ctrl-C or leaving the slide closes it and removes only the container created by that invocation. Docker detachment alone would not stop Jaeger, so the helper explicitly cleans up on terminal hangup. Occupied ports fail without stopping their owners. Jaeger stores traces in memory: leaving the slide discards them. A hard process kill or Docker outage can prevent cleanup and needs human review.</p>
+    <p>Jaeger accepts traces only. This Docker Agent build also exports metrics/logs to the same base endpoint; those exports can report unsupported-endpoint errors without invalidating trace export. Do not assume OTEL_METRICS_EXPORTER=none disables this build's explicitly constructed exporters.</p>
+    <p>Prompt/response content and tool arguments/results are omitted by default and capture is explicitly disabled here. Span metadata and error descriptions still need appropriate access and retention controls. Failed/conflicting evidence requires human review (DATA-1); sealed teams remain governed by FAIR-1. No entry or local match is requested by this demo.</p>
+    <p><a href="https://docker.github.io/docker-agent/community/opentelemetry/">Docker Agent tracing</a> · <a href="https://www.jaegertracing.io/docs/2.21/getting-started/">Jaeger setup</a></p>
+</speaker-notes>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>An agent calls the builder as a tool</h1>
+<p class="subtitle">MCP is the tool protocol. Streamable HTTP is its transport.</p>
+<div class="service-diagram">
+    <img src="/images/mcp-builder.svg" alt="A caller agent discovers and calls the root tool using MCP JSON-RPC over Streamable HTTP to Docker Agent on port 8081. Its root team builder calls PokéAPI on port 8000 for facts and the arena backend on port 8090 for rules and practice, then returns a tool result." width="1786" height="600" />
+</div>
+<p class="takeaway">The caller sees a tool named <code>root</code>; the builder runs its own agent loop.</p>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>Let another agent call the builder</h1>
+<p class="subtitle">Agent client → Docker Agent MCP over HTTP → builder</p>
+<split-view>
+    <source-code folder="agents" files="14-mcp-client.yaml" start-lines="" end-lines="" focus-lines="5-20"></source-code>
+    <div class="terminal-stack">
+        <web-term path="." command="docker agent serve mcp agents/13-service.yaml --http --listen 127.0.0.1:8081"></web-term>
+        <web-term path="." command="docker agent run --exec agents/14-mcp-client.yaml &quot;Propose a team for water-budget.&quot;"></web-term>
+    </div>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>Package the agent</h1>
+<p class="subtitle">With docker compose</p>
+<split-view class="workspace-package">
+    <source-code folder="." files="compose.yaml" start-lines="" end-lines=""></source-code>
+    <div class="cards workspace-boundaries">
+        <article>
+            <h3>Mount only what it needs</h3>
+            <p>Agents and guidelines: read-only.</p>
+        </article>
+        <article>
+            <h3>Keep secrets out of the files</h3>
+            <p>Resolve provider credentials with 1Password; inject them through the environment.</p>
+        </article>
+        <article>
+            <h3>Separate state and services</h3>
+            <p>Read-only root filesystem; runtime state in a volume.</p>
+            <p>Chat API on localhost:8080; sibling arena on the private network.</p>
+            <p>PokéAPI and its spec run locally: no GitHub calls during the demo.</p>
+            <p><code>docker compose up -d --wait pokeapi</code></p>
+        </article>
+    </div>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>Run the packaged agent</h1>
+<p class="subtitle">Compose in the foreground. The same application client.</p>
+<split-view>
+    <web-term path="." command="OPENAI_API_KEY='op://Team AI Agent/cagent-proxy/OPENAI_API_KEY' op run -- docker compose --env-file /dev/null up --no-build --pull never"></web-term>
+    <web-term path="." command="python3 scripts/api_client.py"></web-term>
+</split-view>
+<speaker-notes>
+    <p>Before the talk, build PokéAPI with docker compose --env-file /dev/null build pokeapi and prepare the agent/backend images with docker compose --env-file /dev/null pull pokemon-arena arena. The agent image must support transform_json, max_output_bytes and structured output. If using local Docker Agent changes, build ../docker-agent under the docker/docker-agent:latest tag used by compose.yaml.</p>
+    <p>Install the 1Password CLI (op) on the Mac and enable its desktop integration in 1Password Settings > Developer. Unlock 1Password and ensure your account can read the Team AI Agent vault's cagent-proxy item and OPENAI_API_KEY field. The slide uses op run to resolve that reference on the host; approve the 1Password prompt when asked. No raw key needs to be exported before launching DemoIt. The selected gpt-6-luna model also needs provider access, and model calls still require networking.</p>
+    <p>Stop only your earlier chat listener on 8080 (Ctrl-C in its terminal) before starting Compose. Port 8000 should be free or occupied by this project's prepared PokéAPI container, which Compose reuses. Use the same repository root and default Compose project as the automatic PokéAPI helper; do not start a second project competing for port 8000.</p>
+    <p>Both commands wait for Enter. Start the left terminal first: no -d, no --wait, no builds or pulls. op run resolves the key for its Compose subprocess, and Compose injects it into the agent container's environment. --env-file /dev/null avoids loading a credential file. No launcher, temporary secret file or custom image is needed; the read-only root filesystem is unchanged. The key is visible to Docker administrators through container inspection; op run's output masking is best-effort, not a security boundary. Do not print the resolved Compose configuration. Wait for healthy dependencies and the agent's listening message on 8080 before running the right terminal. The Python client calls the same OpenAI-compatible API as before, now served by the container.</p>
+    <p>The Compose arena is private at arena:8090; keep the separate host arena on 8090 running for the later leaderboard slides. This request only proposes a team: no entry, practice or tournament is requested. Inspect TEAM-1, SPECIES-1, BUDGET-1 and COVERAGE-1; failed/conflicting evidence requires human review (DATA-1), and sealed entries remain governed by FAIR-1.</p>
+    <p>After the client completes, Ctrl-C in the left terminal stops the attached services, including PokéAPI. Compose containers can survive a terminal disconnect, so do not rely on leaving the slide for cleanup. If needed, run docker compose --env-file /dev/null stop from the repository root. The next slide terminal restarts prepared PokéAPI automatically; the host arena and its entries are untouched. Do not use down -v or reset the arena.</p>
+</speaker-notes>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<svg class="optional-marker" viewBox="0 0 24 24" role="img" aria-label="Optional slide"><title>Optional slide</title><path d="m12 3 2.8 5.7 6.3.9-4.5 4.4 1.1 6.2-5.7-3-5.7 3 1.1-6.2-4.5-4.4 6.3-.9Z"/></svg>
+<h1>Ship the exact agent you evaluated</h1>
+<p class="subtitle">OCI artifacts: version the configuration, deploy by digest</p>
+<div class="cards">
+    <article><h3>Freeze</h3><p>Chosen flavor and reviewed guidance</p></article>
+    <article><h3>Evaluate</h3><p>Keep results and runtime versions</p></article>
+    <article><h3>Publish</h3><p>Versioned tag → immutable digest</p></article>
+</div>
+<pre class="command"><code>docker agent share push release.yaml myorg/team-builder:v1
+docker agent serve chat myorg/team-builder@sha256:&lt;digest&gt; \
+  --listen 127.0.0.1:8080</code></pre>
+<speaker-notes>
+    <p>Optional four-minute detour; skip straight to the leaderboard if short on time. Static examples only: release.yaml, myorg and &lt;digest&gt; are placeholders, not checked-in files or a published release. No registry write, model call or service startup is needed on stage.</p>
+    <p>Compose packages the execution environment; an OCI agent artifact distributes the configuration. Freeze the reviewed release inputs, evaluate them, publish, then verify the retrieved artifact and its dependencies before promotion. Keep the full OCI manifest digest with the release evidence and deploy that digest, not a moving tag. A digest identifies bytes, not quality or publisher trust; it does not certify a passing eval.</p>
+    <p>For example, docker agent debug config agents/11-builder.yaml checked-totals can resolve the chosen flavor into a release YAML before evaluation. With a flavor supplied, debug config bakes in the patches and removes the flavors section; share push itself has no --flavor option. Review the resolved file and evaluate those release inputs. Do not assume 11-builder.yaml results certify the different 13-service.yaml builder, its container flavor or a newly transformed release.</p>
+    <p>The artifact stores the configuration as YAML, not a container image or a workspace archive. instruction_file contents are inlined when pushing, but add_prompt_files remain external path references. Our builders need team-building.md; the served builder also loads AGENTS.md. Supply the exact reviewed files in a versioned read-only workspace, as in Compose, and verify their hashes and working-directory resolution. Missing prompt files can be silently skipped. Alternatively, deliberately inline reviewed guidance into the release configuration before evaluating it; that transformation needs review and fresh evals, not a claim that push bundles it automatically.</p>
+    <p>Eval cases, eval-setup.sh, raw results, binaries such as jq/awk, OpenAPI specs, model weights and backend data are not bundled by share push. Retain an external release record with source revision, selected flavor, support-file hashes, cases and raw result paths, CLI/runtime image version or digest, model and judge settings, spec/backend evidence versions and the full OCI manifest digest. The publication command does not automatically attach eval evidence.</p>
+    <p>Tags, even v1, can be overwritten. Resolve the published tag with registry tooling and copy the full manifest digest into &lt;digest&gt;; do not use the local YAML checksum or the signature's YAML-layer digest as the registry reference. Inspect and validate the retrieved configuration with the pinned support workspace, then run the release evals before promoting that digest. Later model, tool, environment or policy overrides mean a different effective agent and need validation.</p>
+    <p>Registry access may require login and network access; provider credentials still come from the runtime. Never place secrets in the YAML: it is published in clear, even with share push --encrypt. Signing is a separate provenance check, not proof of eval success. Do not read credential files or publish anything during this detour.</p>
+    <p>The serve command illustrates replacing the local YAML with a registry reference; it is not an additional listener to start beside the previous 8080 service. Stop only an owned listener if deliberately rehearsing the replacement. Keep access on loopback and provision the same reviewed guidelines and backend services; the later leaderboard demos are unchanged.</p>
+    <p>Immutable config bytes do not freeze hosted model behavior or live tool responses. Missing or conflicting evidence still requires human review (DATA-1); current backend rules remain authoritative and FAIR-1 keeps teams sealed until judging. Distribution grants no entry authority, and this slide requests no local match or tournament.</p>
+    <p><a href="https://docker.github.io/docker-agent/concepts/distribution/">Agent distribution</a> · <a href="https://docker.github.io/docker-agent/configuration/flavors/">Configuration flavors</a></p>
+</speaker-notes>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>From sparring to a leaderboard</h1>
+<p class="subtitle">Fast final builder: no thinking, budget-first shortlist, tool-checked totals.</p>
+<div class="cards">
+    <article><h3>Agent A</h3><p>Base strategy</p><p>Seal independently</p></article>
+    <article><h3>Agent B</h3><p>Type-aware flavor</p><p>Seal independently</p></article>
+    <article><h3>Backend referee</h3><p>Validate → judge → reveal</p><p>One result, even after retries</p></article>
+</div>
+<p class="takeaway">100/100 fixture-legal proposals; backend validation still gates every entry (DATA-1). Keep the <a href="http://127.0.0.1:8090/" target="_blank" rel="noopener noreferrer">local arena</a> open.</p>
+<img class="slide-corner" src="/images/trophy.svg" alt="Trophy" width="240" height="240" />
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>Submit Agent A's team</h1>
+<p class="subtitle">1/2 - Build → confirm → seal</p>
+<split-view>
+    <web-browser src="http://127.0.0.1:8090/#arena"></web-browser>
+    <web-term path="." command="docker agent run --safety strict agents/15-arena.yaml &quot;Build for the water-budget challenge and enter a local match as agent-a. Submit the team; let the arena handle the match.&quot;"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>Submit Agent B's team</h1>
+<p class="subtitle">2/2 - Seal the second entry → automatic fight</p>
+<split-view>
+    <web-browser src="http://127.0.0.1:8090/#arena"></web-browser>
+    <web-term path="." command="docker agent run --safety strict agents/15-arena.yaml --flavor type-aware &quot;Build for the water-budget challenge and enter a local match as agent-b. Submit the team; let the arena handle the match.&quot;"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">04</span>Serve</p>
+<h1>32 players. One champion.</h1>
+<p class="subtitle">Fast Luna players: 99/100 fixture-legal proposals, median 10.2s. Entries remain backend-validated.</p>
+
+<split-view>
+    <web-browser src="http://127.0.0.1:8090/#tournaments"></web-browser>
+    <web-term path="." command="docker agent run agents/16-tournament.yaml &quot;Run the local tournament devoxx-cup for water-budget with 32 background players.&quot;"></web-term>
+</split-view>
+
+---
+
+<p class="kicker"><span class="stage">05</span>Take it home</p>
+<h1>Pokémon today. Your business tomorrow.</h1>
+<p class="subtitle">Build → measure → improve → serve</p>
+<div class="cards">
+    <article><h3>Your facts</h3><p>Existing data and services</p></article>
+    <article><h3>Your quality bar</h3><p>Repeatable checks</p></article>
+    <article><h3>Your users</h3><p>A useful capability</p></article>
+</div>
+<img class="slide-corner" src="/images/rocket.svg" alt="Rocket ready for launch" width="240" height="240" />
+
+---
+
+<p class="kicker"><span class="stage">05</span>Take it home</p>
+<h1>There’s more to explore</h1>
+<p class="subtitle">Docker Agent capabilities we haven’t demonstrated today</p>
+<ul class="capability-cloud" aria-label="More Docker Agent capabilities">
+    <li class="cloud-docs">
+        <a href="https://docker.github.io/docker-agent/">
+            <img src="/qrcode?url=https%3A%2F%2Fdocker.github.io%2Fdocker-agent%2F" alt="QR code for Docker Agent documentation" width="320" height="320"/>
+        </a>
+    </li>
+    <li class="cloud-md" style="--x: 13%; --y: 9%"><a href="https://docker.github.io/docker-agent/features/snapshots/">Snapshots &amp; Undo</a></li>
+    <li class="cloud-xl" style="--x: 37%; --y: 6%"><a href="https://docker.github.io/docker-agent/features/acp/" title="Agent Client Protocol">ACP</a></li>
+    <li class="cloud-lg" style="--x: 59%; --y: 11%"><a href="https://docker.github.io/docker-agent/tools/memory/">Memory</a></li>
+    <li class="cloud-md" style="--x: 82%; --y: 7%"><a href="https://docker.github.io/docker-agent/features/remote-mcp/">Remote MCP</a></li>
+    <li class="cloud-md" style="--x: 35%; --y: 23%"><a href="https://docker.github.io/docker-agent/features/skills/">Skills</a></li>
+    <li class="cloud-hero" style="--x: 18%; --y: 28%"><a href="https://docker.github.io/docker-agent/configuration/sandbox/">Sandboxes</a></li>
+    <li class="cloud-sm" style="--x: 8%; --y: 42%"><a href="https://docker.github.io/docker-agent/features/board/">Kanban Board</a></li>
+    <li class="cloud-lg" style="--x: 70%; --y: 26%"><a href="https://docker.github.io/docker-agent/features/remote-mcp/">OAuth</a></li>
+    <li class="cloud-md" style="--x: 90%; --y: 22%"><a href="https://docker.github.io/docker-agent/tools/mcp-catalog/">MCP Catalog</a></li>
+    <li class="cloud-xl" style="--x: 26%; --y: 43%"><a href="https://docker.github.io/docker-agent/tools/rag/">RAG</a></li>
+    <li class="cloud-sm" style="--x: 20%; --y: 56%"><a href="https://docker.github.io/docker-agent/tools/background-jobs/">Background Jobs</a></li>
+    <li class="cloud-lg" style="--x: 73%; --y: 43%"><a href="https://docker.github.io/docker-agent/tools/lsp/" title="Language Server Protocol">LSP</a></li>
+    <li class="cloud-md" style="--x: 87%; --y: 58%"><a href="https://docker.github.io/docker-agent/configuration/routing/">Model Routing</a></li>
+    <li class="cloud-sm" style="--x: 11%; --y: 77%"><a href="https://docker.github.io/docker-agent/features/harnesses/">Coding Harnesses</a></li>
+    <li class="cloud-lg" style="--x: 31%; --y: 71%"><a href="https://docker.github.io/docker-agent/features/code-mode/">Code Mode</a></li>
+    <li class="cloud-md" style="--x: 74%; --y: 72%"><a href="https://docker.github.io/docker-agent/features/api-server/">Session Forking</a></li>
+    <li class="cloud-md" style="--x: 92%; --y: 80%"><a href="https://docker.github.io/docker-agent/tools/scheduler/">Scheduler</a></li>
+    <li class="cloud-lg" style="--x: 18%; --y: 91%"><a href="https://docker.github.io/docker-agent/features/api-server/">REST API</a></li>
+    <li class="cloud-xl" style="--x: 59%; --y: 88%"><a href="https://docker.github.io/docker-agent/features/a2a/" title="Agent-to-Agent Protocol">A2A</a></li>
+    <li class="cloud-sm" style="--x: 49%; --y: 23%"><a href="https://docker.github.io/docker-agent/guides/compaction/">Context Compaction</a></li>
+    <li class="cloud-md" style="--x: 80%; --y: 92%"><a href="https://docker.github.io/docker-agent/community/opentelemetry/">OpenTelemetry</a></li>
+    <li class="cloud-md" style="--x: 33%; --y: 89%"><a href="https://docker.github.io/docker-agent/configuration/agentsignore/">File Masking</a></li>
+    <li class="cloud-sm" style="--x: 28%; --y: 15%"><a href="https://docker.github.io/docker-agent/tools/background-jobs/">Runtime Recall</a></li>
+    <li class="cloud-md" style="--x: 86%; --y: 40%"><a href="https://docker.github.io/docker-agent/configuration/hooks/">Tool Guards</a></li>
+    <li class="cloud-md" style="--x: 8%; --y: 63%"><a href="https://docker.github.io/docker-agent/tools/webhook/">Webhooks</a></li>
+    <li class="cloud-lg" style="--x: 44%; --y: 96%"><a href="https://docker.github.io/docker-agent/guides/go-sdk/">Go SDK</a></li>
+    <li class="cloud-sm" style="--x: 51%; --y: 78%"><a href="https://docker.github.io/docker-agent/concepts/distribution/">OCI Distribution</a></li>
+    <li class="cloud-md" style="--x: 65%; --y: 97%"><a href="https://docker.github.io/docker-agent/features/api-server/">Session Attach</a></li>
+    <li class="cloud-md" style="--x: 92%; --y: 66%"><a href="https://docker.github.io/docker-agent/tools/handoff/">Handoffs</a></li>
+    <li class="cloud-sm" style="--x: 91%; --y: 87%"><a href="https://docker.github.io/docker-agent/features/remote-mcp/">Unix Sockets</a></li>
+</ul>
+
+---
+
+<h1 hidden>Cloud Sandbox Credit</h1>
+<img class="full-screen-image" src="/images/cloud-sandbox-credit.png" alt="Docker Sandboxes: claim $250 Cloud Sandbox Credit. Scan the QR code to claim. Each sandbox is a microVM with its own kernel, running in the cloud. Your agents keep working after you close your laptop." width="1920" height="1080" />
+
+---
+
+<p class="kicker"><span class="stage">05</span>Take it home</p>
+<h1>Questions &amp; next steps</h1>
+<p class="subtitle">What will you craft and deploy first?</p>
+<p>Start with one useful task. Build an agent, prove it works, then put it to work.</p>
+<div class="qr-links">
+    <a href="https://github.com/dgageot/devoxx-be-2026">
+        <img src="/qrcode?url=https%3A%2F%2Fgithub.com%2Fdgageot%2Fdevoxx-be-2026" alt="QR code for the presentation on GitHub"/>
+        <span>Presentation</span>
+    </a>
+    <a href="https://docker.github.io/docker-agent/">
+        <img src="/qrcode?url=https%3A%2F%2Fdocker.github.io%2Fdocker-agent%2F" alt="QR code for Docker Agent documentation"/>
+        <span>Documentation</span>
+    </a>
+    <a href="https://github.com/docker/docker-agent">
+        <img src="/qrcode?url=https%3A%2F%2Fgithub.com%2Fdocker%2Fdocker-agent" alt="QR code for Docker Agent source code on GitHub"/>
+        <span>Source code</span>
+    </a>
+    <a href="https://github.com/dgageot/demoit">
+        <img src="/qrcode?url=https%3A%2F%2Fgithub.com%2Fdgageot%2Fdemoit" alt="QR code for DemoIt on GitHub"/>
+        <span>DemoIt</span>
+    </a>
+</div>

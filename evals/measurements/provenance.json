@@ -1,0 +1,678 @@
+{
+  "cli_version": "docker agent version dev\nCommit: c145f64efc0e78a36c1b5ac7ff99551135c5a81f",
+  "agent_image_id": "sha256:7cc50f4277b6916f0b8fbe061ab7a479abf3e65ea83ed2d84907abf0d7c284eb",
+  "judge_model": "openai/gpt-5.6-terra",
+  "concurrency": 6,
+  "repeat": 3,
+  "inputs": {
+    "agents/11-builder.yaml": "64eb7e60ec74683d83faf749247996ac7a040b179a7d798f6d9d4516d9869e68",
+    "agents/13-service.yaml": "f6936fb730e0c2ad95cfb0ce42f40e7d58bf41964e12b75bf6a34bc9906a5e42",
+    "agents/15-arena.yaml": "0bbe5880a67b668b485ae18f46bf58bcae973201e05a65852117669e2d34f662",
+    "agents/16-tournament.yaml": "86fcd08776fc82e224f41fb4aabdde6fb6c3fe794c792f0d0a237762180abe4d",
+    "agents/team-building.md": "248c8108fd15e8cfd07ea0233a9d0f77f6bd0df4075da8e4db6a4c47b8065f31",
+    "agents/eval-setup.sh": "8154dc1fd44f56318fc4d523120be33ca4c4a6a63a456e7310233cc96e03b731",
+    "evals/arena/duplicate-team.json": "9e23d6cdeac0f5877f64d1e13201dc790385a9a4e0e9ee2b19ad1b4d09f2d240",
+    "evals/arena/honest-loss.json": "01cd032f95fb311c5469c53b87f975c57deb2f2978993189a18fcbe0d64fb912",
+    "evals/arena/over-budget.json": "b823826bb2284c4257e0f21639e5b4f8fdf91895a31b168d6fd1877c8ee29f29",
+    "evals/arena/water-advanced.json": "6e99a1a940050240879793da55d73b3d243df1f4e4a7a4438e45f6833418c6a3",
+    "evals/arena/water-beginner.json": "f0b5424655be54de6b4dd87ec72e02cf0e6c13d5f3cda35fb096e067d3e43ed7",
+    "evals/arena/water-proposal.json": "c70f88fd7fd8362f37090430cae70a2cbc72a38057f189b9617dec5cbb3b33b6"
+  },
+  "capture_input_sha256": "8a1221706b66e485f1a612456d3778afa724c1f3d274709931ecce298fff3eec  agents/11-builder.yaml\n248c8108fd15e8cfd07ea0233a9d0f77f6bd0df4075da8e4db6a4c47b8065f31  agents/team-building.md\n8154dc1fd44f56318fc4d523120be33ca4c4a6a63a456e7310233cc96e03b731  agents/eval-setup.sh\n9e23d6cdeac0f5877f64d1e13201dc790385a9a4e0e9ee2b19ad1b4d09f2d240  evals/arena/duplicate-team.json\n01cd032f95fb311c5469c53b87f975c57deb2f2978993189a18fcbe0d64fb912  evals/arena/honest-loss.json\nb823826bb2284c4257e0f21639e5b4f8fdf91895a31b168d6fd1877c8ee29f29  evals/arena/over-budget.json\n6e99a1a940050240879793da55d73b3d243df1f4e4a7a4438e45f6833418c6a3  evals/arena/water-advanced.json\nf0b5424655be54de6b4dd87ec72e02cf0e6c13d5f3cda35fb096e067d3e43ed7  evals/arena/water-beginner.json\nc70f88fd7fd8362f37090430cae70a2cbc72a38057f189b9617dec5cbb3b33b6  evals/arena/water-proposal.json\n",
+  "measurements": {
+    "baseline": {
+      "run_file": "evals/measurements/baseline.json",
+      "run_sha256": "e930c4d9bb9a10ed5efb0e7b22590ffb74883353a086514091cc9e28f6b911cc",
+      "source_file": ".state/eval-story/baseline-v3-repeat/calm-vale-908.json",
+      "run_name": "calm-vale-908",
+      "captured_at": "2026-10-05T14:43:33.686101+02:00",
+      "passed": 14,
+      "total": 18,
+      "duration": "59.607s",
+      "median_agent_seconds": 7.475,
+      "summary": {
+        "total_evals": 18,
+        "failed_evals": 0,
+        "total_cost": 0.021032059999999998,
+        "sizes_passed": 0,
+        "sizes_total": 0,
+        "tools_f1_sum": 0,
+        "tools_count": 0,
+        "relevance_passed": 28,
+        "relevance_total": 33,
+        "assertions_passed": 82,
+        "assertions_total": 84,
+        "repeat_metrics": {
+          "k": 3,
+          "pass_at_k": 1,
+          "pass_hat_k": 0.5,
+          "total": 6,
+          "evals": [
+            {
+              "input_path": "evals/arena/duplicate-team.json",
+              "status": "flaky",
+              "passed": 1,
+              "total": 3,
+              "errors": 0,
+              "failed_runs": [
+                "Reject duplicate members #1",
+                "Reject duplicate members #3"
+              ],
+              "cost": {
+                "samples": 3,
+                "median": 0.000361335,
+                "min": 0.00027709,
+                "max": 0.00090973,
+                "outliers": [
+                  {
+                    "title": "Reject duplicate members #1",
+                    "cost": 0.00090973
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/over-budget.json",
+              "status": "flaky",
+              "passed": 2,
+              "total": 3,
+              "errors": 0,
+              "failed_runs": [
+                "Reject an over-budget request #2"
+              ],
+              "cost": {
+                "samples": 3,
+                "median": 0.0009644149999999999,
+                "min": 0.000887915,
+                "max": 0.001374645
+              }
+            },
+            {
+              "input_path": "evals/arena/water-advanced.json",
+              "status": "flaky",
+              "passed": 2,
+              "total": 3,
+              "errors": 0,
+              "failed_runs": [
+                "Stretch goal: beat advanced #2"
+              ],
+              "cost": {
+                "samples": 3,
+                "median": 0.00151257,
+                "min": 0.00107037,
+                "max": 0.0017516399999999998
+              }
+            },
+            {
+              "input_path": "evals/arena/honest-loss.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.00115981,
+                "min": 0.00115731,
+                "max": 0.0012314300000000002
+              }
+            },
+            {
+              "input_path": "evals/arena/water-beginner.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.00151703,
+                "min": 0.001221325,
+                "max": 0.001523475
+              }
+            },
+            {
+              "input_path": "evals/arena/water-proposal.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.00136034,
+                "min": 0.000650785,
+                "max": 0.002100845
+              }
+            }
+          ]
+        }
+      },
+      "flavors": []
+    },
+    "checked-totals": {
+      "run_file": "evals/measurements/checked-totals.json",
+      "run_sha256": "67f09254ce5a955f3fddf5e4a11f8168425792305377537df353251a838a665b",
+      "source_file": ".state/eval-story/patch-awk/keen-falcon-680.json",
+      "run_name": "keen-falcon-680",
+      "captured_at": "2026-10-05T15:03:00.589154+02:00",
+      "passed": 18,
+      "total": 18,
+      "duration": "1m6.265s",
+      "median_agent_seconds": 10.25,
+      "summary": {
+        "total_evals": 18,
+        "failed_evals": 0,
+        "total_cost": 0.02250399,
+        "sizes_passed": 0,
+        "sizes_total": 0,
+        "tools_f1_sum": 0,
+        "tools_count": 0,
+        "relevance_passed": 33,
+        "relevance_total": 33,
+        "assertions_passed": 84,
+        "assertions_total": 84,
+        "repeat_metrics": {
+          "k": 3,
+          "pass_at_k": 1,
+          "pass_hat_k": 1,
+          "total": 6,
+          "evals": [
+            {
+              "input_path": "evals/arena/duplicate-team.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.00037862,
+                "min": 0.00036662,
+                "max": 0.00042666
+              }
+            },
+            {
+              "input_path": "evals/arena/honest-loss.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.001189905,
+                "min": 0.001185905,
+                "max": 0.001331425
+              }
+            },
+            {
+              "input_path": "evals/arena/over-budget.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.000985655,
+                "min": 0.00031725,
+                "max": 0.000992155
+              }
+            },
+            {
+              "input_path": "evals/arena/water-advanced.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.0025482650000000005,
+                "min": 0.0025445650000000004,
+                "max": 0.0026746450000000002
+              }
+            },
+            {
+              "input_path": "evals/arena/water-beginner.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.001107065,
+                "min": 0.001104565,
+                "max": 0.00255926,
+                "outliers": [
+                  {
+                    "title": "Build and practice: the live demo request #1",
+                    "cost": 0.00255926
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/water-proposal.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.000930415,
+                "min": 0.0008226399999999999,
+                "max": 0.001038375
+              }
+            }
+          ]
+        }
+      },
+      "flavors": [
+        "checked-totals"
+      ]
+    },
+    "alternate-model": {
+      "run_file": "evals/measurements/alternate-model.json",
+      "run_sha256": "d76796fccea3218edd8b492e51f014e4740d60e13e4fee3f359b8a4451618328",
+      "source_file": ".state/eval-story/model-only/sharp-flame-849.json",
+      "run_name": "sharp-flame-849",
+      "captured_at": "2026-10-05T14:58:49.88711+02:00",
+      "passed": 15,
+      "total": 18,
+      "duration": "1m23.987s",
+      "median_agent_seconds": 12.202,
+      "summary": {
+        "total_evals": 18,
+        "failed_evals": 0,
+        "total_cost": 0.47759890000000005,
+        "sizes_passed": 0,
+        "sizes_total": 0,
+        "tools_f1_sum": 0,
+        "tools_count": 0,
+        "relevance_passed": 30,
+        "relevance_total": 33,
+        "assertions_passed": 84,
+        "assertions_total": 84,
+        "repeat_metrics": {
+          "k": 3,
+          "pass_at_k": 0.8333333333333334,
+          "pass_hat_k": 0.8333333333333334,
+          "total": 6,
+          "evals": [
+            {
+              "input_path": "evals/arena/water-advanced.json",
+              "status": "failing",
+              "passed": 0,
+              "total": 3,
+              "errors": 0,
+              "failed_runs": [
+                "Stretch goal: beat advanced #1",
+                "Stretch goal: beat advanced #2",
+                "Stretch goal: beat advanced #3"
+              ],
+              "cost": {
+                "samples": 3,
+                "median": 0.0611569,
+                "min": 0.0315106,
+                "max": 0.06497249999999999
+              }
+            },
+            {
+              "input_path": "evals/arena/duplicate-team.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.016281,
+                "min": 0.003359,
+                "max": 0.0163794
+              }
+            },
+            {
+              "input_path": "evals/arena/honest-loss.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.022459599999999996,
+                "min": 0.0056472,
+                "max": 0.0225472
+              }
+            },
+            {
+              "input_path": "evals/arena/over-budget.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.017423900000000003,
+                "min": 0.017333900000000003,
+                "max": 0.021946700000000003
+              }
+            },
+            {
+              "input_path": "evals/arena/water-beginner.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.0190076,
+                "min": 0.0169891,
+                "max": 0.0461795,
+                "outliers": [
+                  {
+                    "title": "Build and practice: the live demo request #1",
+                    "cost": 0.0461795
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/water-proposal.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.040428000000000006,
+                "min": 0.0113757,
+                "max": 0.0426011
+              }
+            }
+          ]
+        }
+      },
+      "flavors": [
+        "alternate-model"
+      ]
+    },
+    "heldout": {
+      "run_file": "evals/measurements/heldout.json",
+      "run_sha256": "b8acc475333a20520e00da9ffe3515372ade9b7fb3061d5d62627404081e4634",
+      "source_file": ".state/eval-story/heldout/eager-dusk-067.json",
+      "run_name": "eager-dusk-067",
+      "captured_at": "2026-10-05T15:04:28.346821+02:00",
+      "passed": 6,
+      "total": 6,
+      "duration": "1m16.667s",
+      "median_agent_seconds": 14.968,
+      "summary": {
+        "total_evals": 6,
+        "failed_evals": 0,
+        "total_cost": 0.013460115,
+        "sizes_passed": 0,
+        "sizes_total": 0,
+        "tools_f1_sum": 0,
+        "tools_count": 0,
+        "relevance_passed": 12,
+        "relevance_total": 12,
+        "assertions_passed": 33,
+        "assertions_total": 33,
+        "repeat_metrics": {
+          "k": 3,
+          "pass_at_k": 1,
+          "pass_hat_k": 1,
+          "total": 2,
+          "evals": [
+            {
+              "input_path": "evals/arena-heldout/no-starters.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.0013376,
+                "min": 0.000988755,
+                "max": 0.00365935,
+                "outliers": [
+                  {
+                    "title": "New preference: no Kanto starters #1",
+                    "cost": 0.00365935
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena-heldout/water-intermediate.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.00286159,
+                "min": 0.00173334,
+                "max": 0.00287948
+              }
+            }
+          ]
+        }
+      },
+      "flavors": [
+        "checked-totals"
+      ]
+    },
+    "arena-proposals": {
+      "run_file": "evals/measurements/arena-proposals.json",
+      "run_sha256": "31105af0165cfdb450a4cc9ce96fdeb8dca11e28d9d5ed25950ed20a92d89c97",
+      "valid": 100,
+      "total": 100,
+      "median_agent_seconds": 11.575,
+      "proposal_only": true,
+      "captured_at": "2026-10-05T13:19:51.547120+00:00",
+      "input_sha256": {
+        "agents/15-arena.yaml": "0bbe5880a67b668b485ae18f46bf58bcae973201e05a65852117669e2d34f662",
+        "scripts/check_team_reliability.py": "501e3497e688921a2125b514d720ce08f1e36e92de36c1f81dfd091cdbb3f732",
+        "agents/team-building.md": "248c8108fd15e8cfd07ea0233a9d0f77f6bd0df4075da8e4db6a4c47b8065f31",
+        "fixtures/arena-catalog.json": "6ae4f2649d63cd0b2c49c02bf4bbffc66fa2d007b09adfe8e26714e2ff736eb4",
+        "fixtures/arena-challenges.json": "56cf2c67dd75fdb0e9a7616fe4d1ddd4c05c1a33459941a356ebefe39edf7ec0"
+      },
+      "concurrency": 4,
+      "prohibited_tools": [
+        "join_local_arena",
+        "submit_tournament_team",
+        "create_tournament",
+        "spar_team",
+        "run_background_agent",
+        "wait_background_agents",
+        "transfer_task"
+      ],
+      "validity_scope": "fixture-legal team and accurate total; live lookup evidence not audited"
+    },
+    "tournament-proposals": {
+      "run_file": "evals/measurements/tournament-proposals.json",
+      "run_sha256": "ee4f5b19d9488319e3d6782a7db957038fd72fa887ed7f9c3c1a77e5b9e4ebbd",
+      "valid": 99,
+      "total": 100,
+      "median_agent_seconds": 10.214,
+      "proposal_only": true,
+      "captured_at": "2026-10-05T13:25:18.676135+00:00",
+      "input_sha256": {
+        "agents/16-tournament.yaml": "86fcd08776fc82e224f41fb4aabdde6fb6c3fe794c792f0d0a237762180abe4d",
+        "scripts/check_team_reliability.py": "501e3497e688921a2125b514d720ce08f1e36e92de36c1f81dfd091cdbb3f732",
+        "agents/team-building.md": "248c8108fd15e8cfd07ea0233a9d0f77f6bd0df4075da8e4db6a4c47b8065f31",
+        "fixtures/arena-catalog.json": "6ae4f2649d63cd0b2c49c02bf4bbffc66fa2d007b09adfe8e26714e2ff736eb4",
+        "fixtures/arena-challenges.json": "56cf2c67dd75fdb0e9a7616fe4d1ddd4c05c1a33459941a356ebefe39edf7ec0"
+      },
+      "concurrency": 4,
+      "prohibited_tools": [
+        "join_local_arena",
+        "submit_tournament_team",
+        "create_tournament",
+        "spar_team",
+        "run_background_agent",
+        "wait_background_agents",
+        "transfer_task"
+      ],
+      "validity_scope": "fixture-legal team and accurate total; live lookup evidence not audited"
+    },
+    "checked-totals-final": {
+      "run_file": "evals/measurements/checked-totals-final.json",
+      "run_sha256": "1d85bc43d4f088403863fa0048d21a8a5e035a7b2b30f58ca8b2520ecb614b7f",
+      "source_file": ".state/eval-story/patch-safe/gentle-brook-996.json",
+      "run_name": "gentle-brook-996",
+      "captured_at": "2026-10-05T15:19:51.54861+02:00",
+      "passed": 17,
+      "total": 18,
+      "duration": "1m2.943s",
+      "median_agent_seconds": 8.766,
+      "summary": {
+        "total_evals": 18,
+        "failed_evals": 0,
+        "total_cost": 0.026881129999999996,
+        "sizes_passed": 0,
+        "sizes_total": 0,
+        "tools_f1_sum": 0,
+        "tools_count": 0,
+        "relevance_passed": 30,
+        "relevance_total": 33,
+        "assertions_passed": 82,
+        "assertions_total": 84,
+        "repeat_metrics": {
+          "k": 3,
+          "pass_at_k": 1,
+          "pass_hat_k": 0.8333333333333334,
+          "total": 6,
+          "evals": [
+            {
+              "input_path": "evals/arena/water-advanced.json",
+              "status": "flaky",
+              "passed": 2,
+              "total": 3,
+              "errors": 0,
+              "failed_runs": [
+                "Stretch goal: beat advanced #1"
+              ],
+              "cost": {
+                "samples": 3,
+                "median": 0.002696535,
+                "min": 0.0017328500000000002,
+                "max": 0.00285528
+              }
+            },
+            {
+              "input_path": "evals/arena/duplicate-team.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.00093566,
+                "min": 0.00029783,
+                "max": 0.0009998250000000002
+              }
+            },
+            {
+              "input_path": "evals/arena/honest-loss.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.0012701549999999998,
+                "min": 0.00045000000000000004,
+                "max": 0.001515285
+              }
+            },
+            {
+              "input_path": "evals/arena/over-budget.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.000993705,
+                "min": 0.0003213,
+                "max": 0.0012376449999999999
+              }
+            },
+            {
+              "input_path": "evals/arena/water-beginner.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.001544675,
+                "min": 0.001482085,
+                "max": 0.00256703
+              }
+            },
+            {
+              "input_path": "evals/arena/water-proposal.json",
+              "status": "stable",
+              "passed": 3,
+              "total": 3,
+              "errors": 0,
+              "cost": {
+                "samples": 3,
+                "median": 0.00215439,
+                "min": 0.001534545,
+                "max": 0.002292335
+              }
+            }
+          ]
+        }
+      },
+      "flavors": [
+        "checked-totals"
+      ]
+    }
+  },
+  "notes": [
+    "Native run files are copied byte-for-byte; cases and judge unchanged.",
+    "Agent timing is the first-to-last transcript timestamp interval, excluding setup/judge; run duration includes both.",
+    "Model-only comparison uses the baseline prompt with gpt-6.1-sol and thinking_budget:none, not the arithmetic patch.",
+    "Proposal reliability checks do not submit entries or exercise tournament orchestration.",
+    "The held-out requests have now been inspected; replace them before a future tuning cycle.",
+    "Earlier experiments with the broken relay are excluded from model conclusions.",
+    "Final restricted-overlay checks: arena100/100; tournament99/100. Tournament failure selected later-generation politoed, rejected by fixture checker (DATA-1). No entry or match tools were authorized.",
+    "Earlier arithmetic patch passed18/18; final DATA-1-qualified patch passed17/18, failing one over-budget advanced search. Do not claim perfection.",
+    "The heldout capture used the earlier arithmetic patch. One no-starters trace retrieves13 candidates, exceeding the12-candidate prompt limit despite judge pass.",
+    "Proposal timing includes CLI startup and result checking, unlike native transcript timing.",
+    "Capture-time hashes for older native experiments are incomplete; current final hashes are reconstructed metadata, not proof of unchanged inactive flavor content."
+  ],
+  "trace_audit": {
+    "baseline": {
+      "lookup_limit": 12,
+      "exceeded": [
+        {
+          "session_id": "a972b47e-37d8-4e14-a8e8-272557812861",
+          "title": "Stretch goal: beat advanced #3",
+          "distinct_candidate_calls": 13
+        }
+      ]
+    },
+    "checked-totals": {
+      "lookup_limit": 12,
+      "exceeded": []
+    },
+    "alternate-model": {
+      "lookup_limit": 12,
+      "exceeded": []
+    },
+    "heldout": {
+      "lookup_limit": 12,
+      "exceeded": [
+        {
+          "session_id": "ac077f59-4fd6-42aa-9e19-69ca332a9977",
+          "title": "New preference: no Kanto starters #1",
+          "distinct_candidate_calls": 13
+        }
+      ]
+    },
+    "checked-totals-final": {
+      "lookup_limit": 12,
+      "exceeded": []
+    }
+  }
+}

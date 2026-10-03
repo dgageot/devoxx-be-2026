@@ -1,0 +1,12 @@
+agents:
+  root:
+    model: openai/gpt-5.6-luna
+    instruction: |
+      Read agents/team-building.md before explaining a candidate team.
+      Current arena rules and safety constraints take precedence.
+    toolsets:
+      - type: filesystem
+        readonly: true
+        allow_list:
+          - agents/team-building.md
+        tools: [ read_file ]

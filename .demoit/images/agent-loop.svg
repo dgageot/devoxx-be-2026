@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1786" height="540" viewBox="0 0 1786 540" role="img" aria-labelledby="title desc">
+<title id="title">How an agent works</title>
+<desc id="desc">Instructions guide the model. The user asks a question. The model decides whether to request a tool or answer. Docker Agent executes requested tools and returns their results to the model, which can repeat the loop or answer the user.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#40566c"/></marker>
+<marker id="guidance" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#874100"/></marker>
+<filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#102934" flood-opacity=".10"/></filter>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#231f20}
+.heading{font-size:40px;font-weight:700;letter-spacing:-1px}
+.body{font-size:28px;fill:#40566c}
+.section{font-size:22px;fill:#40566c;font-weight:700;letter-spacing:2.5px}
+.label{font-size:29px;fill:#40566c;text-anchor:middle;font-weight:700}
+.link{stroke:#40566c;stroke-width:3;fill:none;marker-end:url(#arrow)}
+.return{stroke:#40566c;stroke-width:3;stroke-dasharray:9 7;fill:none;marker-end:url(#arrow)}
+</style>
+</defs>
+<text class="section" x="30" y="30">THE REQUEST</text>
+<text class="section" x="690" y="30">THE GUIDANCE</text>
+<text class="section" x="1425" y="30">THE CAPABILITIES</text>
+<rect x="690" y="55" width="350" height="88" rx="17" fill="#fff2d9" stroke="#f5af33"/>
+<text class="heading" x="865" y="111" text-anchor="middle" style="font-size:34px">Instructions</text>
+<path d="M865 143V186" fill="none" stroke="#874100" stroke-width="3" marker-end="url(#guidance)"/>
+<text class="body" x="891" y="178" style="font-size:25px;fill:#874100">Guide behavior</text>
+<rect x="30" y="200" width="330" height="200" rx="22" fill="#f7f7f5" stroke="#dde3e7"/>
+<text class="heading" x="62" y="271">User</text>
+<text class="body" x="62" y="322">Asks a question</text>
+<text class="body" x="62" y="366">Receives an answer</text>
+<rect x="690" y="200" width="350" height="200" rx="22" fill="#102934" filter="url(#shadow)"/>
+<rect x="721" y="232" width="6" height="44" rx="3" fill="#f5af33"/>
+<text class="heading" x="746" y="271" style="fill:white;font-size:44px">Model</text>
+<text class="body" x="721" y="322" style="fill:#d0e1e8">Chooses the next step</text>
+<text class="body" x="721" y="366" style="fill:#d0e1e8">Call a tool or answer</text>
+<rect x="1425" y="200" width="331" height="200" rx="22" fill="#edf5f8" stroke="#d4e3e9"/>
+<text class="heading" x="1455" y="271">Tool</text>
+<text class="body" x="1455" y="322">Performs an action</text>
+<text class="body" x="1455" y="366">Returns a result</text>
+<path class="link" d="M360 260H675"/>
+<text class="label" x="517" y="237">Question</text>
+<path class="return" d="M690 335H360"/>
+<text class="label" x="517" y="377">Answer</text>
+<path class="link" d="M1040 250C1150 132 1300 132 1415 250"/>
+<text class="label" x="1230" y="143">Tool call</text>
+<path class="return" d="M1425 335C1310 451 1150 451 1050 335"/>
+<text class="label" x="1230" y="465">Result back to model</text>
+<text class="body" x="1230" y="505" text-anchor="middle" style="font-size:26px">Repeat until ready to answer</text>
+</svg>

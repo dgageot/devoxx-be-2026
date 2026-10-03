@@ -1,0 +1,19 @@
+agents:
+  root:
+    model: openai/gpt-5.6-luna
+    instruction: |
+      Use pokemon_retrieve to answer with facts.
+      Never invent missing data.
+    toolsets:
+      - type: openapi
+        url: http://127.0.0.1:8000/openapi.yml
+        allow_private_ips: true
+        max_output_bytes: 0
+        tools: [ pokemon_retrieve ]
+    hooks:
+      tool_response_transform:
+        - matcher: pokemon_retrieve
+          hooks:
+            - type: builtin
+              command: transform_json
+              args: [ name, types, stats ]

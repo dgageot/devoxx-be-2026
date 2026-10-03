@@ -1,0 +1,54 @@
+{
+  "id": "water-intermediate",
+  "input_id": "water-intermediate",
+  "title": "New opponent: intermediate",
+  "messages": [
+    {
+      "message": {
+        "message": {
+          "role": "user",
+          "content": "Build a team for water-budget and spar with that same team against intermediate."
+        }
+      }
+    }
+  ],
+  "evals": {
+    "setup": "sh /configs/eval-setup.sh",
+    "assertions": [
+      {
+        "name": "requested challenge",
+        "type": "regex",
+        "value": "\"challenge_id\"\\s*:\\s*\"water-budget\""
+      },
+      {
+        "name": "reported status",
+        "type": "regex",
+        "value": "\"status\"\\s*:\\s*\"ready\""
+      },
+      {
+        "name": "pokemon_retrieve called",
+        "type": "tool_called",
+        "value": "pokemon_retrieve"
+      },
+      {
+        "name": "spar_team called",
+        "type": "tool_called",
+        "value": "spar_team"
+      },
+      {
+        "name": "generation_retrieve called",
+        "type": "tool_called",
+        "value": "generation_retrieve"
+      },
+      {
+        "name": "type_retrieve called",
+        "type": "tool_called",
+        "value": "type_retrieve"
+      }
+    ],
+    "relevance": [
+      "The final team has exactly three distinct members from the 151 Generation I species, default varieties only; at least one is Water type and the combined base-stat total is at most 1000. Every final member has a successful pokemon_retrieve result; reported types and stat_total agree with those results (sum all six stats[].base_stat per member). Missing or failed evidence does not pass. Generation membership is supported by successful generation_retrieve or pokemon_species_retrieve evidence; final pokemon_retrieve results show default varieties whose species match the chosen names.",
+      "The final answer reports actual outcome and both scores from a successful intermediate spar_team call using water-budget and the final team. A loss is acceptable if reported truthfully."
+    ]
+  }
+}

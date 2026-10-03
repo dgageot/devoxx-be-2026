@@ -1,0 +1,1297 @@
+{
+  "captured_at": "2026-10-04T19:23:40.678630+00:00",
+  "generation": "generation-i",
+  "species_count": 151,
+  "default_varieties_only": true,
+  "type_chart": "modern, 18 types",
+  "artifacts": {
+    "arena-catalog.json": "6ae4f2649d63cd0b2c49c02bf4bbffc66fa2d007b09adfe8e26714e2ff736eb4",
+    "arena-types.json": "ed0ada1fa80c01783729d2ec3712834cf861a72482e7504f3dea9c170a673ca7"
+  },
+  "responses": [
+    {
+      "url": "https://pokeapi.co/api/v2/generation/1/",
+      "sha256": "1a8bf32ec01f0c66a92b09f2d7823651014cbc131f7c72f1b7f334d80b0bd8ed"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/abra/",
+      "sha256": "09653e2b216d798407b60599bd8a5cd31195e630a45adc9165b2c054c9343cb2"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/abra/",
+      "sha256": "f82f136d0db787635ae07e85717e8cc68c96fb9172a3adb9aa30a5c6cb2daf37"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/aerodactyl/",
+      "sha256": "10d0f6752ff4ae65d4e8c6abc08b66c31a86d952487387b34d6c51193e2923dd"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/aerodactyl/",
+      "sha256": "61b9c51cb5bfaa30addb01272b10531032bb3867759c1aad3e8c023fcdbd29f2"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/alakazam/",
+      "sha256": "b8f9e9f31e84cb75328de1c7d2b65f14a3460a9d7bb60ddb5d04cbbf60b51f4c"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/alakazam/",
+      "sha256": "d8057e920602d4f2b84973f3a4e0ad3a0cf2208c2917056c016af42d2d25acc9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/arbok/",
+      "sha256": "ac5c56102c5257a355dd7520194c4e0b81ce355a5f7b26e6ea99c8a5a7ace287"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/arbok/",
+      "sha256": "c04065a86e844f14de5ba64868392d19f9768601377afadf2acfd412d6eb7ee1"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/arcanine/",
+      "sha256": "533e9725a3b25341ed72a09a638bec9728f2c533ac942caf653459d20c66a446"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/arcanine/",
+      "sha256": "3b697f641872757bbe588d0cc6f3c8e9537e93c428cadfcf588b25832543b2a3"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/articuno/",
+      "sha256": "fac79a06a72f7eb960281bb0ff5896f660ea31c10a6559393dfc019465bd9a9f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/articuno/",
+      "sha256": "2929fccad078275223f904cbb57d6de276a0563604988afaed11ef629def022e"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/beedrill/",
+      "sha256": "cc7b4619df07be59ccfe172f79d9022fb78bd40750bd57b803b5d9d1733df89f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/beedrill/",
+      "sha256": "991c2d496ceb9ba66f972c8531d59b99d21dddf3943ca26e387bbf7fcdb31ead"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/bellsprout/",
+      "sha256": "bfc5414ae5ad5e0c6ec60e8783cfecb21e091e099a1d0124ef97764f621108be"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/bellsprout/",
+      "sha256": "c5690675e21b7cbd8ce093375fea48ebc60635da00ced0fda31d5e58ad848f1d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/blastoise/",
+      "sha256": "c38fe3038228bfe5f80c39be0e8677202e5fafd19cc20bb6e02a7af6ef3befbc"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/blastoise/",
+      "sha256": "15d4b0062b7ce1f2317e5214a9f5a19fdc1ff0f154e4032bdd6b79cb2ee3ac9c"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/bulbasaur/",
+      "sha256": "0841398912abb467d9292255f0ab1dc69ad13a59f30c0a1589525ec43a33909f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/bulbasaur/",
+      "sha256": "3ca1bf39b481b750d1eed194b990e9eb96c98ed77831ed0459589e22124458cb"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/butterfree/",
+      "sha256": "da4dd0cc30a87635c2aaef978c5ac70832f7fff96e91ad0ff67976e50fdd72b9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/butterfree/",
+      "sha256": "f4ccac3dea9346ad5ffaec152bcacabaab4fa6a24db3dd10aec3f6f6d104d8c1"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/caterpie/",
+      "sha256": "65d71b38b0b00f8e0028f5c36ebd0f1ac89b630582f81179d11a267d0e670441"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/caterpie/",
+      "sha256": "3ffa7e340bd8c0b2491023df4a4b6c26b439828d61f4e39ee62b016969a9ad2f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/chansey/",
+      "sha256": "cb89dd0ae4e5393c547cb2292dcb2cbc8c9845fb342dd55f5c435a9ed4a93db9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/chansey/",
+      "sha256": "2a52c8405f45ee55f29b53ee4ea047af68d843c52101b994f74f10c42804da86"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/charizard/",
+      "sha256": "623e24b457cb50ed73df753dc54ba5b8f24ba314220ade8166a878edc44c3b3a"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/charizard/",
+      "sha256": "4d8c563bfb48a1d569d64ed45ce8ac1f8ef2e798ee555da57431225c448b7b88"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/charmander/",
+      "sha256": "a2313515bb25a69e00158dfc53ec265e27d8c4450589ad4645f58906740262de"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/charmander/",
+      "sha256": "e3dd69ab06bd480c0a3eb06346b7d980d40ddcdc6ba3034c8d4fd28744cb70e7"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/charmeleon/",
+      "sha256": "4b85319a7dc2723d641cf9376011c08429e4773bc489a5d8ebed945475a6db74"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/charmeleon/",
+      "sha256": "022310e37c2b4d33533d6f6047bdffaece01e69b4eb5fbb52d81b4176b17f4b9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/clefable/",
+      "sha256": "33e4ce222b8e9d1cc8e5bbcc23810debdec99da6af1667ba47eed62b732b79b5"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/clefable/",
+      "sha256": "42e8c8e4b4b727ecafd45e9607461a4ca5c623854bdec3fd505d60be9b25a176"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/clefairy/",
+      "sha256": "290d21e42e4027e298d5e82e6075ff9350bf5271fd16e6a8e48f8456c16b142c"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/clefairy/",
+      "sha256": "84965bff68735557d528ab94e8499a3bc794dc86a19ab1e964c96a906fd0c7a0"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/cloyster/",
+      "sha256": "d22f2d930690e656fca2944dffaf968475e198c53230761755c03c83e0dc54ab"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/cloyster/",
+      "sha256": "54f5ad065921f53d3bcfa2897047ffa1f4458726c25fc5db203afd847f3fbe57"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/cubone/",
+      "sha256": "0f0b367bab7c03e8e0cc86db8e86f595c427c77c5486106ccdd2476c898bd942"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/cubone/",
+      "sha256": "889b214956e1276c3ce797f7a3e17d3705d7830b37529411540da4627f307b65"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/dewgong/",
+      "sha256": "852369a42051147d6d79a377317f8eb96df7497bc915087dfc6a5d7c00bdc22d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/dewgong/",
+      "sha256": "30e1e68bbc4ba6efdf520f973a1611cdfdc538afda3c2d665f39bdaae360c27b"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/diglett/",
+      "sha256": "905251452255637153f401f0411078282d09d76db0443878f7ec6c3e6bf5e270"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/diglett/",
+      "sha256": "07a0084daf39fa80415a4947f4287aced6305e6723b57fbc6b3f250c435ce736"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/ditto/",
+      "sha256": "e5bad12e3be2aa4c5561d1de2a1e3bc0dc6250daf6541c8700150c363e6cbf46"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/ditto/",
+      "sha256": "f6d4a3271959f1e4c2d4e99365a3f637280385136b64ebdc7224a4041e777112"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/dodrio/",
+      "sha256": "1dcc17a0058f7ddcd9fddcdbac38ecba71a9e2376c063f1e3778af62f540b105"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/dodrio/",
+      "sha256": "1e223fdab8e519fee0a76bfb12a065fd9b9c525ecc0aedf72667c6014cb488ab"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/doduo/",
+      "sha256": "8b607ae445e3806f67e1a284ab862ef32087a495197776bc3d95f999c1f174e6"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/doduo/",
+      "sha256": "208aba9cd5f039b63ed4f2df0afc2ac3aec493508c2c5569575b956cbee85929"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/dragonair/",
+      "sha256": "5d7a89aa42af2a30d79f8cd1dba8d9b50b2e8bb46bd5ed1fcafab4f7579bc740"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/dragonair/",
+      "sha256": "786e47b2fe6c44a7f63466e6035d7b996b4d4ce94be0e0a91ccb9b4130337a3d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/dragonite/",
+      "sha256": "9dab8286b9bf0bf5def3c1667872c1137baac7c937bcefd057910fed6a265597"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/dragonite/",
+      "sha256": "3a4fc2e4129de8030566cbcb2a0aaa73031cf1a9b72002c19b296ce06181f8f2"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/dratini/",
+      "sha256": "b0d671a837b6cd5aad493449b6e8bc4d8e82d162c285469d98f1120ca6792ebf"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/dratini/",
+      "sha256": "3d4245e7428efd8293b03e086e7bdec6b8f27668a2f75383c131312fe9a02e3d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/drowzee/",
+      "sha256": "c2ccad8db1eaa659201cde7f59a3a8bef2ce37a2fde0d64d704a543cba8d23c6"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/drowzee/",
+      "sha256": "fde68837d403f2f83289a62eb23315447a3640c3d32c4d4627fd9c3a6a67503e"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/dugtrio/",
+      "sha256": "fe4dba4a8cbb471e2932e1e65b45643a6afc41e1789805c5bf11f46045cbcac9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/dugtrio/",
+      "sha256": "5d9c1c4199d91cb250e35d7364a78aa1c95f5a427de1db20e6d13b3c3475bd1b"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/eevee/",
+      "sha256": "b397af6301a7ac885249cdd9221141827d3d5b915b5a6a432e61720e30a5d563"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/eevee/",
+      "sha256": "538fc14188eb1745f32d1e3e472fa2a1ff5167ecc609b48cd3e8c26844ace697"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/ekans/",
+      "sha256": "749c04919870bf92a9c686ec3ec34a3bf374f98ed0a66900b7c474d98c56a605"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/ekans/",
+      "sha256": "9330d7114a838987f32322bb1561a3f7fa7f3cef3fac6c2c22155516361403c2"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/electabuzz/",
+      "sha256": "bf7378490459c19da0041fb7b6ef186c2ad6f6c6992f8ec391058a50f55ef632"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/electabuzz/",
+      "sha256": "eafb459890ac3c87170ac47e9e192aed44eeb5bf3c2db5d00eb73e32eb24e8c3"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/electrode/",
+      "sha256": "0f9f3e8d7d10d1cd7125fdf05fe8569602b6664496fbd692dcde9eb734b58f0a"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/electrode/",
+      "sha256": "83470837027517cc6abaf5348e7ada5611319f8bb81a5905def765cfc762a4eb"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/exeggcute/",
+      "sha256": "de1d47d6433e747c17afbb90db907b87b54c8da6c22e4594bb63062217f3df86"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/exeggcute/",
+      "sha256": "84fa6294ad99f3b95ddafa5176229e1c8a83d77719e528eb8d2f20c90f1786ec"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/exeggutor/",
+      "sha256": "8c796cc93fac3cf5e53151363c35b5c33c6186e78d85953181855f5b459c9cea"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/exeggutor/",
+      "sha256": "bb0110ecb4b44aa3c58dd8a08b6a2e6a8fa0cb01b299283aa5273481f49fe5c8"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/farfetchd/",
+      "sha256": "fd4367a85e7c334df86e66936072af59999e9fc52d68c36c418e79fb626f6e54"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/farfetchd/",
+      "sha256": "98bef0331a561a552948c967a76c620058e767de1dcb55797ebb9f2546ef0be4"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/fearow/",
+      "sha256": "4ef6bbd468217ec487de364ee5513facc80cf7fa83c5b9c8bec000b9c13a8fe1"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/fearow/",
+      "sha256": "335c343a54904981af7620c2aae1af9a15017a7969ca23deb14bb61cde8fbd2c"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/flareon/",
+      "sha256": "8b9b1ab051d0400f50941b037c20f5a7aba81d5b5f7cf6783341be61a93724d0"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/flareon/",
+      "sha256": "0c5db5a546e0ed6f4fa8e23bef56a3cbef3c5264e40e030661a8b9258e911fdc"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/gastly/",
+      "sha256": "3346b7d7557f76c65ccab8ba69191094882c2cac9600aa4e99011a3e4bcb687f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/gastly/",
+      "sha256": "40fb9c22e9ebf34216ac0aa0955e88cc9cc726c3a2b1d97f78862d6cb768671b"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/gengar/",
+      "sha256": "48d2a8c9120554273a56d4e2b07e3a9f10655979907713917ecce3db40b6d46c"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/gengar/",
+      "sha256": "f36a0b0f3f3d4b3cca3f7826c5e6612465436954e95d9b12f42952f26e75bd91"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/geodude/",
+      "sha256": "a209cddf452ee10d442adac0dffd00cf199da7a6d47ce84620f555e79b2e6049"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/geodude/",
+      "sha256": "45aa8d8bef2f5ea1c0cf0a96c7ccb8f185bfb58526fbaa86e8e7ed7b3168f7dc"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/gloom/",
+      "sha256": "c12d89f85a6203a212eb5a2b20e94d2e5acf333d2f0dc768c4bcc3ed07576320"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/gloom/",
+      "sha256": "6ff26e5323f06e73d79524d1b0571e972563cb4aea900fc5ea14206216561f80"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/golbat/",
+      "sha256": "d200505617463b27166504e8b346fc2e33eeaa7631ab931a95fd1e712bb3c468"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/golbat/",
+      "sha256": "0ef85882edb4b8f6f03e9be37cb3c3414deb9a29d40bcd7c07533717ff93c1be"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/goldeen/",
+      "sha256": "68684134f6e6da0076d1d5de00f449fca787123be99a334ebaaeaf6be003c091"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/goldeen/",
+      "sha256": "046b2ff4e50dd72366269cf2c01f54a403bb152d5799de6094ff699db0b7204f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/golduck/",
+      "sha256": "25d08feda3c5e0eda30ef11d7d2802b202cb75c3b7e754ef94702f0cecae64e6"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/golduck/",
+      "sha256": "d8c256d2d363bfe641eb729c38f9e33e6d6e1acb3d47073dc64431e934a459ef"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/golem/",
+      "sha256": "2bf550d4ff661abfddd2db6ca777fb244bbbcb48e6db4d0270632559d401f3b1"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/golem/",
+      "sha256": "df1bd0a70760ec833b509797a82e990574d1015ee1fa81776c00e1832b1b0ff2"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/graveler/",
+      "sha256": "0ee46c2b9635f57337c1054eae96689e9a2f38a17de540e5f36246087a07145b"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/graveler/",
+      "sha256": "d7f5b3e928a1921d5884c9675597613674d43fa0f3a65a1e07741788f715fde9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/grimer/",
+      "sha256": "0f2c58a8622cc565123feae700e1b4469d5772a96e3841d6d0599abcdfcf2396"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/grimer/",
+      "sha256": "4ad421b9637aceef8df44bfb6e379694d8b9f4baeef724092e1e494e4456b172"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/growlithe/",
+      "sha256": "e4e1790fd7b02f4caf35dad28f4fb5d8d3d8735fa47a140c13779943dac895a9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/growlithe/",
+      "sha256": "56f4a0b183dfb868cca57f7bb9c15915d88269aa475e42c500e48d667b945ded"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/gyarados/",
+      "sha256": "0b49263eee41464dffa41148d733bd88fa4690906f7db0aff51c60bcb863c321"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/gyarados/",
+      "sha256": "7598240e439334aa9ff14d7a4a56eca8f53f52357114b114fc7cfa6932a8d9fc"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/haunter/",
+      "sha256": "0ca2ebdee611d5bf60448ce70ce8513f8889bbbc8b391cd4de05904b6e6b2fea"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/haunter/",
+      "sha256": "f9d00d7a04d4f79cb5621ea4822d0e3192c5460b11610ae41e897e4f6b45472a"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/hitmonchan/",
+      "sha256": "435ea148b3b2c1adf3207607ef30ec543584d4d3f4fdfd078a8a32453a454f95"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/hitmonchan/",
+      "sha256": "9f9a56b003a0d23f8a6d6c063d1618bc31385da52ca5c500d92a3f0edd3724a6"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/hitmonlee/",
+      "sha256": "36fca27af0c153efd2d97f43934333e56ddfb19931ad467347e4e38ff631db82"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/hitmonlee/",
+      "sha256": "87c8f90d183827dfe6da0d306cf204a5a794d36cf089451490656ae143cdd975"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/horsea/",
+      "sha256": "abd1e17a1e0fa6496da0fb415b2e515ef3af6a4f84e4b4f10da453142cfdce55"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/horsea/",
+      "sha256": "ab0a0310bb9335c5bcd64a639d44d2c7edb95ee7032c4738d0d643c7a35ec79d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/hypno/",
+      "sha256": "64ac940ab5cf559154f1ef9853e994bd16b51ae925d9efaaacdfa6533922ca6a"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/hypno/",
+      "sha256": "186dfd81ad0e9b67cec7d1195ba4fad50aa2cac5b9fcb8b393c8adcc81c86b53"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/ivysaur/",
+      "sha256": "a22616922b257d439f93e86d2f8b78b3c41404405e9c20f82b8b2cada4afa3f0"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/ivysaur/",
+      "sha256": "b69b7ba192c5a7dd218632bf1546118750d2ead0f74ab022d0614554689b5412"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/jigglypuff/",
+      "sha256": "9582f212400448df48a9ace8bc125fc202e5291a072436114c6794cad21dfa03"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/jigglypuff/",
+      "sha256": "3de0ca011c1b43cf94c4c8e4cd50f5b85ad8ada73aa471bae6454e396704b62d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/jolteon/",
+      "sha256": "a1c2330a1583a60a5d1a26ca4e94256a2fc1e05d0fb5464b59778991a41bab48"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/jolteon/",
+      "sha256": "09177021da54971b35a2c208b260f9ef0401c252e16798f2f929176848eda8d6"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/jynx/",
+      "sha256": "36107f031d69ac778eb0b3f1664196b0d77fe8f2ec85fc898984ed191c5e6adb"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/jynx/",
+      "sha256": "bc9b3d67cb04473e5c59cedf7b7ed7aa4d6b72b185f4045d9a79976cbc67207a"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/kabuto/",
+      "sha256": "ade636fad9479436ee0a49bb411f752f2deceeb5101abe612299da57b23d33ac"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/kabuto/",
+      "sha256": "856364233a3874489528c7eec0eacf6051288aa3f69451b2e30ab96a90421428"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/kabutops/",
+      "sha256": "6308228cbc9e72236973a012ba19b5a3447894e2aacdb16f41aad9a744647473"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/kabutops/",
+      "sha256": "7d939c7cf26656b907821434c5da0476d0a435cadb97b224f70a5393c28cdf0b"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/kadabra/",
+      "sha256": "5bfb3af6102bd338966afe2c6c6ec7750f40db0ad284850a28971f70b9661fe4"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/kadabra/",
+      "sha256": "f0b2d71479721806dd11b085d188dff8377b035b9a1c2d2bb1b9011f8770e7a6"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/kakuna/",
+      "sha256": "1f23d9e168ba550fe1b615b1c248e9d30fab8f6fb4f4cb608ae71d2249effe41"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/kakuna/",
+      "sha256": "39914a86aead8f38fed07a70c5b9ec89a695362a7404ba0a7e8b67eeef347c07"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/kangaskhan/",
+      "sha256": "246e0e0663f6ac0d71d7dc3040f40f59f675b93ebc0964523b75b331125f3486"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/kangaskhan/",
+      "sha256": "9a0231bc36e0b079930b1c8470b514b87478ba15cb3a06df3b5ab8df9172f225"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/kingler/",
+      "sha256": "dbc3a1ac2abac0d2c977ccb94cac247ba243d9683cc3528066db9944f94a131b"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/kingler/",
+      "sha256": "8780f52f3a22411b561566da9e3949aae741bdc47154bf669f131af6d066673f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/koffing/",
+      "sha256": "937a0d611f7d473ab55e2636d0491f19632c6fa82acab31737fa7a55020d8b9a"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/koffing/",
+      "sha256": "21b6622c04f3d987f517c311fa0d22950bdf56755fb9f5c3f76ea153ea13956e"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/krabby/",
+      "sha256": "c3a7c55c875e6aa91dcefe2d050d653c789677a080a09458d178019188ec0649"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/krabby/",
+      "sha256": "3ab3a5d87a4c07eda191010e14fd6a4c8435d36aaf24ef4307496c1a6514fa33"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/lapras/",
+      "sha256": "8b1ab089aa520322c6dd8760a3b1760b1b95dd440aecc4423a99dc9832b8cb2b"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/lapras/",
+      "sha256": "2f923b4181be5fe471518448a12c358360780a6e93c5f014abf7af95c189bd8f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/lickitung/",
+      "sha256": "3f778216e257ef0c5664413581dd8af11533d860bcadc88fe738a3a75c0d3e1f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/lickitung/",
+      "sha256": "a18c19210ad581b5f6f50cfc53ed3bc1d775e38b3960651eb411ac7a99e454ac"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/machamp/",
+      "sha256": "8abaab5b1015c544d29397bee7fefb43cee892534c53ddb0e284f5a53237a1a5"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/machamp/",
+      "sha256": "a10604c67b2069ec0604eb02b493d2f95f399fb6c8fb785201d2421782810907"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/machoke/",
+      "sha256": "b1c9e14588f2da61f5d699d47e8dbd494dda6db1d76f9cef08028f286c62ef33"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/machoke/",
+      "sha256": "4ba305ab7208e369705e991fa239208ef9035338b54aab6470dfab2bf01f799f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/machop/",
+      "sha256": "0888cc1aacb7c7b64444b8f7f00c207147fc6e11b92a1ff3c31046952615271f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/machop/",
+      "sha256": "038938652c02d88f535ef5ec8e8b108604404ef7857d65282fb38dd21eb0ead5"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/magikarp/",
+      "sha256": "43726703f95be1d007d0434b80f5d240f471e5921b20d957393963301e52b6fb"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/magikarp/",
+      "sha256": "b8289f77d03936640352977d500b317704419b3b3e359f89dbef706de9275c11"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/magmar/",
+      "sha256": "92f92389495943a789c9a76e7652cf22bc99b4d4bb9e0b0bf3a70c64deba67da"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/magmar/",
+      "sha256": "18c756f69cc9a707a0f45e69cebee42c3af9656656d10bca75debe63b8d4c8c0"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/magnemite/",
+      "sha256": "0e3c7e1fc56debb184744a217b883b6e7532bd614444fbe463acaa4831015ef7"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/magnemite/",
+      "sha256": "45a47b0e3a4a9089775ea4f3d19ebc931a33bea1cb5b8a812fc1de81d551b71d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/magneton/",
+      "sha256": "05b0643d52f347e0e24fde889a9436707731564e491ce9758ad1f2d9ebd6b8fd"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/magneton/",
+      "sha256": "3fb613686547a5507e03d931dc4ec200663d831f3baa81d7dd172d810cbd903c"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/mankey/",
+      "sha256": "73b2f400eb19543fd13ef6d6223685edf97b73aae80c3226924b331c0434549f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/mankey/",
+      "sha256": "03a2bfe37678f592a8c39e44574d758acf75b771b059f9f3aafe4d8c5dedac49"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/marowak/",
+      "sha256": "0acd3d335b5b9953bc908e57f377875354fcab281b74e08f5ddceaf3a22fbdeb"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/marowak/",
+      "sha256": "a551e55e1daf89503d6f04ea1b74c49a829a4168fdfd866fb3981c5e85c9680f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/meowth/",
+      "sha256": "cc88ecbb6198ac265fc8bd748ffb1f5e29fcececcaa4f7019a27c24f6a0ee4ee"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/meowth/",
+      "sha256": "c34a576a37362b39d764f436c4e3ef3470fed2c1fca39e08a816b6845cb0e5b4"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/metapod/",
+      "sha256": "209efae829a0359747856759002135fcbc155920ba5078a5b946ec9c8967f1c7"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/metapod/",
+      "sha256": "5459df348b72005d20add58d12f3578e874d44fdf14f76d99634152af208f87d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/mew/",
+      "sha256": "3ac9988e842f485bd2feaffb78cbeb8187c4c8408dc1a6b350a34340972c4434"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/mew/",
+      "sha256": "851296833621713ad7b0b3d639f38da86efe931a0cecb0bc59964395f6a99c4a"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/mewtwo/",
+      "sha256": "09c9fe83921bf30c9a0731449ee0e9a97a5c6f3ffac1fc5c3a36d8b247de4ad1"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/mewtwo/",
+      "sha256": "f1bc322edbb1ad344869e4fd57fce9919878bb6534dbd8edbedc72a2611422df"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/moltres/",
+      "sha256": "edcc48317cc6ef3a711494529160b09115d92e762a72b2208fba7d4b7542800d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/moltres/",
+      "sha256": "65d8fa4cc88d55a68dbb525e956e80dd2fc5b662eec40e44ef75d128a1977552"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/mr-mime/",
+      "sha256": "8a316413823c664ec91ead37f5d7cd532f9e985951270f2c94e48ff7e48826ac"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/mr-mime/",
+      "sha256": "80dcd590a9252f415b6cc0a2cc0d11a62fb81174ff4fddc3ea924eaad9702e1c"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/muk/",
+      "sha256": "0aea3f40e31bbb8838a05b383a90615b0f7dbdce07f694c9425123f6f155fddc"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/muk/",
+      "sha256": "2eef312d7e6b492eae5dd21b2b4ad7932838e291e98074c7f2f27a7dfb85dbc3"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/nidoking/",
+      "sha256": "caa92029466bdb75a2f9ca95d6df349e389b3c66379c41eb6a06bc1dc7a4cc2e"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/nidoking/",
+      "sha256": "3c10cc7f438629f7cae82b187b31fd4ff0934d3497ad95019f80c1f07760917c"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/nidoqueen/",
+      "sha256": "d97f8ac2ba9c41ef9b2fdb7c6f7a11bbbb53b7f8e976e6fc38abdd2b93bb5640"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/nidoqueen/",
+      "sha256": "dd6c1c1c61915938d53ac9706508cb2b6fc00632422b79d863281ec37f2b62f9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/nidoran-f/",
+      "sha256": "f2f5437ff002d697d45458b375b447d7d99618b31b9984eb61e0b6287ab724fc"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/nidoran-f/",
+      "sha256": "0ad68cffd738880388982abd808c08a1baff5a9bc7913023fa8b48925bd0375d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/nidoran-m/",
+      "sha256": "0bf0f77b2d48dfc5101aeeb7455b61a60816e795980ab306dca5ea663526e242"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/nidoran-m/",
+      "sha256": "22aa4454e868634e288b84ee84a44c2db3cc709513fcf1d8616a81847f8e0490"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/nidorina/",
+      "sha256": "5c94f166e4a0db98d01ad94243099a9b745327bb0ca7b14f75d221d0b572c70a"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/nidorina/",
+      "sha256": "068f062a5ca647ee710621f97c12afd560c7456f6508fb6b449c8d8b9762c236"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/nidorino/",
+      "sha256": "06e849dee52de7c6eb484715ddb8cf5a706e7af11e62576e1ae1a13309a3e448"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/nidorino/",
+      "sha256": "4e9bf72645e415e3da6a06a8f4aed2ee408d76e42ee0d62bed6d839d11782951"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/ninetales/",
+      "sha256": "74d59a70c6ebf46f803c4bc3acdb5c6e95bd4a793db5d7bfee1b4b0d713087bb"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/ninetales/",
+      "sha256": "64bc9aab9d9c20f013a505eff2cb913ece034ffcd74510045ac1c557c00fd739"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/oddish/",
+      "sha256": "b4cb176b6a1e582778321f2a1f1d2972a02a8c7eb87c920304e2da36d4cfd65b"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/oddish/",
+      "sha256": "dff78fbe15a0cc20f82e671e8dc4c4d02117fe4c867f9d81e5533b6c0d3a5f0c"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/omanyte/",
+      "sha256": "e4b8ea86f707e4458a172f638ed801bf47aba49feba6f073c360e36d5f053de8"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/omanyte/",
+      "sha256": "14d2c354ac10901069f40e008c9203fd22992fdd03fc5638b7c2d4bcc8fbc497"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/omastar/",
+      "sha256": "15fd449da373d4c4d2557a72797ccee4f8096868b5352ce5a7e08bbd9380723d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/omastar/",
+      "sha256": "e52a3e263ebc5088ae67a96d295e96d301debbfbbb5de8ddb67e21c4689d85fe"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/onix/",
+      "sha256": "0860760bbb3cc721f09acf303eb44f522dc17ab09cee30fc6a7accae2b560958"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/onix/",
+      "sha256": "9d7f3b586d410a64ee0e14f64da363751fc0075dc58f76606b3cc6ed3c593020"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/paras/",
+      "sha256": "7a3edb9f1a9aed26f5b94672893c33b9106255188a43f46564498ffe7fc4ec54"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/paras/",
+      "sha256": "07812817adc70899c1c3e0ffacc67a8efad7c5a47d5414ae6b5cb034db36085e"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/parasect/",
+      "sha256": "b5e62bc1252a143047a3a5c77fec62568879146b2ac3ee2c910c36221faeb253"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/parasect/",
+      "sha256": "16885ed36b0fdcb29c5d9918cd8da774bb2adcb1f59a833505aa75d6699c44d5"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/persian/",
+      "sha256": "3a847229aa5799076e48759bc8b8f9242fb7f2f86b75fff2c3357525cb3ca422"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/persian/",
+      "sha256": "2bd1df704d3321807ded073563863d14a676244c5339b903e643972df5e5b884"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/pidgeot/",
+      "sha256": "1de15664fe3ec3b5b5eaef7e8af5372153d91e317f45efd71bf6d30a37e93907"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/pidgeot/",
+      "sha256": "c0ae492c769946ddf9cf87316080049741c73f03b0e3cbc184197441d55fdfe0"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/pidgeotto/",
+      "sha256": "5497329185fa1a64455f7cd89ca934359569eeb1b02396328916c67cf54f0457"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/pidgeotto/",
+      "sha256": "97984ad09d8b9416a53486ac5c57405bf67d218e5d1605343fbd76d2f1cd92e3"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/pidgey/",
+      "sha256": "1bac4a09ce9159004bbb9f2e3dd3b8c921f7e2d79b04b4c2b6ebafe45ab163f0"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/pidgey/",
+      "sha256": "f7551d9cbf63ae28069140ddd090aeffe25998e1e8d3f125fdcebcd1007dec1d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/pikachu/",
+      "sha256": "a2ed8553154a8436bebdfa8e96df529e9e046b21badbba333ebf0eb860cc3358"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/pikachu/",
+      "sha256": "65ff5787e30b2f6ac469d4edb8e359b54eb60c04c3db616f71ecda626b537fb5"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/pinsir/",
+      "sha256": "a24e7b83ac39f9b92494fce9cf7754d2095ddd25e738d699143d9fcfeed20f68"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/pinsir/",
+      "sha256": "f61163d09cbc1d3b660d7c9b1e90f3bae9ca54e7fc2578f3f8f8dad71b168edf"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/poliwag/",
+      "sha256": "4694a3626f0583537b05e31aed2720163ad28d751e17da1d913f638e1aa84c37"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/poliwag/",
+      "sha256": "919fb81f38111e6e37af9c09726e3c637bdbce2b58334298a3a881bc21366193"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/poliwhirl/",
+      "sha256": "24b82a9a2e83f8c28b5d20b68dd711ca559601e95d398c27dc4dce78561c8720"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/poliwhirl/",
+      "sha256": "d667efeb7ff3a336ea1e8a302dda3640ec01a6620b0abe9f11b0e1fdbf099adc"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/poliwrath/",
+      "sha256": "64f8028074d537032100638b6533a0bb758d2fdb96bbaa60d05e958b292fe456"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/poliwrath/",
+      "sha256": "84ef2bb8096548bab7292c54eaac3ab7835e219894784b68a4b9b3178564c546"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/ponyta/",
+      "sha256": "2a406262d9602ea7f233c959a625121d506b47b44f5002e3b2a704591ab8d791"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/ponyta/",
+      "sha256": "bcc206bdf820f58685cce8825c1bd5dd12f85542b940633389a25e9f1bffd676"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/porygon/",
+      "sha256": "82fda8a28d6c9376921d5a3016e8e01faa29c81a51829aa03100994417b68478"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/porygon/",
+      "sha256": "32340a73df4bc6a179df11295bf7b8015cd9d691ea7502858f61df901fbe8fe1"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/primeape/",
+      "sha256": "02bc73a50348325452cffc75c89f0af3d2d6ee2352deaa7206a701a490a507eb"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/primeape/",
+      "sha256": "53198a276465aaa88d16d3414fb7b0a623adf8d43cf9b9f280def54aaa87ef24"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/psyduck/",
+      "sha256": "5dc162847deafd2e9556db960e8b887c25bd535eba6d1f37179fb1329bcb2928"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/psyduck/",
+      "sha256": "7b4aea14d7ba9b4ac91b8e2a8b3a577f00b3fc624db1d60067dc24291aaad2a0"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/raichu/",
+      "sha256": "eb3b2ed9c2c93ec4679fdb5c0aa6d5cd48453d0bafd634d3d2c28efdb141188a"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/raichu/",
+      "sha256": "51994835d1fb276938ae06207e6ee4c2dabea06502bee506c1608dd5e3a56b8a"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/rapidash/",
+      "sha256": "975be3ff95a802e5510aa93a25662666f3abcfbdf9d999dbfe60e0f9d12dcca9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/rapidash/",
+      "sha256": "bc9fef34f5dbe003840e32110f7e0d1a669bb22da468ae3c9af1fc3f26f50ea6"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/raticate/",
+      "sha256": "f9ad7b0e3e9df770762467dfe43cd892b89ca3195b1878eee933e82c95961f2b"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/raticate/",
+      "sha256": "bb0aea7bfb4721c8b25e40d99c55805b9b38e93049e51e498d73eb6deb901332"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/rattata/",
+      "sha256": "a90b63ba156df69d1e76a626fbbd127b66fb7786f169f1291df65cfe27028151"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/rattata/",
+      "sha256": "70de364cf76579ce0c0e5b0bc3441c6ead55ed8b736dc941608bec1f2f6bb694"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/rhydon/",
+      "sha256": "5c3ecbef84fe463a6e86721ecbac12e082276d35b89a3d85136a992aa5a006e9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/rhydon/",
+      "sha256": "d436c4e08d7c3b895f8fcc0cbaef5b08853619f996e6c29183717810524738b9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/rhyhorn/",
+      "sha256": "a4e91127d5082307fc2c5cae2921984cbfc81426b7b88fc80de116e5db4a7bc2"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/rhyhorn/",
+      "sha256": "3ae1ccad0e772cf500d4cb2dbf6baacf91ab1fb3acbe8e5ab93af39363dcd4d5"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/sandshrew/",
+      "sha256": "090e0a913e36f32b1b111ed6f7527df7969be532c4c8615541087357f408b58a"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/sandshrew/",
+      "sha256": "9b8bf857c1080bfb1fbdd32f06f4d56ef01c153a708fc5218af6302026aa8b20"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/sandslash/",
+      "sha256": "054625376da913ca5e4715c6ba2e0b4087a42d7ecb82b1f6471db7ee929830c0"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/sandslash/",
+      "sha256": "31a429e4e1338fc0ce0dcf1c2605fd37efaddf657533ab88f8a86c67d6e84d0f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/scyther/",
+      "sha256": "e1f437d8fd0e6c54afdfd6a6be52717f9bca3b1c6016ff1a44224df7cf9ef644"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/scyther/",
+      "sha256": "0cda5e05910babc117e9055b352dbbb17dcec2f93b35dd1cbdfe58b91015b52e"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/seadra/",
+      "sha256": "408d138784d27e91e609ff96ab0fafd7de440ea57599ed4d477a6f5c54a86a03"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/seadra/",
+      "sha256": "48f9309170933187adcb1cc63103c0ff7199c43ca5d6fe0077b610778f3b56fd"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/seaking/",
+      "sha256": "70ebfae3940ddc1444032ee3bced8fb6ffd1cb1061b7268fec8ead9e0071c97d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/seaking/",
+      "sha256": "79289ddd5a5096dd37bfafe0082b132bc2a5cae0671424bef645e3160b3875c2"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/seel/",
+      "sha256": "613a8e183f899eb38da56226497d34a9f9bebea5017f5651749bae99310ef8c9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/seel/",
+      "sha256": "83530184db425bf16a87f7973e7267ffb5f4dda1486b0f60668eedd5e82309c6"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/shellder/",
+      "sha256": "6833109f93a3fcc729c47a6b252152c865a5ab62a1e345b86403a947f933ac4f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/shellder/",
+      "sha256": "4095cbe7d38db1d73217b7982eff5b542f166a9f00678d04e40bb243a3c804de"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/slowbro/",
+      "sha256": "f05a7db5066430fe4558c90004a85146565189d9b65f2755b4ec571d94ccb45f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/slowbro/",
+      "sha256": "8e96c975d29e1b2e41780763292d95e0c3a0a0c03a845c68a98586bb47f2edfe"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/slowpoke/",
+      "sha256": "1ac4584b825de3e9ba35c359291be4e148c00ddd186fc638a0aca900935ebb93"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/slowpoke/",
+      "sha256": "3322f115a5995e8e82dceb0f00b2b81120658dc9b86efd34154550a8927df206"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/snorlax/",
+      "sha256": "211fa83c6fb8492f36d2e04fcd78ada57679c0c8d4382e0a037321e6f2f37a40"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/snorlax/",
+      "sha256": "5b6ac1101ab35c4a3a4b91164b60fb943c40233f55d804e262d1a03deb552bbf"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/spearow/",
+      "sha256": "fe034a99b2722e2ddb6aee8ca34277f8b3fa38f08c86589627db4efb5000b6ff"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/spearow/",
+      "sha256": "a37f547774e2a1a35a63f8c63cd217be72b8309f266b965bacb1a812894491d8"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/squirtle/",
+      "sha256": "e6e025716c0b323d1048aab287db084b4f5773ead4dd07e6c2e14ddca7d68985"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/squirtle/",
+      "sha256": "2312ba1fe604ff5aa8d0c28d4ab9ac0ab793905f05539b6b5c66ebbac150aebe"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/starmie/",
+      "sha256": "291c9a8b88cf9c8c68da1816ac2dbab2529bf1145a7dd8a45446f0d8a9bbfc37"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/starmie/",
+      "sha256": "69820c616d34c51db518da3e6694ea28c67ed9c434269a677c0c8754d5e2e87b"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/staryu/",
+      "sha256": "1932b39c2b9de90c130d7c230871616c4d59868628a2edde610665f7cb605f97"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/staryu/",
+      "sha256": "f795fcc60d2188de6ce192de37b05bb60b8b7be48aeb7d57d8b4058e5b1f0853"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/tangela/",
+      "sha256": "8e89a428b7ad1b43a665cb9a4ceadbc9a1dbb2d94ccd2442eff2c17544103337"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/tangela/",
+      "sha256": "81ec7f33608829c0be4b67a96299e3c2e384f9181dfa647f4345490a35e8cf01"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/tauros/",
+      "sha256": "e36f0f4a8cf2f10a571302693afaf5c1a9e812f781fbe0e302a6b96ec3836a70"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/tauros/",
+      "sha256": "f6393bd5bde9c5392c585c59cb3bdbf7dd3d8f3e59677f5e1861bec6d0b419df"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/tentacool/",
+      "sha256": "655d0581c20c80439506ef18807aeae2bce77b0908736b4c535b124f089092e7"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/tentacool/",
+      "sha256": "7661316bd6b30766c5fb904cab3bbcfda5644d965fe155fb0e67ffce0f727c64"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/tentacruel/",
+      "sha256": "811c07d6b050735c82f4bdbfdaf4e23e5cc4f616ceb3a205aa78f216e70ac489"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/tentacruel/",
+      "sha256": "61fa218063492f00740e2f240a7bae19f6d6f1cee7c9a6452d9b2f5d1160c73b"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/vaporeon/",
+      "sha256": "8c60e09d4fa24346a0e95217f73cd1b83f7961394d47e2d1578fff5faa01a97d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/vaporeon/",
+      "sha256": "7e7bd90cc4cf48f96b62862a5e0dc62ec30baa29a115b2915fc38a2b914b9025"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/venomoth/",
+      "sha256": "5624f175a11a2c170fa27a9f485393aeac45a6b451ff680fd59d810f617a5ab0"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/venomoth/",
+      "sha256": "718dd5608f0fb4c743949a8bfbf2c7f585b2a55919d3184ebabd684a4ead5776"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/venonat/",
+      "sha256": "c52160f0c0cbcc4ec1983642c8e4e60b9b577f6c26e1e9490cabed0691d91995"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/venonat/",
+      "sha256": "30f75c2991460b9dfb2546346d7d04fa23529a6430247c0954b15bf182d3907f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/venusaur/",
+      "sha256": "1ec7684f0dae5889a4cdb014c1dce2866be60479079004bbc14afff26d7b09e5"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/venusaur/",
+      "sha256": "40211c7e0afd5cf6482e71fab6b196ed869882926f7736268528237670cf3fe8"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/victreebel/",
+      "sha256": "a5f62b581117a7f176b552faee974e6fe7a577886954fe9840f917d10a392c00"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/victreebel/",
+      "sha256": "d6ded2e5c428f006652b1c10d58097d73e5ef14c97d75c911614ae1cf89221f4"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/vileplume/",
+      "sha256": "548b491e37e50733d3b3f49e0bb1d515534ac6de5a1aa84953c5882ed3ee1ee6"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/vileplume/",
+      "sha256": "e65a9f2d2d55e47cf2e6b88c0e288b0d578da430399ff4bbc7666b6e0db9f499"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/voltorb/",
+      "sha256": "afb6412876ec11135611fd559b9e7481bb191eb3e66116e7040377f17f060e16"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/voltorb/",
+      "sha256": "125c97496df4f1b5d5511cf623fe96d30967f1cf3b976e1a3f0e93d4bf45a60e"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/vulpix/",
+      "sha256": "29001e9ecff5dda8cd6ad0aa390652dc5d46d8202c004b11129004caf29a55b7"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/vulpix/",
+      "sha256": "8996aaf1307f64999098424fa1f2eb065092171edffc9e2743563c7500089272"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/wartortle/",
+      "sha256": "b9a8c8b7fd5fddfb6a6320272e7cb1b19b01ad8ac31bec99d0c25c955b2959d5"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/wartortle/",
+      "sha256": "f607e6ce0454f91ec7aa43d6e19b37f24cba8c11cdb7a9507048a979e32ace28"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/weedle/",
+      "sha256": "3bd98fa0fdd5f271319c1f4d278750f512202ef028b4276dc28d09ed1442633b"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/weedle/",
+      "sha256": "8752f58aace25ee7f1f3e3c8624d9598cff9ea200416799f073f2d25b9fcc7df"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/weepinbell/",
+      "sha256": "b0c5a9ac3ca2e29a45c38e12b8ca596f37f7033168e124ab71ed2a1291812327"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/weepinbell/",
+      "sha256": "cfe88fdc2b76c6720ef55a649af5da783b89dd4faa0bc694d2c8a17902b63028"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/weezing/",
+      "sha256": "23abb8ac68d49caf012c14b2b8bc003606fa6c2df7a4b4722a3dfe5982eecc75"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/weezing/",
+      "sha256": "db2482075b964bb880070c172ba7164520f59f73e1723c1c7822496107d321e2"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/wigglytuff/",
+      "sha256": "93c986f6f51181737ad131769a031a4f1b58b564481e411db272c8645fa2ba7d"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/wigglytuff/",
+      "sha256": "f88a6522ef371ab04d088307ffd2bc3cd42a3fe77e7f75f95a2872bb5ccc4ab5"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/zapdos/",
+      "sha256": "fb7e0840c2cebaabf8b1cbfa7a121c83a420fd9b5f589873f7b3d786816a7dc1"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/zapdos/",
+      "sha256": "bec491ab5ba48d3fd09e5eb5460fb15b9915f3e7e1d3d010c772cd9b5ed61378"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon-species/zubat/",
+      "sha256": "b283c9491855b5d52b431035d9b59045f7d402b9d295bfdab08cda04d9c6c65c"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/pokemon/zubat/",
+      "sha256": "9c1d3f3a8df0b96cec9ba10507c831e154325a8ab79eb87151ab766aabc446b5"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/7/",
+      "sha256": "fefbde09668c3673742ee00ad53683233a76ec3ea40bb345791c6f642d6e387f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/17/",
+      "sha256": "43659b1cb726a547b1600c8a7ea0db4edb0fc7f060f1fb0e7c9671eae4583e37"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/16/",
+      "sha256": "39bdf354fc4ceabccad878d57f8c19c0c74cd1a861b23903d6b0a80663e47fc7"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/13/",
+      "sha256": "ceb76d0dede2a19a198b2aa607fd4ce0127951cd2db4367b66c56bcd8e2fed54"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/18/",
+      "sha256": "a8a0d106308013779751de39eae36b04f4ea93a94d62cb2fd45cca147d0e13d5"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/2/",
+      "sha256": "f5938b01c29c7f9bbf6e0c38315fdccbd6cf45508404e44463e06ce1eb5e26d6"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/10/",
+      "sha256": "1797e9bb3920308651cb61bd41717bd3cf8462ba6cd83f4935e0829875b8754f"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/3/",
+      "sha256": "e17825cd90873fabbaa03706a484dd05a5b88c7661c4f9dec007fa45dc88f60c"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/8/",
+      "sha256": "a3099ce1b880a91e3371655e5629862ed6cdfd960fe72df954d5f9c7c96944a0"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/12/",
+      "sha256": "bb614cf03bb57ae1853af054d8295dea8f3e535beafe5d22968b5696b7b2eb54"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/5/",
+      "sha256": "ad1935fbd3a77e341a145cd0c4e11c6e244d9627318b966f745b0190c6f3c878"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/15/",
+      "sha256": "ec5364aeca91877872cfc407aee46765fe6f75f259296670e2f2650dd8d1e655"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/1/",
+      "sha256": "19f15200a27033de9ae02bb460b83a86d4b1743a4f4e7d34821f19d01edd1c52"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/4/",
+      "sha256": "66b54aacc2cb2a6cbc920a51ccf261bbe9cc51378137738803788af70c2b28e0"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/14/",
+      "sha256": "d839fd9ba765248814f6557badac779e644426e858ed82bb2e0e44cffe6892b9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/6/",
+      "sha256": "b2191f6883fd07aeedef432c822896feeabcf6252fd4f5e56b7de0289db275e9"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/9/",
+      "sha256": "933c7e4bd7c11137f505ba48f024b1bfcfdf4ee5f369714ea4bc73906cc9cd14"
+    },
+    {
+      "url": "https://pokeapi.co/api/v2/type/11/",
+      "sha256": "f2f88c0b91f921351a1b4cf073441d0ef9c19372d8ee07e7928d61b8997702cd"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "run_file": "arena.json",
+  "run_sha256": "47838bc09661935a3416e46b7396286b95c9f597f9aa997253f1a675e1a54238",
+  "source_file": "evals/stability/baseline-1.json",
+  "run_name": "gentle-dusk-379",
+  "captured_at": "2026-10-05T17:05:20.056408+02:00",
+  "command": "docker agent eval agents/11-builder.yaml evals/arena --repeat 5 --concurrency 5 --judge-model openai/gpt-5.6-terra --output .state/eval-stability/rehearsal-baseline",
+  "passed": 17,
+  "total": 25,
+  "per_case": {
+    "duplicate-team": [
+      2,
+      5
+    ],
+    "honest-loss": [
+      5,
+      5
+    ],
+    "over-budget": [
+      2,
+      5
+    ],
+    "water-beginner": [
+      5,
+      5
+    ],
+    "water-proposal": [
+      3,
+      5
+    ]
+  },
+  "median_agent_seconds": 7.475,
+  "duration": "1m51.274s",
+  "summary": {
+    "total_evals": 25,
+    "failed_evals": 0,
+    "total_cost": 0.02413935,
+    "sizes_passed": 0,
+    "sizes_total": 0,
+    "tools_f1_sum": 0,
+    "tools_count": 0,
+    "relevance_passed": 32,
+    "relevance_total": 40,
+    "assertions_passed": 109,
+    "assertions_total": 110,
+    "repeat_metrics": {
+      "k": 5,
+      "pass_at_k": 1,
+      "pass_hat_k": 0.4,
+      "total": 5,
+      "evals": [
+        {
+          "input_path": "evals/arena/duplicate-team.json",
+          "status": "flaky",
+          "passed": 2,
+          "total": 5,
+          "errors": 0,
+          "failed_runs": [
+            "Reject duplicate members #1",
+            "Reject duplicate members #4",
+            "Reject duplicate members #5"
+          ],
+          "cost": {
+            "samples": 5,
+            "median": 0.00026967,
+            "min": 0.00020138,
+            "max": 0.000757,
+            "outliers": [
+              {
+                "title": "Reject duplicate members #3",
+                "cost": 0.000757
+              }
+            ]
+          }
+        },
+        {
+          "input_path": "evals/arena/over-budget.json",
+          "status": "flaky",
+          "passed": 2,
+          "total": 5,
+          "errors": 0,
+          "failed_runs": [
+            "Reject an over-budget request #1",
+            "Reject an over-budget request #3",
+            "Reject an over-budget request #4"
+          ],
+          "cost": {
+            "samples": 5,
+            "median": 0.00021579000000000002,
+            "min": 0.00020879,
+            "max": 0.000784915,
+            "outliers": [
+              {
+                "title": "Reject an over-budget request #3",
+                "cost": 0.000784915
+              }
+            ]
+          }
+        },
+        {
+          "input_path": "evals/arena/water-proposal.json",
+          "status": "flaky",
+          "passed": 3,
+          "total": 5,
+          "errors": 0,
+          "failed_runs": [
+            "Propose a legal Water team #3",
+            "Propose a legal Water team #4"
+          ],
+          "cost": {
+            "samples": 5,
+            "median": 0.00125834,
+            "min": 0.0007316600000000001,
+            "max": 0.00224744
+          }
+        },
+        {
+          "input_path": "evals/arena/honest-loss.json",
+          "status": "stable",
+          "passed": 5,
+          "total": 5,
+          "errors": 0,
+          "cost": {
+            "samples": 5,
+            "median": 0.00105331,
+            "min": 0.00033682,
+            "max": 0.00106631
+          }
+        },
+        {
+          "input_path": "evals/arena/water-beginner.json",
+          "status": "stable",
+          "passed": 5,
+          "total": 5,
+          "errors": 0,
+          "cost": {
+            "samples": 5,
+            "median": 0.00170646,
+            "min": 0.001024705,
+            "max": 0.0029664500000000002
+          }
+        }
+      ]
+    }
+  },
+  "tool_error_sessions": [],
+  "failure_session_ids": [
+    "fe4dc21b-955d-483b-ad88-3a6863fb1435",
+    "a6fb94e5-36e0-4a22-8cc0-c1401ec8365e",
+    "7c557ff0-6cea-4d66-9bd7-a465171092e9",
+    "19b0b12a-9c7c-4f9f-9f15-0acb466c3d0b",
+    "4cb7f5dc-f02d-4d0f-b38a-d382f846acf2",
+    "1919406e-86f1-438d-b90d-7794dbc9778a",
+    "e173e838-e58a-4677-a75c-9b71067a059a",
+    "242462d8-a3b0-4426-9822-21d51c9cac87"
+  ],
+  "passed_cases": 17,
+  "failed_cases": 8,
+  "input_sha256": {
+    "agents/11-builder.yaml": "5366b23b4b103340399d2192c3fc8c311e637845529ea3d580d59d4c44e66c5d",
+    "agents/team-building.md": "248c8108fd15e8cfd07ea0233a9d0f77f6bd0df4075da8e4db6a4c47b8065f31",
+    "agents/eval-setup.sh": "8154dc1fd44f56318fc4d523120be33ca4c4a6a63a456e7310233cc96e03b731",
+    "evals/arena/duplicate-team.json": "9e23d6cdeac0f5877f64d1e13201dc790385a9a4e0e9ee2b19ad1b4d09f2d240",
+    "evals/arena/honest-loss.json": "01cd032f95fb311c5469c53b87f975c57deb2f2978993189a18fcbe0d64fb912",
+    "evals/arena/over-budget.json": "b823826bb2284c4257e0f21639e5b4f8fdf91895a31b168d6fd1877c8ee29f29",
+    "evals/arena/water-beginner.json": "f0b5424655be54de6b4dd87ec72e02cf0e6c13d5f3cda35fb096e067d3e43ed7",
+    "evals/arena/water-proposal.json": "c70f88fd7fd8362f37090430cae70a2cbc72a38057f189b9617dec5cbb3b33b6",
+    "evals/arena-stretch/water-advanced.json": "6e99a1a940050240879793da55d73b3d243df1f4e4a7a4438e45f6833418c6a3",
+    "fixtures/arena-catalog.json": "6ae4f2649d63cd0b2c49c02bf4bbffc66fa2d007b09adfe8e26714e2ff736eb4",
+    "fixtures/arena-challenges.json": "56cf2c67dd75fdb0e9a7616fe4d1ddd4c05c1a33459941a356ebefe39edf7ec0",
+    "fixtures/arena-types.json": "ed0ada1fa80c01783729d2ec3712834cf861a72482e7504f3dea9c170a673ca7"
+  },
+  "cli_version": "docker agent version dev\nCommit: c145f64efc0e78a36c1b5ac7ff99551135c5a81f",
+  "agent_image_id": "sha256:7cc50f4277b6916f0b8fbe061ab7a479abf3e65ea83ed2d84907abf0d7c284eb",
+  "judge_model": "openai/gpt-5.6-terra",
+  "repeat": 5,
+  "concurrency": 5,
+  "notes": [
+    "Byte-for-byte copy of the first final repeat5 rehearsal, all25 repetitions retained.",
+    "Repeated failures involve incorrect arithmetic or conflicting prose totals; inspect every failure rather than a selected example.",
+    "Saved evidence is teaching data; for live comparisons use the JSON path printed by the native baseline command."
+  ]
+}

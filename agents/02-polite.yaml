@@ -1,0 +1,7 @@
+agents:
+  root:
+    instruction: |
+      Rewrite the user text as one clear,
+      polite English sentence.
+      Return only that sentence.
+    model: openai/gpt-5.6-luna

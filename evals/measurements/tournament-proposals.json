@@ -1,0 +1,1225 @@
+{
+  "agent": "agents/16-tournament.yaml",
+  "agent_name": "player",
+  "proposal_only": true,
+  "prohibited_tools": [
+    "join_local_arena",
+    "submit_tournament_team",
+    "create_tournament",
+    "spar_team",
+    "run_background_agent",
+    "wait_background_agents",
+    "transfer_task"
+  ],
+  "captured_at": "2026-10-05T13:25:18.676135+00:00",
+  "concurrency": 4,
+  "input_sha256": {
+    "agents/16-tournament.yaml": "86fcd08776fc82e224f41fb4aabdde6fb6c3fe794c792f0d0a237762180abe4d",
+    "scripts/check_team_reliability.py": "501e3497e688921a2125b514d720ce08f1e36e92de36c1f81dfd091cdbb3f732",
+    "agents/team-building.md": "248c8108fd15e8cfd07ea0233a9d0f77f6bd0df4075da8e4db6a4c47b8065f31",
+    "fixtures/arena-catalog.json": "6ae4f2649d63cd0b2c49c02bf4bbffc66fa2d007b09adfe8e26714e2ff736eb4",
+    "fixtures/arena-challenges.json": "56cf2c67dd75fdb0e9a7616fe4d1ddd4c05c1a33459941a356ebefe39edf7ec0"
+  },
+  "overlay_sha256": "831e08b9bea052477496b16eee1919bccf61868baa1165081762c4c75bd68e7e",
+  "validity_scope": "fixture-legal team and accurate total; live lookup evidence not audited",
+  "runs": 100,
+  "valid": 99,
+  "duration_seconds": 269.047,
+  "results": [
+    {
+      "seed": 1,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "psyduck",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 824,
+      "duration_seconds": 10.22
+    },
+    {
+      "seed": 2,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 804,
+      "duration_seconds": 10.221
+    },
+    {
+      "seed": 3,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "pidgey",
+        "spearow"
+      ],
+      "stat_total": 813,
+      "duration_seconds": 10.208
+    },
+    {
+      "seed": 4,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "psyduck",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 710,
+      "duration_seconds": 11.613
+    },
+    {
+      "seed": 5,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "growlithe",
+        "caterpie",
+        "spearow"
+      ],
+      "stat_total": 807,
+      "duration_seconds": 9.461
+    },
+    {
+      "seed": 6,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "oddish",
+        "pidgey",
+        "caterpie"
+      ],
+      "stat_total": 766,
+      "duration_seconds": 12.071
+    },
+    {
+      "seed": 7,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "voltorb",
+        "caterpie",
+        "rattata"
+      ],
+      "stat_total": 778,
+      "duration_seconds": 9.771
+    },
+    {
+      "seed": 8,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 725,
+      "duration_seconds": 13.282
+    },
+    {
+      "seed": 9,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 839,
+      "duration_seconds": 10.295
+    },
+    {
+      "seed": 10,
+      "challenge_id": "water-budget",
+      "valid": false,
+      "error": "DATA-1: Unknown species or incomplete evidence for politoed. FAIR-1: Entries stay sealed until a duel is judged.",
+      "duration_seconds": 12.287
+    },
+    {
+      "seed": 11,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "krabby",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 715,
+      "duration_seconds": 12.249
+    },
+    {
+      "seed": 12,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 725,
+      "duration_seconds": 10.296
+    },
+    {
+      "seed": 13,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "growlithe",
+        "weedle",
+        "pidgey"
+      ],
+      "stat_total": 796,
+      "duration_seconds": 8.684
+    },
+    {
+      "seed": 14,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "oddish",
+        "caterpie",
+        "pidgey"
+      ],
+      "stat_total": 766,
+      "duration_seconds": 9.448
+    },
+    {
+      "seed": 15,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 710,
+      "duration_seconds": 9.567
+    },
+    {
+      "seed": 16,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "krabby",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 715,
+      "duration_seconds": 12.772
+    },
+    {
+      "seed": 17,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "rattata",
+        "spearow"
+      ],
+      "stat_total": 850,
+      "duration_seconds": 14.396
+    },
+    {
+      "seed": 18,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "weedle",
+        "pidgey"
+      ],
+      "stat_total": 781,
+      "duration_seconds": 9.994
+    },
+    {
+      "seed": 19,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "psyduck",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 710,
+      "duration_seconds": 9.089
+    },
+    {
+      "seed": 20,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "weedle",
+        "rattata"
+      ],
+      "stat_total": 748,
+      "duration_seconds": 11.692
+    },
+    {
+      "seed": 21,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "pidgey",
+        "spearow"
+      ],
+      "stat_total": 822,
+      "duration_seconds": 9.985
+    },
+    {
+      "seed": 22,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bellsprout",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 804,
+      "duration_seconds": 12.558
+    },
+    {
+      "seed": 23,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "voltorb",
+        "rattata",
+        "spearow"
+      ],
+      "stat_total": 845,
+      "duration_seconds": 9.986
+    },
+    {
+      "seed": 24,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "weedle",
+        "spearow"
+      ],
+      "stat_total": 792,
+      "duration_seconds": 9.96
+    },
+    {
+      "seed": 25,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "spearow",
+        "pidgey"
+      ],
+      "stat_total": 848,
+      "duration_seconds": 10.71
+    },
+    {
+      "seed": 26,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "weedle",
+        "pidgey"
+      ],
+      "stat_total": 746,
+      "duration_seconds": 8.975
+    },
+    {
+      "seed": 27,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "caterpie",
+        "pidgey"
+      ],
+      "stat_total": 746,
+      "duration_seconds": 13.925
+    },
+    {
+      "seed": 28,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "rattata",
+        "caterpie"
+      ],
+      "stat_total": 748,
+      "duration_seconds": 16.083
+    },
+    {
+      "seed": 29,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "ponyta",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 800,
+      "duration_seconds": 9.968
+    },
+    {
+      "seed": 30,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bellsprout",
+        "weedle",
+        "spearow"
+      ],
+      "stat_total": 757,
+      "duration_seconds": 8.709
+    },
+    {
+      "seed": 31,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "caterpie",
+        "rattata"
+      ],
+      "stat_total": 768,
+      "duration_seconds": 8.778
+    },
+    {
+      "seed": 32,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 804,
+      "duration_seconds": 12.138
+    },
+    {
+      "seed": 33,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "psyduck",
+        "weedle",
+        "rattata"
+      ],
+      "stat_total": 768,
+      "duration_seconds": 10.92
+    },
+    {
+      "seed": 34,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 690,
+      "duration_seconds": 10.14
+    },
+    {
+      "seed": 35,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "krabby",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 715,
+      "duration_seconds": 11.392
+    },
+    {
+      "seed": 36,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "caterpie",
+        "pidgey"
+      ],
+      "stat_total": 781,
+      "duration_seconds": 11.654
+    },
+    {
+      "seed": 37,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "growlithe",
+        "pidgey",
+        "spearow"
+      ],
+      "stat_total": 863,
+      "duration_seconds": 9.306
+    },
+    {
+      "seed": 38,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bellsprout",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 804,
+      "duration_seconds": 12.668
+    },
+    {
+      "seed": 39,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "voltorb",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 720,
+      "duration_seconds": 13.61
+    },
+    {
+      "seed": 40,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 839,
+      "duration_seconds": 9.358
+    },
+    {
+      "seed": 41,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 704,
+      "duration_seconds": 8.415
+    },
+    {
+      "seed": 42,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "caterpie",
+        "pidgey"
+      ],
+      "stat_total": 746,
+      "duration_seconds": 11.387
+    },
+    {
+      "seed": 43,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 818,
+      "duration_seconds": 13.5
+    },
+    {
+      "seed": 44,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "horsea",
+        "caterpie",
+        "spearow"
+      ],
+      "stat_total": 752,
+      "duration_seconds": 8.963
+    },
+    {
+      "seed": 45,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "rattata",
+        "spearow"
+      ],
+      "stat_total": 824,
+      "duration_seconds": 9.975
+    },
+    {
+      "seed": 46,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "oddish",
+        "caterpie",
+        "rattata"
+      ],
+      "stat_total": 768,
+      "duration_seconds": 9.324
+    },
+    {
+      "seed": 47,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "magnemite",
+        "caterpie",
+        "spearow"
+      ],
+      "stat_total": 782,
+      "duration_seconds": 9.276
+    },
+    {
+      "seed": 48,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "weedle",
+        "pidgey"
+      ],
+      "stat_total": 781,
+      "duration_seconds": 13.339
+    },
+    {
+      "seed": 49,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "krabby",
+        "rattata",
+        "spearow"
+      ],
+      "stat_total": 840,
+      "duration_seconds": 8.614
+    },
+    {
+      "seed": 50,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 839,
+      "duration_seconds": 14.205
+    },
+    {
+      "seed": 51,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "horsea",
+        "caterpie",
+        "pidgey"
+      ],
+      "stat_total": 741,
+      "duration_seconds": 12.597
+    },
+    {
+      "seed": 52,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "caterpie",
+        "spearow"
+      ],
+      "stat_total": 792,
+      "duration_seconds": 9.004
+    },
+    {
+      "seed": 53,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "vulpix",
+        "caterpie",
+        "rattata"
+      ],
+      "stat_total": 747,
+      "duration_seconds": 11.195
+    },
+    {
+      "seed": 54,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bellsprout",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 690,
+      "duration_seconds": 9.08
+    },
+    {
+      "seed": 55,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pidgey",
+        "spearow",
+        "voltorb"
+      ],
+      "stat_total": 843,
+      "duration_seconds": 13.584
+    },
+    {
+      "seed": 56,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "krabby",
+        "caterpie",
+        "spearow"
+      ],
+      "stat_total": 782,
+      "duration_seconds": 9.477
+    },
+    {
+      "seed": 57,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "rattata",
+        "spearow"
+      ],
+      "stat_total": 850,
+      "duration_seconds": 10.378
+    },
+    {
+      "seed": 58,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 804,
+      "duration_seconds": 8.56
+    },
+    {
+      "seed": 59,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "pidgey",
+        "rattata"
+      ],
+      "stat_total": 818,
+      "duration_seconds": 9.777
+    },
+    {
+      "seed": 60,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 725,
+      "duration_seconds": 13.139
+    },
+    {
+      "seed": 61,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 813,
+      "duration_seconds": 8.607
+    },
+    {
+      "seed": 62,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "oddish",
+        "caterpie",
+        "pidgey"
+      ],
+      "stat_total": 766,
+      "duration_seconds": 12.466
+    },
+    {
+      "seed": 63,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "magnemite",
+        "pidgey",
+        "spearow"
+      ],
+      "stat_total": 838,
+      "duration_seconds": 10.7
+    },
+    {
+      "seed": 64,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 839,
+      "duration_seconds": 8.932
+    },
+    {
+      "seed": 65,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "krabby",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 829,
+      "duration_seconds": 10.483
+    },
+    {
+      "seed": 66,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "rattata",
+        "weedle"
+      ],
+      "stat_total": 762,
+      "duration_seconds": 9.753
+    },
+    {
+      "seed": 67,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 818,
+      "duration_seconds": 10.26
+    },
+    {
+      "seed": 68,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "psyduck",
+        "caterpie",
+        "pidgey"
+      ],
+      "stat_total": 766,
+      "duration_seconds": 7.839
+    },
+    {
+      "seed": 69,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "growlithe",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 740,
+      "duration_seconds": 9.624
+    },
+    {
+      "seed": 70,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "oddish",
+        "caterpie",
+        "rattata"
+      ],
+      "stat_total": 768,
+      "duration_seconds": 10.32
+    },
+    {
+      "seed": 71,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "magnemite",
+        "caterpie",
+        "spearow"
+      ],
+      "stat_total": 782,
+      "duration_seconds": 8.623
+    },
+    {
+      "seed": 72,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 725,
+      "duration_seconds": 13.039
+    },
+    {
+      "seed": 73,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "psyduck",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 710,
+      "duration_seconds": 10.006
+    },
+    {
+      "seed": 74,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 839,
+      "duration_seconds": 8.353
+    },
+    {
+      "seed": 75,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "pidgey",
+        "spearow"
+      ],
+      "stat_total": 848,
+      "duration_seconds": 7.978
+    },
+    {
+      "seed": 76,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 725,
+      "duration_seconds": 9.102
+    },
+    {
+      "seed": 77,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "growlithe",
+        "caterpie"
+      ],
+      "stat_total": 854,
+      "duration_seconds": 10.897
+    },
+    {
+      "seed": 78,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "oddish",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 824,
+      "duration_seconds": 8.544
+    },
+    {
+      "seed": 79,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "voltorb",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 720,
+      "duration_seconds": 10.031
+    },
+    {
+      "seed": 80,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "spearow",
+        "weedle"
+      ],
+      "stat_total": 771,
+      "duration_seconds": 8.727
+    },
+    {
+      "seed": 81,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "horsea",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 799,
+      "duration_seconds": 10.427
+    },
+    {
+      "seed": 82,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 725,
+      "duration_seconds": 10.181
+    },
+    {
+      "seed": 83,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "rattata",
+        "pidgey"
+      ],
+      "stat_total": 839,
+      "duration_seconds": 10.357
+    },
+    {
+      "seed": 84,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "psyduck",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 710,
+      "duration_seconds": 13.677
+    },
+    {
+      "seed": 85,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "growlithe",
+        "caterpie",
+        "spearow"
+      ],
+      "stat_total": 807,
+      "duration_seconds": 9.868
+    },
+    {
+      "seed": 86,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bulbasaur",
+        "weedle",
+        "spearow"
+      ],
+      "stat_total": 775,
+      "duration_seconds": 12.307
+    },
+    {
+      "seed": 87,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "magnemite",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 715,
+      "duration_seconds": 11.06
+    },
+    {
+      "seed": 88,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "weedle",
+        "rattata"
+      ],
+      "stat_total": 783,
+      "duration_seconds": 9.9
+    },
+    {
+      "seed": 89,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "spearow",
+        "caterpie"
+      ],
+      "stat_total": 771,
+      "duration_seconds": 9.039
+    },
+    {
+      "seed": 90,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 725,
+      "duration_seconds": 10.711
+    },
+    {
+      "seed": 91,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "krabby",
+        "caterpie",
+        "pidgey"
+      ],
+      "stat_total": 771,
+      "duration_seconds": 11.106
+    },
+    {
+      "seed": 92,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "pidgey",
+        "spearow"
+      ],
+      "stat_total": 827,
+      "duration_seconds": 9.802
+    },
+    {
+      "seed": 93,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "growlithe",
+        "weedle",
+        "pidgey"
+      ],
+      "stat_total": 796,
+      "duration_seconds": 8.197
+    },
+    {
+      "seed": 94,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bellsprout",
+        "pidgey",
+        "spearow"
+      ],
+      "stat_total": 813,
+      "duration_seconds": 9.649
+    },
+    {
+      "seed": 95,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "voltorb",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 720,
+      "duration_seconds": 10.318
+    },
+    {
+      "seed": 96,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 690,
+      "duration_seconds": 10.691
+    },
+    {
+      "seed": 97,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "weedle",
+        "spearow"
+      ],
+      "stat_total": 771,
+      "duration_seconds": 14.243
+    },
+    {
+      "seed": 98,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "tentacool",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 725,
+      "duration_seconds": 10.438
+    },
+    {
+      "seed": 99,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "caterpie",
+        "spearow"
+      ],
+      "stat_total": 757,
+      "duration_seconds": 13.97
+    },
+    {
+      "seed": 100,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "krabby",
+        "caterpie",
+        "weedle"
+      ],
+      "stat_total": 715,
+      "duration_seconds": 9.987
+    }
+  ]
+}

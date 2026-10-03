@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1786" height="600" viewBox="0 0 1786 600" role="img" aria-labelledby="title desc">
+<title id="title">An agent calls the builder as an MCP tool</title>
+<desc id="desc">The caller agent in 14-mcp-client.yaml discovers and calls the root tool using MCP JSON-RPC over Streamable HTTP. Docker Agent runs the MCP server on port 8081 and the root team builder, returning a tool result. The builder calls PokéAPI on port 8000 for facts and the arena backend on port 8090 for rules and practice over HTTP and JSON.</desc>
+<defs>
+<marker id="request" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#40566c"/></marker>
+<marker id="response" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#40566c"/></marker>
+<filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#102934" flood-opacity=".10"/></filter>
+<style>
+    text{font-family:Arial,Helvetica,sans-serif;fill:#231f20}
+    .heading{font-size:38px;font-weight:700;letter-spacing:-1px}
+    .body{font-size:29px}
+    .meta{font-size:26px;fill:#40566c}
+    .section{font-size:22px;fill:#40566c;font-weight:700;letter-spacing:2.5px}
+    .link{stroke:#40566c;stroke-width:3;fill:none;marker-end:url(#request)}
+    .return{stroke:#40566c;stroke-width:3;stroke-dasharray:9 7;fill:none;marker-end:url(#response)}
+    .label{font-size:27px;fill:#40566c;text-anchor:middle}
+    .mono{font-family:monospace;font-size:25px;fill:#40566c}
+</style>
+</defs>
+<text class="section" x="30" y="39">CALLER AGENT</text>
+<text class="section" x="675" y="39">AGENT RUNTIME</text>
+<text class="section" x="1425" y="39">EXISTING SERVICES</text>
+<rect x="30" y="200" width="330" height="260" rx="22" fill="#f7f7f5" stroke="#dde3e7"/>
+<rect x="62" y="231" width="58" height="46" rx="10" fill="#e6edf2"/>
+<path d="M91 242V250M80 261L87 255M102 261L95 255" fill="none" stroke="#40566c" stroke-width="3"/><circle cx="91" cy="239" r="4" fill="#40566c"/><circle cx="77" cy="264" r="4" fill="#40566c"/><circle cx="105" cy="264" r="4" fill="#40566c"/><circle cx="91" cy="253" r="5" fill="#40566c"/>
+<text class="heading" x="62" y="337">Caller agent</text>
+<text class="body" x="62" y="383">MCP client</text>
+<text class="mono" x="62" y="426">14-mcp-client.yaml</text>
+<rect x="675" y="87" width="510" height="460" rx="24" fill="#102934" filter="url(#shadow)"/>
+<rect x="709" y="123" width="6" height="39" rx="3" fill="#f5af33"/>
+<text class="heading" x="732" y="156" style="fill:white">Docker Agent</text>
+<text class="body" x="710" y="207" style="fill:#d0e1e8">MCP server</text>
+<rect x="1052" y="176" width="97" height="43" rx="10" fill="#294551"/>
+<text class="mono" x="1066" y="204" style="fill:white">:8081</text>
+<rect x="705" y="253" width="450" height="191" rx="17" fill="#fff2d9"/>
+<text class="heading" x="738" y="315" style="font-size:44px">Team builder</text>
+<rect x="738" y="335" width="174" height="39" rx="8" fill="#ffe1a1"/>
+<text class="mono" x="753" y="362" style="fill:#65400d">agent: root</text>
+<text class="body" x="738" y="417">Builds the plan. Calls tools.</text>
+<text class="mono" x="710" y="500" style="fill:#d0e1e8">13-service.yaml</text>
+<path class="link" d="M360 298H660"/>
+<text class="label" x="510" y="209" style="font-weight:700">Tool call</text>
+<text class="label" x="510" y="248" style="font-size:26px">MCP · JSON-RPC</text>
+<text class="label" x="510" y="279" style="font-size:26px">Streamable HTTP</text>
+<text class="mono" x="517.5" y="338" text-anchor="middle" style="font-size:24px">tools/list →</text>
+<text class="mono" x="517.5" y="372" text-anchor="middle" style="font-size:24px">tools/call (root)</text>
+<path class="return" d="M675 392H360"/>
+<text class="label" x="510" y="436" style="font-weight:700">Tool result</text>
+<text class="label" x="510" y="471" style="font-size:26px">Plan from the builder</text>
+
+<path class="link" d="M1185 305H1292V242H1410" marker-start="url(#request)"/>
+<path class="link" d="M1185 375H1292V458H1410" marker-start="url(#request)"/>
+<text class="label" x="1300" y="174" style="font-weight:700">Facts</text><text class="label" x="1300" y="211" style="font-size:26px">HTTP + JSON</text>
+<text class="label" x="1300" y="500" style="font-weight:700">Rules / practice</text><text class="label" x="1300" y="537" style="font-size:26px">HTTP + JSON</text>
+<rect x="1425" y="149" width="331" height="185" rx="20" fill="#edf5f8" stroke="#d4e3e9"/>
+<text class="heading" x="1455" y="206">PokéAPI</text>
+<text class="body" x="1455" y="249">Species, types, stats</text>
+<text class="mono" x="1455" y="285">:8000</text><text class="mono" x="1455" y="312">/api/v2/…</text>
+<rect x="1425" y="365" width="331" height="185" rx="20" fill="#edf5f8" stroke="#d4e3e9"/>
+<text class="heading" x="1455" y="422">Arena backend</text>
+<text class="body" x="1455" y="461">Rules and practice</text>
+<text class="mono" x="1455" y="497">:8090</text><text class="mono" x="1455" y="526">/rules · /spar</text>
+</svg>

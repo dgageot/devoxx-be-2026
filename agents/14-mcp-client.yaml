@@ -1,0 +1,22 @@
+agents:
+  root:
+    model: openai/gpt-6-luna
+    description: Call the team builder through MCP.
+    instruction: |
+      Call the root tool to ask the team builder to propose a team for the requested challenge.
+      Keep the user-supplied challenge. Request training only when asked; never join a match.
+      Return its recommendation.
+    toolsets:
+      - type: mcp
+        allow_private_ips: true
+        remote:
+          url: http://127.0.0.1:8081
+          transport_type: streamable
+        lifecycle:
+          profile: strict
+          startup_timeout: 15s
+permissions:
+  allow:
+    - root
+runtime:
+  safety: restricted

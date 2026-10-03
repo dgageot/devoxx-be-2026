@@ -1,0 +1,1230 @@
+{
+  "agent": "agents/15-arena.yaml",
+  "agent_name": "root",
+  "proposal_only": true,
+  "prohibited_tools": [
+    "join_local_arena",
+    "submit_tournament_team",
+    "create_tournament",
+    "spar_team",
+    "run_background_agent",
+    "wait_background_agents",
+    "transfer_task"
+  ],
+  "captured_at": "2026-10-05T13:19:51.547120+00:00",
+  "concurrency": 4,
+  "input_sha256": {
+    "agents/15-arena.yaml": "0bbe5880a67b668b485ae18f46bf58bcae973201e05a65852117669e2d34f662",
+    "scripts/check_team_reliability.py": "501e3497e688921a2125b514d720ce08f1e36e92de36c1f81dfd091cdbb3f732",
+    "agents/team-building.md": "248c8108fd15e8cfd07ea0233a9d0f77f6bd0df4075da8e4db6a4c47b8065f31",
+    "fixtures/arena-catalog.json": "6ae4f2649d63cd0b2c49c02bf4bbffc66fa2d007b09adfe8e26714e2ff736eb4",
+    "fixtures/arena-challenges.json": "56cf2c67dd75fdb0e9a7616fe4d1ddd4c05c1a33459941a356ebefe39edf7ec0"
+  },
+  "overlay_sha256": "811fff1bf6244c0b77b3a8a033833e9694ba299de1c6facbb2166d19a585041d",
+  "validity_scope": "fixture-legal team and accurate total; live lookup evidence not audited",
+  "runs": 100,
+  "valid": 100,
+  "duration_seconds": 312.816,
+  "results": [
+    {
+      "seed": 1,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "horsea",
+        "pikachu"
+      ],
+      "stat_total": 929,
+      "duration_seconds": 15.652
+    },
+    {
+      "seed": 2,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 13.197
+    },
+    {
+      "seed": 3,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 14.111
+    },
+    {
+      "seed": 4,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 12.984
+    },
+    {
+      "seed": 5,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "growlithe",
+        "squirtle",
+        "horsea"
+      ],
+      "stat_total": 959,
+      "duration_seconds": 16.687
+    },
+    {
+      "seed": 6,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "oddish",
+        "pidgey",
+        "charmander"
+      ],
+      "stat_total": 880,
+      "duration_seconds": 15.552
+    },
+    {
+      "seed": 7,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 947,
+      "duration_seconds": 12.142
+    },
+    {
+      "seed": 8,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 15.898
+    },
+    {
+      "seed": 9,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "poliwag",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 927,
+      "duration_seconds": 11.012
+    },
+    {
+      "seed": 10,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 14.809
+    },
+    {
+      "seed": 11,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.592
+    },
+    {
+      "seed": 12,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 13.275
+    },
+    {
+      "seed": 13,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "bulbasaur",
+        "squirtle"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.766
+    },
+    {
+      "seed": 14,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bulbasaur",
+        "charmander",
+        "horsea"
+      ],
+      "stat_total": 922,
+      "duration_seconds": 10.885
+    },
+    {
+      "seed": 15,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "squirtle",
+        "bulbasaur"
+      ],
+      "stat_total": 952,
+      "duration_seconds": 11.743
+    },
+    {
+      "seed": 16,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.98
+    },
+    {
+      "seed": 17,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.056
+    },
+    {
+      "seed": 18,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 14.33
+    },
+    {
+      "seed": 19,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 9.223
+    },
+    {
+      "seed": 20,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 14.496
+    },
+    {
+      "seed": 21,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "bulbasaur",
+        "squirtle"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.92
+    },
+    {
+      "seed": 22,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bulbasaur",
+        "charmander",
+        "squirtle"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 16.262
+    },
+    {
+      "seed": 23,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 947,
+      "duration_seconds": 11.374
+    },
+    {
+      "seed": 24,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "horsea",
+        "squirtle",
+        "bulbasaur"
+      ],
+      "stat_total": 927,
+      "duration_seconds": 10.515
+    },
+    {
+      "seed": 25,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.195
+    },
+    {
+      "seed": 26,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "poliwag",
+        "meowth"
+      ],
+      "stat_total": 904,
+      "duration_seconds": 14.527
+    },
+    {
+      "seed": 27,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.216
+    },
+    {
+      "seed": 28,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.037
+    },
+    {
+      "seed": 29,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "bulbasaur",
+        "squirtle"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 8.814
+    },
+    {
+      "seed": 30,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bulbasaur",
+        "charmander",
+        "horsea"
+      ],
+      "stat_total": 922,
+      "duration_seconds": 8.181
+    },
+    {
+      "seed": 31,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "magnemite",
+        "charmander"
+      ],
+      "stat_total": 954,
+      "duration_seconds": 12.392
+    },
+    {
+      "seed": 32,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.868
+    },
+    {
+      "seed": 33,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.409
+    },
+    {
+      "seed": 34,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.898
+    },
+    {
+      "seed": 35,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 8.689
+    },
+    {
+      "seed": 36,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.815
+    },
+    {
+      "seed": 37,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "bulbasaur",
+        "squirtle"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.475
+    },
+    {
+      "seed": 38,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bulbasaur",
+        "charmander",
+        "oddish"
+      ],
+      "stat_total": 947,
+      "duration_seconds": 10.499
+    },
+    {
+      "seed": 39,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 947,
+      "duration_seconds": 14.486
+    },
+    {
+      "seed": 40,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.558
+    },
+    {
+      "seed": 41,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 16.151
+    },
+    {
+      "seed": 42,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.447
+    },
+    {
+      "seed": 43,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.487
+    },
+    {
+      "seed": 44,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.897
+    },
+    {
+      "seed": 45,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "bulbasaur",
+        "squirtle"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 16.289
+    },
+    {
+      "seed": 46,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "paras",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 912,
+      "duration_seconds": 11.288
+    },
+    {
+      "seed": 47,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "charmander",
+        "bulbasaur"
+      ],
+      "stat_total": 947,
+      "duration_seconds": 11.443
+    },
+    {
+      "seed": 48,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.348
+    },
+    {
+      "seed": 49,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.157
+    },
+    {
+      "seed": 50,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 14.657
+    },
+    {
+      "seed": 51,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "horsea"
+      ],
+      "stat_total": 927,
+      "duration_seconds": 12.668
+    },
+    {
+      "seed": 52,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "horsea",
+        "squirtle",
+        "bulbasaur"
+      ],
+      "stat_total": 927,
+      "duration_seconds": 11.362
+    },
+    {
+      "seed": 53,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "bulbasaur",
+        "squirtle"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.651
+    },
+    {
+      "seed": 54,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bulbasaur",
+        "oddish",
+        "paras"
+      ],
+      "stat_total": 923,
+      "duration_seconds": 13.101
+    },
+    {
+      "seed": 55,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 947,
+      "duration_seconds": 19.594
+    },
+    {
+      "seed": 56,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 13.199
+    },
+    {
+      "seed": 57,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 18.165
+    },
+    {
+      "seed": 58,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "horsea",
+        "charmander"
+      ],
+      "stat_total": 918,
+      "duration_seconds": 10.679
+    },
+    {
+      "seed": 59,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 8.649
+    },
+    {
+      "seed": 60,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.705
+    },
+    {
+      "seed": 61,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "squirtle",
+        "bulbasaur"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 16.417
+    },
+    {
+      "seed": 62,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bulbasaur",
+        "charmander",
+        "horsea"
+      ],
+      "stat_total": 922,
+      "duration_seconds": 17.303
+    },
+    {
+      "seed": 63,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 947,
+      "duration_seconds": 11.692
+    },
+    {
+      "seed": 64,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.879
+    },
+    {
+      "seed": 65,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.09
+    },
+    {
+      "seed": 66,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 12.724
+    },
+    {
+      "seed": 67,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.479
+    },
+    {
+      "seed": 68,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 13.342
+    },
+    {
+      "seed": 69,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "bulbasaur",
+        "squirtle"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.975
+    },
+    {
+      "seed": 70,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bulbasaur",
+        "charmander",
+        "horsea"
+      ],
+      "stat_total": 922,
+      "duration_seconds": 13.286
+    },
+    {
+      "seed": 71,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "voltorb",
+        "geodude",
+        "bulbasaur"
+      ],
+      "stat_total": 948,
+      "duration_seconds": 17.296
+    },
+    {
+      "seed": 72,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.412
+    },
+    {
+      "seed": 73,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.319
+    },
+    {
+      "seed": 74,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.073
+    },
+    {
+      "seed": 75,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.872
+    },
+    {
+      "seed": 76,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.884
+    },
+    {
+      "seed": 77,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "bulbasaur",
+        "squirtle"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.236
+    },
+    {
+      "seed": 78,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bulbasaur",
+        "exeggcute",
+        "charmander"
+      ],
+      "stat_total": 952,
+      "duration_seconds": 13.534
+    },
+    {
+      "seed": 79,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "squirtle",
+        "bulbasaur"
+      ],
+      "stat_total": 952,
+      "duration_seconds": 11.001
+    },
+    {
+      "seed": 80,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.504
+    },
+    {
+      "seed": 81,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.051
+    },
+    {
+      "seed": 82,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 13.165
+    },
+    {
+      "seed": 83,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.62
+    },
+    {
+      "seed": 84,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.176
+    },
+    {
+      "seed": 85,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "bulbasaur",
+        "growlithe"
+      ],
+      "stat_total": 977,
+      "duration_seconds": 15.938
+    },
+    {
+      "seed": 86,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bulbasaur",
+        "charmander",
+        "horsea"
+      ],
+      "stat_total": 922,
+      "duration_seconds": 10.992
+    },
+    {
+      "seed": 87,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "charmander",
+        "horsea"
+      ],
+      "stat_total": 924,
+      "duration_seconds": 11.329
+    },
+    {
+      "seed": 88,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "horsea",
+        "onix"
+      ],
+      "stat_total": 994,
+      "duration_seconds": 13.113
+    },
+    {
+      "seed": 89,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.553
+    },
+    {
+      "seed": 90,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 12.873
+    },
+    {
+      "seed": 91,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 18.473
+    },
+    {
+      "seed": 92,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 9.954
+    },
+    {
+      "seed": 93,
+      "challenge_id": "fire-budget",
+      "valid": true,
+      "team": [
+        "charmander",
+        "bulbasaur",
+        "squirtle"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.373
+    },
+    {
+      "seed": 94,
+      "challenge_id": "grass-budget",
+      "valid": true,
+      "team": [
+        "bulbasaur",
+        "charmander",
+        "horsea"
+      ],
+      "stat_total": 922,
+      "duration_seconds": 12.895
+    },
+    {
+      "seed": 95,
+      "challenge_id": "electric-budget",
+      "valid": true,
+      "team": [
+        "pikachu",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 947,
+      "duration_seconds": 12.257
+    },
+    {
+      "seed": 96,
+      "challenge_id": "water-open",
+      "valid": true,
+      "team": [
+        "wartortle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 1032,
+      "duration_seconds": 9.939
+    },
+    {
+      "seed": 97,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.849
+    },
+    {
+      "seed": 98,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 11.676
+    },
+    {
+      "seed": 99,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 14.249
+    },
+    {
+      "seed": 100,
+      "challenge_id": "water-budget",
+      "valid": true,
+      "team": [
+        "squirtle",
+        "bulbasaur",
+        "charmander"
+      ],
+      "stat_total": 941,
+      "duration_seconds": 10.085
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "over-budget",
+  "input_id": "over-budget",
+  "title": "Reject an over-budget request",
+  "messages": [
+    {
+      "message": {
+        "message": {
+          "role": "user",
+          "content": "For water-budget, check exactly onix, eevee and squirtle. Do not replace any member or raise the budget. If this team is illegal, explain why and do not spar."
+        }
+      }
+    }
+  ],
+  "evals": {
+    "setup": "sh /configs/eval-setup.sh",
+    "assertions": [
+      {
+        "name": "requested challenge",
+        "type": "regex",
+        "value": "\"challenge_id\"\\s*:\\s*\"water-budget\""
+      },
+      {
+        "name": "reported status",
+        "type": "regex",
+        "value": "\"status\"\\s*:\\s*\"ineligible\""
+      },
+      {
+        "name": "pokemon_retrieve called",
+        "type": "tool_called",
+        "value": "pokemon_retrieve"
+      }
+    ],
+    "relevance": [
+      "The agent retrieves all three requested species. It keeps onix, eevee and squirtle unchanged and reports their combined base-stat total as 1024, above the 1000 limit. It explains BUDGET-1, returns ineligible with empty sparring, and makes no spar_team call. It does not silently repair the team. Every requested distinct species must have successful, identity-matched pokemon_retrieve evidence, and reported totals must agree with all six retrieved base stats. Failed or missing evidence does not pass this rule-rejection case; it requires DATA-1 human review instead."
+    ]
+  }
+}

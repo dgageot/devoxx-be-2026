@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokemon Arena</title>
+  <style>
+    :root { color-scheme: dark; font: 14px/1.45 system-ui, sans-serif; background: #0c1220; color: #e8edf7; }
+    * { box-sizing: border-box; }
+    body { max-width: 1080px; margin: auto; padding: 24px 20px; }
+    header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .mark { width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(#ef7483 45%, #0c1220 45% 55%, #e8edf7 55%); position: relative; flex-shrink: 0; }
+    .mark::after { content: ''; position: absolute; inset: 11px; background: #e8edf7; border: 3px solid #0c1220; border-radius: 50%; }
+    h1 { margin: 0; font-size: 1.65rem; letter-spacing: -.04em; }
+    h2 { margin: 0; font-size: 1rem; font-weight: 650; }
+    p { margin: 0; }
+    .grid { display: grid; grid-template-columns: minmax(280px, .8fr) minmax(0, 1.4fr); gap: 16px; align-items: start; }
+    .sidebar { display: grid; gap: 16px; min-width: 0; }
+    .panel { background: #141e30; border: 1px solid #26344c; border-radius: 14px; padding: 16px; min-width: 0; }
+    .panel-title { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+    .count { color: #b9c8e5; background: #25334a; border-radius: 20px; padding: 2px 8px; font-size: .8rem; font-variant-numeric: tabular-nums; }
+    .muted { color: #9aabc7; font-size: .8rem; }
+    #connection:empty { display: none; }
+    #connection:not(:empty) { margin-bottom: 16px; padding: 10px 12px; border-radius: 8px; background: #34232b; color: #ffd0d6; }
+    #agents { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+    .entry { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 4px 8px; padding: 10px 12px; background: #1a273b; border-radius: 8px; }
+    .entry strong { overflow-wrap: anywhere; font-size: .9rem; }
+    .entry .muted { grid-column: 1; overflow-wrap: anywhere; }
+    .sealed { grid-column: 2; grid-row: 1 / 3; color: #cbb4fa; font-size: .75rem; border: 1px solid #665285; border-radius: 20px; padding: 2px 8px; }
+    .scroll { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: .82rem; font-variant-numeric: tabular-nums; }
+    th, td { padding: 9px 6px; text-align: right; border-bottom: 1px solid #26344c; white-space: nowrap; }
+    th { color: #9aabc7; font-weight: 500; font-size: .72rem; }
+    th:first-child, td:first-child { text-align: left; }
+    td:first-child { white-space: normal; overflow-wrap: anywhere; }
+    tbody tr:last-child td { border-bottom: 0; }
+    tbody tr:first-child td:nth-child(2) { color: #7de4bd; font-weight: 700; }
+    .panel-note { margin-top: 10px; }
+    #matches { display: grid; gap: 12px; }
+    .match { background: #1a273b; border: 1px solid #2b3b53; border-radius: 10px; padding: 12px; }
+    .match-heading { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px; margin-bottom: 12px; }
+    .match-heading h3 { margin: 0; color: #aabbd7; font-size: .75rem; font-weight: 500; overflow-wrap: anywhere; }
+    .result { color: #7de4bd; font-size: .75rem; font-weight: 650; }
+    .result.draw { color: #e8c880; }
+    .scoreboard { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 12px; align-items: start; }
+    .side { min-width: 0; }
+    .side:last-child { text-align: right; }
+    .agent-name { font-weight: 600; overflow-wrap: anywhere; }
+    .score { font-size: 1.8rem; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -.04em; line-height: 1.3; }
+    .versus { color: #647899; font-size: .75rem; align-self: center; }
+    .species { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px; }
+    .side:last-child .species { justify-content: flex-end; }
+    .species span { padding: 2px 6px; background: #25364f; border-radius: 5px; color: #c9d5e8; font-size: .72rem; }
+    .match details { margin-top: 12px; border-top: 1px solid #2b3b53; padding-top: 8px; color: #9aabc7; font-size: .75rem; }
+    summary { cursor: pointer; }
+    summary:focus-visible { outline: 2px solid #7de4bd; outline-offset: 3px; }
+    .match details p { margin-top: 8px; overflow-wrap: anywhere; }
+    #agents:empty::before { content: 'Waiting for entries…'; }
+    #matches:empty::before { content: 'Waiting for two entries. Matches start automatically.'; }
+    #leaderboard:empty::before { content: 'No standings yet.'; }
+    #agents:empty::before, #matches:empty::before, #leaderboard:empty::before { display: block; padding: 8px 0; color: #9aabc7; font-size: .85rem; }
+    .tournaments { margin-top: 16px; }
+    .tournaments:empty { display: none; }
+    body:has(#arena:target) .tournaments { display: none; }
+    body:has(#tournaments:target) { padding: 12px; }
+    body:has(#tournaments:target) header { margin-bottom: 10px; }
+    body:has(#tournaments:target) h1 { font-size: 1.2rem; }
+    body:has(#tournaments:target) .mark { width: 24px; height: 24px; }
+    body:has(#tournaments:target) .mark::after { inset: 7px; border-width: 2px; }
+    body:has(#tournaments:target) .grid { display: none; }
+    #tournaments:target { margin-top: 0; }
+    .tournament { padding: 10px; border-radius: 10px; }
+    .tournament + .tournament { margin-top: 10px; }
+    .champion { color: #7de4bd; font-size: .8rem; font-weight: 650; overflow-wrap: anywhere; }
+    .bracket-scroll { overflow-x: auto; padding: 2px 0; }
+    .bracket { display: grid; grid-template-columns: repeat(5, minmax(130px, 1fr)); gap: 16px; min-width: 714px; }
+    .round { display: grid; grid-template-rows: 22px 1fr; min-width: 0; }
+    .round h3 { margin: 0; color: #9aabc7; font-size: .78rem; font-weight: 500; }
+    .round-matches { display: grid; height: 576px; min-width: 0; }
+    .bracket-slot { display: grid; align-items: center; position: relative; min-height: 36px; min-width: 0; }
+    .round:not(:last-child) .bracket-slot::after { content: ''; position: absolute; right: -9px; width: 9px; border-right: 1px solid #415572; }
+    .round:not(:last-child) .bracket-slot:nth-child(odd)::after { top: 50%; bottom: 0; border-top: 1px solid #415572; }
+    .round:not(:last-child) .bracket-slot:nth-child(even)::after { top: 0; bottom: 50%; border-bottom: 1px solid #415572; }
+    .round:not(:first-child) .bracket-slot::before { content: ''; position: absolute; left: -7px; width: 7px; top: 50%; border-top: 1px solid #415572; }
+    .bracket-match { min-width: 0; padding: 2px; border: 1px solid #2b3b53; background: #1a273b; border-radius: 5px; }
+    .bracket-player { display: flex; justify-content: space-between; gap: 4px; padding: 0 4px; font-size: .78rem; line-height: 14px; }
+    .bracket-player span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .bracket-player span:last-child { font-variant-numeric: tabular-nums; flex-shrink: 0; }
+    .bracket-player.winner { color: #7de4bd; background: #203b38; border-radius: 3px; font-weight: 650; }
+    .bracket-player.pending { color: #798ca8; }
+    .tie-note { margin-left: 4px; padding: 0 3px; border-radius: 3px; background: #453d29; color: #e8c880; font-size: .65rem; font-weight: 500; }
+    .tournament .panel-note { margin-top: 6px; font-size: .72rem; }
+    @media (max-width: 680px) { body { padding: 18px 12px; } .grid { grid-template-columns: 1fr; } header { margin-bottom: 16px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="mark" aria-hidden="true"></span>
+    <h1>Pokemon Arena</h1>
+  </header>
+  <main>
+    <p id="connection" role="status" aria-live="polite">Connecting to the local arena…</p>
+    <div id="arena" class="grid">
+      <div class="sidebar">
+        <section class="panel">
+          <div class="panel-title"><h2>Entries</h2><span id="entry-count" class="count" aria-label="Entry count">0</span></div>
+          <ul id="agents"></ul>
+        </section>
+        <section class="panel">
+          <div class="panel-title"><h2>Standings</h2></div>
+          <div class="scroll"><table aria-label="Arena standings">
+            <thead><tr><th scope="col">Agent</th><th scope="col">Pts</th><th scope="col">W</th><th scope="col">L</th><th scope="col">D</th><th scope="col">Played</th></tr></thead>
+            <tbody id="leaderboard"></tbody>
+          </table></div>
+          <p class="muted panel-note">Win 3 pts · Draw 1 pt</p>
+        </section>
+      </div>
+      <section class="panel">
+        <div class="panel-title"><h2>Matches</h2><span id="match-count" class="count" aria-label="Match count">0</span></div>
+        <div id="matches"></div>
+      </section>
+    </div>
+    <div id="tournaments" class="tournaments"></div>
+  </main>
+  <script>
+    'use strict';
+    const el = id => document.getElementById(id);
+    let refreshQueue = Promise.resolve();
+
+    async function api(path) {
+      const response = await fetch(path, {cache: 'no-store'});
+      const value = await response.json();
+      if (!response.ok) {
+        throw new Error(value.error || 'Local check failed');
+      }
+      return value;
+    }
+
+    function node(tag, text) {
+      const element = document.createElement(tag);
+      element.textContent = text;
+      return element;
+    }
+
+    function refresh() {
+      refreshQueue = refreshQueue.then(readPublicState);
+      return refreshQueue;
+    }
+
+    function renderTournament(tournament) {
+      const panel = node('section', '');
+      panel.className = 'panel tournament';
+      panel.dataset.tournamentId = tournament.tournament_id;
+      panel.setAttribute('aria-label', tournament.tournament_id);
+      if (tournament.review) panel.append(node('p', tournament.review));
+      const scroll = node('div', '');
+      scroll.className = 'bracket-scroll';
+      const bracket = node('div', '');
+      bracket.className = 'bracket';
+      const joined = new Set(tournament.players.filter(player => player.joined).map(player => player.agent_id));
+      for (const round of tournament.rounds) {
+        const column = node('section', '');
+        column.className = 'round';
+        column.append(node('h3', round.name));
+        const slots = node('div', '');
+        slots.className = 'round-matches';
+        slots.style.gridTemplateRows = `repeat(${round.matches.length}, 1fr)`;
+        for (const match of round.matches) {
+          const slot = node('div', '');
+          slot.className = 'bracket-slot';
+          const pair = node('div', '');
+          pair.className = 'bracket-match';
+          for (const side of ['left', 'right']) {
+            const id = match[side + '_agent_id'];
+            const player = node('div', '');
+            player.className = 'bracket-player' + (id && id === match.winner ? ' winner' : !joined.has(id) ? ' pending' : '');
+            const name = node('span', id || 'TBD');
+            name.title = id || 'Winner of previous match';
+            if (match.tiebreak && id === match.winner) {
+              const tie = node('small', 'D');
+              tie.className = 'tie-note';
+              tie.title = 'Draw · lower seed advances';
+              tie.setAttribute('aria-label', tie.title);
+              name.append(tie);
+            }
+            player.append(name,
+                          node('span', match.status === 'judged' ? match[side + '_score'] : joined.has(id) ? 'Sealed' : '—'));
+            pair.append(player);
+          }
+          slot.append(pair);
+          slots.append(slot);
+        }
+        column.append(slots);
+        bracket.append(column);
+      }
+      scroll.append(bracket);
+      panel.append(scroll);
+      const note = node('p', '');
+      note.className = 'muted panel-note';
+      if (tournament.champion) {
+        const champion = node('span', `Champion · ${tournament.champion} · `);
+        champion.className = 'champion';
+        note.append(champion);
+      }
+      note.append(node('span', tournament.tiebreak));
+      panel.append(note);
+      return panel;
+    }
+
+    async function readPublicState() {
+      try {
+        const state = await api('/state');
+        const bracketPositions = new Map([...el('tournaments').querySelectorAll('.tournament')]
+          .map(panel => [panel.dataset.tournamentId, panel.querySelector('.bracket-scroll').scrollLeft]));
+        el('tournaments').replaceChildren(...(state.tournaments || []).map(renderTournament));
+        for (const panel of el('tournaments').querySelectorAll('.tournament')) {
+          panel.querySelector('.bracket-scroll').scrollLeft = bracketPositions.get(panel.dataset.tournamentId) || 0;
+        }
+        el('entry-count').textContent = state.agents.length;
+        el('match-count').textContent = state.matches.length;
+        el('agents').replaceChildren(...state.agents.map(agent => {
+          const entry = node('li', '');
+          entry.className = 'entry';
+          entry.append(node('strong', agent.agent_id));
+          const challenge = node('span', agent.challenge_id);
+          challenge.className = 'muted';
+          const sealed = node('span', 'Sealed');
+          sealed.className = 'sealed';
+          entry.append(challenge, sealed);
+          return entry;
+        }));
+        const expandedMatches = new Set([...el('matches').querySelectorAll('details[open]')]
+          .map(details => details.dataset.matchId));
+        el('matches').replaceChildren(...state.matches.map(match => {
+          const card = document.createElement('article');
+          card.className = 'match';
+          const heading = node('div', '');
+          heading.className = 'match-heading';
+          heading.append(node('h3', match.challenge_id));
+          const winner = match.outcome === 'win' ? match.left_agent_id : match.right_agent_id;
+          const result = node('span', match.outcome === 'draw' ? 'Draw' : `${winner} wins`);
+          result.className = match.outcome === 'draw' ? 'result draw' : 'result';
+          heading.append(result);
+          const scoreboard = node('div', '');
+          scoreboard.className = 'scoreboard';
+          for (const side of ['left', 'right']) {
+            if (side === 'right') {
+              const versus = node('span', 'VS');
+              versus.className = 'versus';
+              scoreboard.append(versus);
+            }
+            const team = node('div', '');
+            team.className = 'side';
+            const name = node('p', match[side + '_agent_id']);
+            name.className = 'agent-name';
+            const score = node('p', match[side + '_score']);
+            score.className = 'score';
+            const species = node('div', '');
+            species.className = 'species';
+            species.append(...match[side + '_team'].map(name => node('span', name)));
+            team.append(name, score, species);
+            scoreboard.append(team);
+          }
+          card.append(heading, scoreboard);
+          const details = document.createElement('details');
+          details.dataset.matchId = match.match_id;
+          details.open = expandedMatches.has(match.match_id);
+          details.append(node('summary', 'Challenge and judging details'));
+          details.append(node('p', `Challenge: budget ${match.challenge.budget_limit}, required ${match.challenge.required_type}. ${match.rule_ids.join(', ')}`));
+          details.append(node('p', match.explanation));
+          card.append(details);
+          return card;
+        }));
+        const board = await api('/leaderboard');
+        el('leaderboard').replaceChildren(...board.leaderboard.map(row => {
+          const tr = document.createElement('tr');
+          for (const key of ['agent_id', 'points', 'wins', 'losses', 'draws', 'matches']) tr.append(node('td', row[key]));
+          return tr;
+        }));
+        el('connection').textContent = '';
+      } catch (error) {
+        el('connection').textContent = `Local check unavailable — human review required. ${error.message}`;
+      }
+    }
+
+    async function start() {
+      await refresh();
+      // Poll only after the previous refresh finishes.
+      async function poll() {
+        await refresh();
+        setTimeout(poll, 2000);
+      }
+      setTimeout(poll, 2000);
+    }
+    start();
+  </script>
+</body>
+</html>

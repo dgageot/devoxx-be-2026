@@ -1,0 +1,55 @@
+services:
+  pokemon-arena:
+    image: docker/docker-agent
+    command: [--config-dir, /tmp/config, --cache-dir, /tmp/cache, --data-dir, /data, serve, chat, agents/13-service.yaml, --flavor, container, --listen, '0.0.0.0:8080', --insecure-no-auth]
+    environment:
+      OPENAI_API_KEY: '${OPENAI_API_KEY:-}'
+      TELEMETRY_ENABLED: 'false'
+      POKEAPI_URL: http://pokeapi:8000/openapi.yml
+    ports: ['127.0.0.1:8080:8080']
+    depends_on:
+      pokeapi:
+        condition: service_healthy
+      arena:
+        condition: service_healthy
+    volumes:
+      - ./agents:/work/agents:ro
+      - ./AGENTS.md:/work/AGENTS.md:ro
+      - sessions:/data
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+  pokeapi:
+    image: devoxx-pokeapi:local
+    build:
+      context: .
+      dockerfile: pokeapi/Dockerfile
+    ports: ['127.0.0.1:8000:8000']
+    healthcheck:
+      test: [CMD, python, -c, "import json; from urllib.request import urlopen; assert json.load(urlopen('http://127.0.0.1:8000/api/v2/pokemon/pikachu/', timeout=5))['id'] == 25; assert urlopen('http://127.0.0.1:8000/openapi.yml', timeout=2).status == 200"]
+      interval: 5s
+      timeout: 10s
+      retries: 12
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+  arena:
+    image: python:3.12-alpine
+    command: [python3, -B, scripts/arena_api.py, --container]
+    working_dir: /work
+    volumes:
+      - ./scripts:/work/scripts:ro
+      - ./fixtures:/work/fixtures:ro
+      - ./arena:/work/arena:ro
+    healthcheck:
+      test: [CMD, python3, -c, "import json; from urllib.request import urlopen; assert json.load(urlopen('http://127.0.0.1:8090/health', timeout=2))['status'] == 'ok'"]
+      interval: 2s
+      timeout: 3s
+      retries: 5
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+volumes:
+  sessions:

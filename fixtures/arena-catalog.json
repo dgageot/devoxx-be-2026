@@ -1,0 +1,2938 @@
+{
+  "abra": {
+    "name": "abra",
+    "species_id": 63,
+    "is_default": true,
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 25,
+      "attack": 20,
+      "defense": 15,
+      "special_attack": 105,
+      "special_defense": 55,
+      "speed": 90
+    },
+    "base_stat_total": 310,
+    "source": "https://pokeapi.co/api/v2/pokemon/abra/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "aerodactyl": {
+    "name": "aerodactyl",
+    "species_id": 142,
+    "is_default": true,
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 65,
+      "special_attack": 60,
+      "special_defense": 75,
+      "speed": 130
+    },
+    "base_stat_total": 515,
+    "source": "https://pokeapi.co/api/v2/pokemon/aerodactyl/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "alakazam": {
+    "name": "alakazam",
+    "species_id": 65,
+    "is_default": true,
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 50,
+      "defense": 45,
+      "special_attack": 135,
+      "special_defense": 95,
+      "speed": 120
+    },
+    "base_stat_total": 500,
+    "source": "https://pokeapi.co/api/v2/pokemon/alakazam/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "arbok": {
+    "name": "arbok",
+    "species_id": 24,
+    "is_default": true,
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 95,
+      "defense": 69,
+      "special_attack": 65,
+      "special_defense": 79,
+      "speed": 80
+    },
+    "base_stat_total": 448,
+    "source": "https://pokeapi.co/api/v2/pokemon/arbok/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "arcanine": {
+    "name": "arcanine",
+    "species_id": 59,
+    "is_default": true,
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 110,
+      "defense": 80,
+      "special_attack": 100,
+      "special_defense": 80,
+      "speed": 95
+    },
+    "base_stat_total": 555,
+    "source": "https://pokeapi.co/api/v2/pokemon/arcanine/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "articuno": {
+    "name": "articuno",
+    "species_id": 144,
+    "is_default": true,
+    "types": [
+      "ice",
+      "flying"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 85,
+      "defense": 100,
+      "special_attack": 95,
+      "special_defense": 125,
+      "speed": 85
+    },
+    "base_stat_total": 580,
+    "source": "https://pokeapi.co/api/v2/pokemon/articuno/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "beedrill": {
+    "name": "beedrill",
+    "species_id": 15,
+    "is_default": true,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 40,
+      "special_attack": 45,
+      "special_defense": 80,
+      "speed": 75
+    },
+    "base_stat_total": 395,
+    "source": "https://pokeapi.co/api/v2/pokemon/beedrill/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "bellsprout": {
+    "name": "bellsprout",
+    "species_id": 69,
+    "is_default": true,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 35,
+      "special_attack": 70,
+      "special_defense": 30,
+      "speed": 40
+    },
+    "base_stat_total": 300,
+    "source": "https://pokeapi.co/api/v2/pokemon/bellsprout/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "blastoise": {
+    "name": "blastoise",
+    "species_id": 9,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 79,
+      "attack": 83,
+      "defense": 100,
+      "special_attack": 85,
+      "special_defense": 105,
+      "speed": 78
+    },
+    "base_stat_total": 530,
+    "source": "https://pokeapi.co/api/v2/pokemon/blastoise/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "bulbasaur": {
+    "name": "bulbasaur",
+    "species_id": 1,
+    "is_default": true,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 45,
+      "attack": 49,
+      "defense": 49,
+      "special_attack": 65,
+      "special_defense": 65,
+      "speed": 45
+    },
+    "base_stat_total": 318,
+    "source": "https://pokeapi.co/api/v2/pokemon/bulbasaur/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "butterfree": {
+    "name": "butterfree",
+    "species_id": 12,
+    "is_default": true,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 45,
+      "defense": 50,
+      "special_attack": 90,
+      "special_defense": 80,
+      "speed": 70
+    },
+    "base_stat_total": 395,
+    "source": "https://pokeapi.co/api/v2/pokemon/butterfree/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "caterpie": {
+    "name": "caterpie",
+    "species_id": 10,
+    "is_default": true,
+    "types": [
+      "bug"
+    ],
+    "stats": {
+      "hp": 45,
+      "attack": 30,
+      "defense": 35,
+      "special_attack": 20,
+      "special_defense": 20,
+      "speed": 45
+    },
+    "base_stat_total": 195,
+    "source": "https://pokeapi.co/api/v2/pokemon/caterpie/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "chansey": {
+    "name": "chansey",
+    "species_id": 113,
+    "is_default": true,
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 250,
+      "attack": 5,
+      "defense": 5,
+      "special_attack": 35,
+      "special_defense": 105,
+      "speed": 50
+    },
+    "base_stat_total": 450,
+    "source": "https://pokeapi.co/api/v2/pokemon/chansey/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "charizard": {
+    "name": "charizard",
+    "species_id": 6,
+    "is_default": true,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "stats": {
+      "hp": 78,
+      "attack": 84,
+      "defense": 78,
+      "special_attack": 109,
+      "special_defense": 85,
+      "speed": 100
+    },
+    "base_stat_total": 534,
+    "source": "https://pokeapi.co/api/v2/pokemon/charizard/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "charmander": {
+    "name": "charmander",
+    "species_id": 4,
+    "is_default": true,
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 39,
+      "attack": 52,
+      "defense": 43,
+      "special_attack": 60,
+      "special_defense": 50,
+      "speed": 65
+    },
+    "base_stat_total": 309,
+    "source": "https://pokeapi.co/api/v2/pokemon/charmander/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "charmeleon": {
+    "name": "charmeleon",
+    "species_id": 5,
+    "is_default": true,
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 58,
+      "attack": 64,
+      "defense": 58,
+      "special_attack": 80,
+      "special_defense": 65,
+      "speed": 80
+    },
+    "base_stat_total": 405,
+    "source": "https://pokeapi.co/api/v2/pokemon/charmeleon/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "clefable": {
+    "name": "clefable",
+    "species_id": 36,
+    "is_default": true,
+    "types": [
+      "fairy"
+    ],
+    "stats": {
+      "hp": 95,
+      "attack": 70,
+      "defense": 73,
+      "special_attack": 95,
+      "special_defense": 90,
+      "speed": 60
+    },
+    "base_stat_total": 483,
+    "source": "https://pokeapi.co/api/v2/pokemon/clefable/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "clefairy": {
+    "name": "clefairy",
+    "species_id": 35,
+    "is_default": true,
+    "types": [
+      "fairy"
+    ],
+    "stats": {
+      "hp": 70,
+      "attack": 45,
+      "defense": 48,
+      "special_attack": 60,
+      "special_defense": 65,
+      "speed": 35
+    },
+    "base_stat_total": 323,
+    "source": "https://pokeapi.co/api/v2/pokemon/clefairy/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "cloyster": {
+    "name": "cloyster",
+    "species_id": 91,
+    "is_default": true,
+    "types": [
+      "water",
+      "ice"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 95,
+      "defense": 180,
+      "special_attack": 85,
+      "special_defense": 45,
+      "speed": 70
+    },
+    "base_stat_total": 525,
+    "source": "https://pokeapi.co/api/v2/pokemon/cloyster/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "cubone": {
+    "name": "cubone",
+    "species_id": 104,
+    "is_default": true,
+    "types": [
+      "ground"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 50,
+      "defense": 95,
+      "special_attack": 40,
+      "special_defense": 50,
+      "speed": 35
+    },
+    "base_stat_total": 320,
+    "source": "https://pokeapi.co/api/v2/pokemon/cubone/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "dewgong": {
+    "name": "dewgong",
+    "species_id": 87,
+    "is_default": true,
+    "types": [
+      "water",
+      "ice"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 70,
+      "defense": 80,
+      "special_attack": 70,
+      "special_defense": 95,
+      "speed": 70
+    },
+    "base_stat_total": 475,
+    "source": "https://pokeapi.co/api/v2/pokemon/dewgong/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "diglett": {
+    "name": "diglett",
+    "species_id": 50,
+    "is_default": true,
+    "types": [
+      "ground"
+    ],
+    "stats": {
+      "hp": 10,
+      "attack": 55,
+      "defense": 25,
+      "special_attack": 35,
+      "special_defense": 45,
+      "speed": 95
+    },
+    "base_stat_total": 265,
+    "source": "https://pokeapi.co/api/v2/pokemon/diglett/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "ditto": {
+    "name": "ditto",
+    "species_id": 132,
+    "is_default": true,
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 48,
+      "attack": 48,
+      "defense": 48,
+      "special_attack": 48,
+      "special_defense": 48,
+      "speed": 48
+    },
+    "base_stat_total": 288,
+    "source": "https://pokeapi.co/api/v2/pokemon/ditto/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "dodrio": {
+    "name": "dodrio",
+    "species_id": 85,
+    "is_default": true,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 110,
+      "defense": 70,
+      "special_attack": 60,
+      "special_defense": 60,
+      "speed": 110
+    },
+    "base_stat_total": 470,
+    "source": "https://pokeapi.co/api/v2/pokemon/dodrio/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "doduo": {
+    "name": "doduo",
+    "species_id": 84,
+    "is_default": true,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 85,
+      "defense": 45,
+      "special_attack": 35,
+      "special_defense": 35,
+      "speed": 75
+    },
+    "base_stat_total": 310,
+    "source": "https://pokeapi.co/api/v2/pokemon/doduo/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "dragonair": {
+    "name": "dragonair",
+    "species_id": 148,
+    "is_default": true,
+    "types": [
+      "dragon"
+    ],
+    "stats": {
+      "hp": 61,
+      "attack": 84,
+      "defense": 65,
+      "special_attack": 70,
+      "special_defense": 70,
+      "speed": 70
+    },
+    "base_stat_total": 420,
+    "source": "https://pokeapi.co/api/v2/pokemon/dragonair/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "dragonite": {
+    "name": "dragonite",
+    "species_id": 149,
+    "is_default": true,
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "stats": {
+      "hp": 91,
+      "attack": 134,
+      "defense": 95,
+      "special_attack": 100,
+      "special_defense": 100,
+      "speed": 80
+    },
+    "base_stat_total": 600,
+    "source": "https://pokeapi.co/api/v2/pokemon/dragonite/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "dratini": {
+    "name": "dratini",
+    "species_id": 147,
+    "is_default": true,
+    "types": [
+      "dragon"
+    ],
+    "stats": {
+      "hp": 41,
+      "attack": 64,
+      "defense": 45,
+      "special_attack": 50,
+      "special_defense": 50,
+      "speed": 50
+    },
+    "base_stat_total": 300,
+    "source": "https://pokeapi.co/api/v2/pokemon/dratini/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "drowzee": {
+    "name": "drowzee",
+    "species_id": 96,
+    "is_default": true,
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 48,
+      "defense": 45,
+      "special_attack": 43,
+      "special_defense": 90,
+      "speed": 42
+    },
+    "base_stat_total": 328,
+    "source": "https://pokeapi.co/api/v2/pokemon/drowzee/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "dugtrio": {
+    "name": "dugtrio",
+    "species_id": 51,
+    "is_default": true,
+    "types": [
+      "ground"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 100,
+      "defense": 50,
+      "special_attack": 50,
+      "special_defense": 70,
+      "speed": 120
+    },
+    "base_stat_total": 425,
+    "source": "https://pokeapi.co/api/v2/pokemon/dugtrio/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "eevee": {
+    "name": "eevee",
+    "species_id": 133,
+    "is_default": true,
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 55,
+      "defense": 50,
+      "special_attack": 45,
+      "special_defense": 65,
+      "speed": 55
+    },
+    "base_stat_total": 325,
+    "source": "https://pokeapi.co/api/v2/pokemon/eevee/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "ekans": {
+    "name": "ekans",
+    "species_id": 23,
+    "is_default": true,
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 60,
+      "defense": 44,
+      "special_attack": 40,
+      "special_defense": 54,
+      "speed": 55
+    },
+    "base_stat_total": 288,
+    "source": "https://pokeapi.co/api/v2/pokemon/ekans/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "electabuzz": {
+    "name": "electabuzz",
+    "species_id": 125,
+    "is_default": true,
+    "types": [
+      "electric"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 83,
+      "defense": 57,
+      "special_attack": 95,
+      "special_defense": 85,
+      "speed": 105
+    },
+    "base_stat_total": 490,
+    "source": "https://pokeapi.co/api/v2/pokemon/electabuzz/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "electrode": {
+    "name": "electrode",
+    "species_id": 101,
+    "is_default": true,
+    "types": [
+      "electric"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 50,
+      "defense": 70,
+      "special_attack": 80,
+      "special_defense": 80,
+      "speed": 150
+    },
+    "base_stat_total": 490,
+    "source": "https://pokeapi.co/api/v2/pokemon/electrode/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "exeggcute": {
+    "name": "exeggcute",
+    "species_id": 102,
+    "is_default": true,
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 40,
+      "defense": 80,
+      "special_attack": 60,
+      "special_defense": 45,
+      "speed": 40
+    },
+    "base_stat_total": 325,
+    "source": "https://pokeapi.co/api/v2/pokemon/exeggcute/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "exeggutor": {
+    "name": "exeggutor",
+    "species_id": 103,
+    "is_default": true,
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "stats": {
+      "hp": 95,
+      "attack": 95,
+      "defense": 85,
+      "special_attack": 125,
+      "special_defense": 75,
+      "speed": 55
+    },
+    "base_stat_total": 530,
+    "source": "https://pokeapi.co/api/v2/pokemon/exeggutor/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "farfetchd": {
+    "name": "farfetchd",
+    "species_id": 83,
+    "is_default": true,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 52,
+      "attack": 90,
+      "defense": 55,
+      "special_attack": 58,
+      "special_defense": 62,
+      "speed": 60
+    },
+    "base_stat_total": 377,
+    "source": "https://pokeapi.co/api/v2/pokemon/farfetchd/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "fearow": {
+    "name": "fearow",
+    "species_id": 22,
+    "is_default": true,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 65,
+      "special_attack": 61,
+      "special_defense": 61,
+      "speed": 100
+    },
+    "base_stat_total": 442,
+    "source": "https://pokeapi.co/api/v2/pokemon/fearow/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "flareon": {
+    "name": "flareon",
+    "species_id": 136,
+    "is_default": true,
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 130,
+      "defense": 60,
+      "special_attack": 95,
+      "special_defense": 110,
+      "speed": 65
+    },
+    "base_stat_total": 525,
+    "source": "https://pokeapi.co/api/v2/pokemon/flareon/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "gastly": {
+    "name": "gastly",
+    "species_id": 92,
+    "is_default": true,
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 35,
+      "defense": 30,
+      "special_attack": 100,
+      "special_defense": 35,
+      "speed": 80
+    },
+    "base_stat_total": 310,
+    "source": "https://pokeapi.co/api/v2/pokemon/gastly/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "gengar": {
+    "name": "gengar",
+    "species_id": 94,
+    "is_default": true,
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "special_attack": 130,
+      "special_defense": 75,
+      "speed": 110
+    },
+    "base_stat_total": 500,
+    "source": "https://pokeapi.co/api/v2/pokemon/gengar/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "geodude": {
+    "name": "geodude",
+    "species_id": 74,
+    "is_default": true,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 100,
+      "special_attack": 30,
+      "special_defense": 30,
+      "speed": 20
+    },
+    "base_stat_total": 300,
+    "source": "https://pokeapi.co/api/v2/pokemon/geodude/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "gloom": {
+    "name": "gloom",
+    "species_id": 44,
+    "is_default": true,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 70,
+      "special_attack": 85,
+      "special_defense": 75,
+      "speed": 40
+    },
+    "base_stat_total": 395,
+    "source": "https://pokeapi.co/api/v2/pokemon/gloom/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "golbat": {
+    "name": "golbat",
+    "species_id": 42,
+    "is_default": true,
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "stats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 70,
+      "special_attack": 65,
+      "special_defense": 75,
+      "speed": 90
+    },
+    "base_stat_total": 455,
+    "source": "https://pokeapi.co/api/v2/pokemon/golbat/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "goldeen": {
+    "name": "goldeen",
+    "species_id": 118,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 45,
+      "attack": 67,
+      "defense": 60,
+      "special_attack": 35,
+      "special_defense": 50,
+      "speed": 63
+    },
+    "base_stat_total": 320,
+    "source": "https://pokeapi.co/api/v2/pokemon/goldeen/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "golduck": {
+    "name": "golduck",
+    "species_id": 55,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 78,
+      "special_attack": 95,
+      "special_defense": 80,
+      "speed": 85
+    },
+    "base_stat_total": 500,
+    "source": "https://pokeapi.co/api/v2/pokemon/golduck/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "golem": {
+    "name": "golem",
+    "species_id": 76,
+    "is_default": true,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 120,
+      "defense": 130,
+      "special_attack": 55,
+      "special_defense": 65,
+      "speed": 45
+    },
+    "base_stat_total": 495,
+    "source": "https://pokeapi.co/api/v2/pokemon/golem/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "graveler": {
+    "name": "graveler",
+    "species_id": 75,
+    "is_default": true,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 95,
+      "defense": 115,
+      "special_attack": 45,
+      "special_defense": 45,
+      "speed": 35
+    },
+    "base_stat_total": 390,
+    "source": "https://pokeapi.co/api/v2/pokemon/graveler/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "grimer": {
+    "name": "grimer",
+    "species_id": 88,
+    "is_default": true,
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 80,
+      "defense": 50,
+      "special_attack": 40,
+      "special_defense": 50,
+      "speed": 25
+    },
+    "base_stat_total": 325,
+    "source": "https://pokeapi.co/api/v2/pokemon/grimer/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "growlithe": {
+    "name": "growlithe",
+    "species_id": 58,
+    "is_default": true,
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 70,
+      "defense": 45,
+      "special_attack": 70,
+      "special_defense": 50,
+      "speed": 60
+    },
+    "base_stat_total": 350,
+    "source": "https://pokeapi.co/api/v2/pokemon/growlithe/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "gyarados": {
+    "name": "gyarados",
+    "species_id": 130,
+    "is_default": true,
+    "types": [
+      "water",
+      "flying"
+    ],
+    "stats": {
+      "hp": 95,
+      "attack": 125,
+      "defense": 79,
+      "special_attack": 60,
+      "special_defense": 100,
+      "speed": 81
+    },
+    "base_stat_total": 540,
+    "source": "https://pokeapi.co/api/v2/pokemon/gyarados/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "haunter": {
+    "name": "haunter",
+    "species_id": 93,
+    "is_default": true,
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "stats": {
+      "hp": 45,
+      "attack": 50,
+      "defense": 45,
+      "special_attack": 115,
+      "special_defense": 55,
+      "speed": 95
+    },
+    "base_stat_total": 405,
+    "source": "https://pokeapi.co/api/v2/pokemon/haunter/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "hitmonchan": {
+    "name": "hitmonchan",
+    "species_id": 107,
+    "is_default": true,
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 105,
+      "defense": 79,
+      "special_attack": 35,
+      "special_defense": 110,
+      "speed": 76
+    },
+    "base_stat_total": 455,
+    "source": "https://pokeapi.co/api/v2/pokemon/hitmonchan/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "hitmonlee": {
+    "name": "hitmonlee",
+    "species_id": 106,
+    "is_default": true,
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 120,
+      "defense": 53,
+      "special_attack": 35,
+      "special_defense": 110,
+      "speed": 87
+    },
+    "base_stat_total": 455,
+    "source": "https://pokeapi.co/api/v2/pokemon/hitmonlee/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "horsea": {
+    "name": "horsea",
+    "species_id": 116,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 40,
+      "defense": 70,
+      "special_attack": 70,
+      "special_defense": 25,
+      "speed": 60
+    },
+    "base_stat_total": 295,
+    "source": "https://pokeapi.co/api/v2/pokemon/horsea/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "hypno": {
+    "name": "hypno",
+    "species_id": 97,
+    "is_default": true,
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 85,
+      "attack": 73,
+      "defense": 70,
+      "special_attack": 73,
+      "special_defense": 115,
+      "speed": 67
+    },
+    "base_stat_total": 483,
+    "source": "https://pokeapi.co/api/v2/pokemon/hypno/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "ivysaur": {
+    "name": "ivysaur",
+    "species_id": 2,
+    "is_default": true,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 62,
+      "defense": 63,
+      "special_attack": 80,
+      "special_defense": 80,
+      "speed": 60
+    },
+    "base_stat_total": 405,
+    "source": "https://pokeapi.co/api/v2/pokemon/ivysaur/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "jigglypuff": {
+    "name": "jigglypuff",
+    "species_id": 39,
+    "is_default": true,
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "stats": {
+      "hp": 115,
+      "attack": 45,
+      "defense": 20,
+      "special_attack": 45,
+      "special_defense": 25,
+      "speed": 20
+    },
+    "base_stat_total": 270,
+    "source": "https://pokeapi.co/api/v2/pokemon/jigglypuff/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "jolteon": {
+    "name": "jolteon",
+    "species_id": 135,
+    "is_default": true,
+    "types": [
+      "electric"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 60,
+      "special_attack": 110,
+      "special_defense": 95,
+      "speed": 130
+    },
+    "base_stat_total": 525,
+    "source": "https://pokeapi.co/api/v2/pokemon/jolteon/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "jynx": {
+    "name": "jynx",
+    "species_id": 124,
+    "is_default": true,
+    "types": [
+      "ice",
+      "psychic"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 50,
+      "defense": 35,
+      "special_attack": 115,
+      "special_defense": 95,
+      "speed": 95
+    },
+    "base_stat_total": 455,
+    "source": "https://pokeapi.co/api/v2/pokemon/jynx/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "kabuto": {
+    "name": "kabuto",
+    "species_id": 140,
+    "is_default": true,
+    "types": [
+      "rock",
+      "water"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 80,
+      "defense": 90,
+      "special_attack": 55,
+      "special_defense": 45,
+      "speed": 55
+    },
+    "base_stat_total": 355,
+    "source": "https://pokeapi.co/api/v2/pokemon/kabuto/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "kabutops": {
+    "name": "kabutops",
+    "species_id": 141,
+    "is_default": true,
+    "types": [
+      "rock",
+      "water"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 115,
+      "defense": 105,
+      "special_attack": 65,
+      "special_defense": 70,
+      "speed": 80
+    },
+    "base_stat_total": 495,
+    "source": "https://pokeapi.co/api/v2/pokemon/kabutops/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "kadabra": {
+    "name": "kadabra",
+    "species_id": 64,
+    "is_default": true,
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "special_attack": 120,
+      "special_defense": 70,
+      "speed": 105
+    },
+    "base_stat_total": 400,
+    "source": "https://pokeapi.co/api/v2/pokemon/kadabra/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "kakuna": {
+    "name": "kakuna",
+    "species_id": 14,
+    "is_default": true,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "stats": {
+      "hp": 45,
+      "attack": 25,
+      "defense": 50,
+      "special_attack": 25,
+      "special_defense": 25,
+      "speed": 35
+    },
+    "base_stat_total": 205,
+    "source": "https://pokeapi.co/api/v2/pokemon/kakuna/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "kangaskhan": {
+    "name": "kangaskhan",
+    "species_id": 115,
+    "is_default": true,
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 105,
+      "attack": 95,
+      "defense": 80,
+      "special_attack": 40,
+      "special_defense": 80,
+      "speed": 90
+    },
+    "base_stat_total": 490,
+    "source": "https://pokeapi.co/api/v2/pokemon/kangaskhan/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "kingler": {
+    "name": "kingler",
+    "species_id": 99,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 130,
+      "defense": 115,
+      "special_attack": 50,
+      "special_defense": 50,
+      "speed": 75
+    },
+    "base_stat_total": 475,
+    "source": "https://pokeapi.co/api/v2/pokemon/kingler/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "koffing": {
+    "name": "koffing",
+    "species_id": 109,
+    "is_default": true,
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 65,
+      "defense": 95,
+      "special_attack": 60,
+      "special_defense": 45,
+      "speed": 35
+    },
+    "base_stat_total": 340,
+    "source": "https://pokeapi.co/api/v2/pokemon/koffing/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "krabby": {
+    "name": "krabby",
+    "species_id": 98,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 105,
+      "defense": 90,
+      "special_attack": 25,
+      "special_defense": 25,
+      "speed": 50
+    },
+    "base_stat_total": 325,
+    "source": "https://pokeapi.co/api/v2/pokemon/krabby/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "lapras": {
+    "name": "lapras",
+    "species_id": 131,
+    "is_default": true,
+    "types": [
+      "water",
+      "ice"
+    ],
+    "stats": {
+      "hp": 130,
+      "attack": 85,
+      "defense": 80,
+      "special_attack": 85,
+      "special_defense": 95,
+      "speed": 60
+    },
+    "base_stat_total": 535,
+    "source": "https://pokeapi.co/api/v2/pokemon/lapras/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "lickitung": {
+    "name": "lickitung",
+    "species_id": 108,
+    "is_default": true,
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 55,
+      "defense": 75,
+      "special_attack": 60,
+      "special_defense": 75,
+      "speed": 30
+    },
+    "base_stat_total": 385,
+    "source": "https://pokeapi.co/api/v2/pokemon/lickitung/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "machamp": {
+    "name": "machamp",
+    "species_id": 68,
+    "is_default": true,
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 130,
+      "defense": 80,
+      "special_attack": 65,
+      "special_defense": 85,
+      "speed": 55
+    },
+    "base_stat_total": 505,
+    "source": "https://pokeapi.co/api/v2/pokemon/machamp/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "machoke": {
+    "name": "machoke",
+    "species_id": 67,
+    "is_default": true,
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 100,
+      "defense": 70,
+      "special_attack": 50,
+      "special_defense": 60,
+      "speed": 45
+    },
+    "base_stat_total": 405,
+    "source": "https://pokeapi.co/api/v2/pokemon/machoke/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "machop": {
+    "name": "machop",
+    "species_id": 66,
+    "is_default": true,
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 50,
+      "special_attack": 35,
+      "special_defense": 35,
+      "speed": 35
+    },
+    "base_stat_total": 305,
+    "source": "https://pokeapi.co/api/v2/pokemon/machop/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "magikarp": {
+    "name": "magikarp",
+    "species_id": 129,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 20,
+      "attack": 10,
+      "defense": 55,
+      "special_attack": 15,
+      "special_defense": 20,
+      "speed": 80
+    },
+    "base_stat_total": 200,
+    "source": "https://pokeapi.co/api/v2/pokemon/magikarp/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "magmar": {
+    "name": "magmar",
+    "species_id": 126,
+    "is_default": true,
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 95,
+      "defense": 57,
+      "special_attack": 100,
+      "special_defense": 85,
+      "speed": 93
+    },
+    "base_stat_total": 495,
+    "source": "https://pokeapi.co/api/v2/pokemon/magmar/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "magnemite": {
+    "name": "magnemite",
+    "species_id": 81,
+    "is_default": true,
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "stats": {
+      "hp": 25,
+      "attack": 35,
+      "defense": 70,
+      "special_attack": 95,
+      "special_defense": 55,
+      "speed": 45
+    },
+    "base_stat_total": 325,
+    "source": "https://pokeapi.co/api/v2/pokemon/magnemite/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "magneton": {
+    "name": "magneton",
+    "species_id": 82,
+    "is_default": true,
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 60,
+      "defense": 95,
+      "special_attack": 120,
+      "special_defense": 70,
+      "speed": 70
+    },
+    "base_stat_total": 465,
+    "source": "https://pokeapi.co/api/v2/pokemon/magneton/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "mankey": {
+    "name": "mankey",
+    "species_id": 56,
+    "is_default": true,
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 35,
+      "special_attack": 35,
+      "special_defense": 45,
+      "speed": 70
+    },
+    "base_stat_total": 305,
+    "source": "https://pokeapi.co/api/v2/pokemon/mankey/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "marowak": {
+    "name": "marowak",
+    "species_id": 105,
+    "is_default": true,
+    "types": [
+      "ground"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 80,
+      "defense": 110,
+      "special_attack": 50,
+      "special_defense": 80,
+      "speed": 45
+    },
+    "base_stat_total": 425,
+    "source": "https://pokeapi.co/api/v2/pokemon/marowak/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "meowth": {
+    "name": "meowth",
+    "species_id": 52,
+    "is_default": true,
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "special_attack": 40,
+      "special_defense": 40,
+      "speed": 90
+    },
+    "base_stat_total": 290,
+    "source": "https://pokeapi.co/api/v2/pokemon/meowth/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "metapod": {
+    "name": "metapod",
+    "species_id": 11,
+    "is_default": true,
+    "types": [
+      "bug"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 20,
+      "defense": 55,
+      "special_attack": 25,
+      "special_defense": 25,
+      "speed": 30
+    },
+    "base_stat_total": 205,
+    "source": "https://pokeapi.co/api/v2/pokemon/metapod/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "mew": {
+    "name": "mew",
+    "species_id": 151,
+    "is_default": true,
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "special_attack": 100,
+      "special_defense": 100,
+      "speed": 100
+    },
+    "base_stat_total": 600,
+    "source": "https://pokeapi.co/api/v2/pokemon/mew/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "mewtwo": {
+    "name": "mewtwo",
+    "species_id": 150,
+    "is_default": true,
+    "types": [
+      "psychic"
+    ],
+    "stats": {
+      "hp": 106,
+      "attack": 110,
+      "defense": 90,
+      "special_attack": 154,
+      "special_defense": 90,
+      "speed": 130
+    },
+    "base_stat_total": 680,
+    "source": "https://pokeapi.co/api/v2/pokemon/mewtwo/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "moltres": {
+    "name": "moltres",
+    "species_id": 146,
+    "is_default": true,
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 100,
+      "defense": 90,
+      "special_attack": 125,
+      "special_defense": 85,
+      "speed": 90
+    },
+    "base_stat_total": 580,
+    "source": "https://pokeapi.co/api/v2/pokemon/moltres/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "mr-mime": {
+    "name": "mr-mime",
+    "species_id": 122,
+    "is_default": true,
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 65,
+      "special_attack": 100,
+      "special_defense": 120,
+      "speed": 90
+    },
+    "base_stat_total": 460,
+    "source": "https://pokeapi.co/api/v2/pokemon/mr-mime/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "muk": {
+    "name": "muk",
+    "species_id": 89,
+    "is_default": true,
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 105,
+      "attack": 105,
+      "defense": 75,
+      "special_attack": 65,
+      "special_defense": 100,
+      "speed": 50
+    },
+    "base_stat_total": 500,
+    "source": "https://pokeapi.co/api/v2/pokemon/muk/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "nidoking": {
+    "name": "nidoking",
+    "species_id": 34,
+    "is_default": true,
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "stats": {
+      "hp": 81,
+      "attack": 102,
+      "defense": 77,
+      "special_attack": 85,
+      "special_defense": 75,
+      "speed": 85
+    },
+    "base_stat_total": 505,
+    "source": "https://pokeapi.co/api/v2/pokemon/nidoking/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "nidoqueen": {
+    "name": "nidoqueen",
+    "species_id": 31,
+    "is_default": true,
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 92,
+      "defense": 87,
+      "special_attack": 75,
+      "special_defense": 85,
+      "speed": 76
+    },
+    "base_stat_total": 505,
+    "source": "https://pokeapi.co/api/v2/pokemon/nidoqueen/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "nidoran-f": {
+    "name": "nidoran-f",
+    "species_id": 29,
+    "is_default": true,
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 47,
+      "defense": 52,
+      "special_attack": 40,
+      "special_defense": 40,
+      "speed": 41
+    },
+    "base_stat_total": 275,
+    "source": "https://pokeapi.co/api/v2/pokemon/nidoran-f/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "nidoran-m": {
+    "name": "nidoran-m",
+    "species_id": 32,
+    "is_default": true,
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 46,
+      "attack": 57,
+      "defense": 40,
+      "special_attack": 40,
+      "special_defense": 40,
+      "speed": 50
+    },
+    "base_stat_total": 273,
+    "source": "https://pokeapi.co/api/v2/pokemon/nidoran-m/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "nidorina": {
+    "name": "nidorina",
+    "species_id": 30,
+    "is_default": true,
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 70,
+      "attack": 62,
+      "defense": 67,
+      "special_attack": 55,
+      "special_defense": 55,
+      "speed": 56
+    },
+    "base_stat_total": 365,
+    "source": "https://pokeapi.co/api/v2/pokemon/nidorina/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "nidorino": {
+    "name": "nidorino",
+    "species_id": 33,
+    "is_default": true,
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 61,
+      "attack": 72,
+      "defense": 57,
+      "special_attack": 55,
+      "special_defense": 55,
+      "speed": 65
+    },
+    "base_stat_total": 365,
+    "source": "https://pokeapi.co/api/v2/pokemon/nidorino/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "ninetales": {
+    "name": "ninetales",
+    "species_id": 38,
+    "is_default": true,
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 73,
+      "attack": 76,
+      "defense": 75,
+      "special_attack": 81,
+      "special_defense": 100,
+      "speed": 100
+    },
+    "base_stat_total": 505,
+    "source": "https://pokeapi.co/api/v2/pokemon/ninetales/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "oddish": {
+    "name": "oddish",
+    "species_id": 43,
+    "is_default": true,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 45,
+      "attack": 50,
+      "defense": 55,
+      "special_attack": 75,
+      "special_defense": 65,
+      "speed": 30
+    },
+    "base_stat_total": 320,
+    "source": "https://pokeapi.co/api/v2/pokemon/oddish/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "omanyte": {
+    "name": "omanyte",
+    "species_id": 138,
+    "is_default": true,
+    "types": [
+      "rock",
+      "water"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 40,
+      "defense": 100,
+      "special_attack": 90,
+      "special_defense": 55,
+      "speed": 35
+    },
+    "base_stat_total": 355,
+    "source": "https://pokeapi.co/api/v2/pokemon/omanyte/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "omastar": {
+    "name": "omastar",
+    "species_id": 139,
+    "is_default": true,
+    "types": [
+      "rock",
+      "water"
+    ],
+    "stats": {
+      "hp": 70,
+      "attack": 60,
+      "defense": 125,
+      "special_attack": 115,
+      "special_defense": 70,
+      "speed": 55
+    },
+    "base_stat_total": 495,
+    "source": "https://pokeapi.co/api/v2/pokemon/omastar/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "onix": {
+    "name": "onix",
+    "species_id": 95,
+    "is_default": true,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 45,
+      "defense": 160,
+      "special_attack": 30,
+      "special_defense": 45,
+      "speed": 70
+    },
+    "base_stat_total": 385,
+    "source": "https://pokeapi.co/api/v2/pokemon/onix/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "paras": {
+    "name": "paras",
+    "species_id": 46,
+    "is_default": true,
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 70,
+      "defense": 55,
+      "special_attack": 45,
+      "special_defense": 55,
+      "speed": 25
+    },
+    "base_stat_total": 285,
+    "source": "https://pokeapi.co/api/v2/pokemon/paras/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "parasect": {
+    "name": "parasect",
+    "species_id": 47,
+    "is_default": true,
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 95,
+      "defense": 80,
+      "special_attack": 60,
+      "special_defense": 80,
+      "speed": 30
+    },
+    "base_stat_total": 405,
+    "source": "https://pokeapi.co/api/v2/pokemon/parasect/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "persian": {
+    "name": "persian",
+    "species_id": 53,
+    "is_default": true,
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 70,
+      "defense": 60,
+      "special_attack": 65,
+      "special_defense": 65,
+      "speed": 115
+    },
+    "base_stat_total": 440,
+    "source": "https://pokeapi.co/api/v2/pokemon/persian/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "pidgeot": {
+    "name": "pidgeot",
+    "species_id": 18,
+    "is_default": true,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 83,
+      "attack": 80,
+      "defense": 75,
+      "special_attack": 70,
+      "special_defense": 70,
+      "speed": 101
+    },
+    "base_stat_total": 479,
+    "source": "https://pokeapi.co/api/v2/pokemon/pidgeot/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "pidgeotto": {
+    "name": "pidgeotto",
+    "species_id": 17,
+    "is_default": true,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 63,
+      "attack": 60,
+      "defense": 55,
+      "special_attack": 50,
+      "special_defense": 50,
+      "speed": 71
+    },
+    "base_stat_total": 349,
+    "source": "https://pokeapi.co/api/v2/pokemon/pidgeotto/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "pidgey": {
+    "name": "pidgey",
+    "species_id": 16,
+    "is_default": true,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 40,
+      "special_attack": 35,
+      "special_defense": 35,
+      "speed": 56
+    },
+    "base_stat_total": 251,
+    "source": "https://pokeapi.co/api/v2/pokemon/pidgey/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "pikachu": {
+    "name": "pikachu",
+    "species_id": 25,
+    "is_default": true,
+    "types": [
+      "electric"
+    ],
+    "stats": {
+      "hp": 35,
+      "attack": 55,
+      "defense": 40,
+      "special_attack": 50,
+      "special_defense": 50,
+      "speed": 90
+    },
+    "base_stat_total": 320,
+    "source": "https://pokeapi.co/api/v2/pokemon/pikachu/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "pinsir": {
+    "name": "pinsir",
+    "species_id": 127,
+    "is_default": true,
+    "types": [
+      "bug"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 125,
+      "defense": 100,
+      "special_attack": 55,
+      "special_defense": 70,
+      "speed": 85
+    },
+    "base_stat_total": 500,
+    "source": "https://pokeapi.co/api/v2/pokemon/pinsir/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "poliwag": {
+    "name": "poliwag",
+    "species_id": 60,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 50,
+      "defense": 40,
+      "special_attack": 40,
+      "special_defense": 40,
+      "speed": 90
+    },
+    "base_stat_total": 300,
+    "source": "https://pokeapi.co/api/v2/pokemon/poliwag/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "poliwhirl": {
+    "name": "poliwhirl",
+    "species_id": 61,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 65,
+      "special_attack": 50,
+      "special_defense": 50,
+      "speed": 90
+    },
+    "base_stat_total": 385,
+    "source": "https://pokeapi.co/api/v2/pokemon/poliwhirl/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "poliwrath": {
+    "name": "poliwrath",
+    "species_id": 62,
+    "is_default": true,
+    "types": [
+      "water",
+      "fighting"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 95,
+      "defense": 95,
+      "special_attack": 70,
+      "special_defense": 90,
+      "speed": 70
+    },
+    "base_stat_total": 510,
+    "source": "https://pokeapi.co/api/v2/pokemon/poliwrath/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "ponyta": {
+    "name": "ponyta",
+    "species_id": 77,
+    "is_default": true,
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 85,
+      "defense": 55,
+      "special_attack": 65,
+      "special_defense": 65,
+      "speed": 90
+    },
+    "base_stat_total": 410,
+    "source": "https://pokeapi.co/api/v2/pokemon/ponyta/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "porygon": {
+    "name": "porygon",
+    "species_id": 137,
+    "is_default": true,
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 60,
+      "defense": 70,
+      "special_attack": 85,
+      "special_defense": 75,
+      "speed": 40
+    },
+    "base_stat_total": 395,
+    "source": "https://pokeapi.co/api/v2/pokemon/porygon/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "primeape": {
+    "name": "primeape",
+    "species_id": 57,
+    "is_default": true,
+    "types": [
+      "fighting"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 105,
+      "defense": 60,
+      "special_attack": 60,
+      "special_defense": 70,
+      "speed": 95
+    },
+    "base_stat_total": 455,
+    "source": "https://pokeapi.co/api/v2/pokemon/primeape/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "psyduck": {
+    "name": "psyduck",
+    "species_id": 54,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 52,
+      "defense": 48,
+      "special_attack": 65,
+      "special_defense": 50,
+      "speed": 55
+    },
+    "base_stat_total": 320,
+    "source": "https://pokeapi.co/api/v2/pokemon/psyduck/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "raichu": {
+    "name": "raichu",
+    "species_id": 26,
+    "is_default": true,
+    "types": [
+      "electric"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 90,
+      "defense": 55,
+      "special_attack": 90,
+      "special_defense": 80,
+      "speed": 110
+    },
+    "base_stat_total": 485,
+    "source": "https://pokeapi.co/api/v2/pokemon/raichu/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "rapidash": {
+    "name": "rapidash",
+    "species_id": 78,
+    "is_default": true,
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 100,
+      "defense": 70,
+      "special_attack": 80,
+      "special_defense": 80,
+      "speed": 105
+    },
+    "base_stat_total": 500,
+    "source": "https://pokeapi.co/api/v2/pokemon/rapidash/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "raticate": {
+    "name": "raticate",
+    "species_id": 20,
+    "is_default": true,
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 81,
+      "defense": 60,
+      "special_attack": 50,
+      "special_defense": 70,
+      "speed": 97
+    },
+    "base_stat_total": 413,
+    "source": "https://pokeapi.co/api/v2/pokemon/raticate/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "rattata": {
+    "name": "rattata",
+    "species_id": 19,
+    "is_default": true,
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 56,
+      "defense": 35,
+      "special_attack": 25,
+      "special_defense": 35,
+      "speed": 72
+    },
+    "base_stat_total": 253,
+    "source": "https://pokeapi.co/api/v2/pokemon/rattata/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "rhydon": {
+    "name": "rhydon",
+    "species_id": 112,
+    "is_default": true,
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "stats": {
+      "hp": 105,
+      "attack": 130,
+      "defense": 120,
+      "special_attack": 45,
+      "special_defense": 45,
+      "speed": 40
+    },
+    "base_stat_total": 485,
+    "source": "https://pokeapi.co/api/v2/pokemon/rhydon/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "rhyhorn": {
+    "name": "rhyhorn",
+    "species_id": 111,
+    "is_default": true,
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 85,
+      "defense": 95,
+      "special_attack": 30,
+      "special_defense": 30,
+      "speed": 25
+    },
+    "base_stat_total": 345,
+    "source": "https://pokeapi.co/api/v2/pokemon/rhyhorn/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "sandshrew": {
+    "name": "sandshrew",
+    "species_id": 27,
+    "is_default": true,
+    "types": [
+      "ground"
+    ],
+    "stats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 85,
+      "special_attack": 20,
+      "special_defense": 30,
+      "speed": 40
+    },
+    "base_stat_total": 300,
+    "source": "https://pokeapi.co/api/v2/pokemon/sandshrew/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "sandslash": {
+    "name": "sandslash",
+    "species_id": 28,
+    "is_default": true,
+    "types": [
+      "ground"
+    ],
+    "stats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 110,
+      "special_attack": 45,
+      "special_defense": 55,
+      "speed": 65
+    },
+    "base_stat_total": 450,
+    "source": "https://pokeapi.co/api/v2/pokemon/sandslash/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "scyther": {
+    "name": "scyther",
+    "species_id": 123,
+    "is_default": true,
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "stats": {
+      "hp": 70,
+      "attack": 110,
+      "defense": 80,
+      "special_attack": 55,
+      "special_defense": 80,
+      "speed": 105
+    },
+    "base_stat_total": 500,
+    "source": "https://pokeapi.co/api/v2/pokemon/scyther/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "seadra": {
+    "name": "seadra",
+    "species_id": 117,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 55,
+      "attack": 65,
+      "defense": 95,
+      "special_attack": 95,
+      "special_defense": 45,
+      "speed": 85
+    },
+    "base_stat_total": 440,
+    "source": "https://pokeapi.co/api/v2/pokemon/seadra/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "seaking": {
+    "name": "seaking",
+    "species_id": 119,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 92,
+      "defense": 65,
+      "special_attack": 65,
+      "special_defense": 80,
+      "speed": 68
+    },
+    "base_stat_total": 450,
+    "source": "https://pokeapi.co/api/v2/pokemon/seaking/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "seel": {
+    "name": "seel",
+    "species_id": 86,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 45,
+      "defense": 55,
+      "special_attack": 45,
+      "special_defense": 70,
+      "speed": 45
+    },
+    "base_stat_total": 325,
+    "source": "https://pokeapi.co/api/v2/pokemon/seel/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "shellder": {
+    "name": "shellder",
+    "species_id": 90,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 65,
+      "defense": 100,
+      "special_attack": 45,
+      "special_defense": 25,
+      "speed": 40
+    },
+    "base_stat_total": 305,
+    "source": "https://pokeapi.co/api/v2/pokemon/shellder/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "slowbro": {
+    "name": "slowbro",
+    "species_id": 80,
+    "is_default": true,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "stats": {
+      "hp": 95,
+      "attack": 75,
+      "defense": 110,
+      "special_attack": 100,
+      "special_defense": 80,
+      "speed": 30
+    },
+    "base_stat_total": 490,
+    "source": "https://pokeapi.co/api/v2/pokemon/slowbro/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "slowpoke": {
+    "name": "slowpoke",
+    "species_id": 79,
+    "is_default": true,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 65,
+      "defense": 65,
+      "special_attack": 40,
+      "special_defense": 40,
+      "speed": 15
+    },
+    "base_stat_total": 315,
+    "source": "https://pokeapi.co/api/v2/pokemon/slowpoke/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "snorlax": {
+    "name": "snorlax",
+    "species_id": 143,
+    "is_default": true,
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 160,
+      "attack": 110,
+      "defense": 65,
+      "special_attack": 65,
+      "special_defense": 110,
+      "speed": 30
+    },
+    "base_stat_total": 540,
+    "source": "https://pokeapi.co/api/v2/pokemon/snorlax/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "spearow": {
+    "name": "spearow",
+    "species_id": 21,
+    "is_default": true,
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 60,
+      "defense": 30,
+      "special_attack": 31,
+      "special_defense": 31,
+      "speed": 70
+    },
+    "base_stat_total": 262,
+    "source": "https://pokeapi.co/api/v2/pokemon/spearow/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "squirtle": {
+    "name": "squirtle",
+    "species_id": 7,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 44,
+      "attack": 48,
+      "defense": 65,
+      "special_attack": 50,
+      "special_defense": 64,
+      "speed": 43
+    },
+    "base_stat_total": 314,
+    "source": "https://pokeapi.co/api/v2/pokemon/squirtle/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "starmie": {
+    "name": "starmie",
+    "species_id": 121,
+    "is_default": true,
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 75,
+      "defense": 85,
+      "special_attack": 100,
+      "special_defense": 85,
+      "speed": 115
+    },
+    "base_stat_total": 520,
+    "source": "https://pokeapi.co/api/v2/pokemon/starmie/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "staryu": {
+    "name": "staryu",
+    "species_id": 120,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 30,
+      "attack": 45,
+      "defense": 55,
+      "special_attack": 70,
+      "special_defense": 55,
+      "speed": 85
+    },
+    "base_stat_total": 340,
+    "source": "https://pokeapi.co/api/v2/pokemon/staryu/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "tangela": {
+    "name": "tangela",
+    "species_id": 114,
+    "is_default": true,
+    "types": [
+      "grass"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 55,
+      "defense": 115,
+      "special_attack": 100,
+      "special_defense": 40,
+      "speed": 60
+    },
+    "base_stat_total": 435,
+    "source": "https://pokeapi.co/api/v2/pokemon/tangela/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "tauros": {
+    "name": "tauros",
+    "species_id": 128,
+    "is_default": true,
+    "types": [
+      "normal"
+    ],
+    "stats": {
+      "hp": 75,
+      "attack": 100,
+      "defense": 95,
+      "special_attack": 40,
+      "special_defense": 70,
+      "speed": 110
+    },
+    "base_stat_total": 490,
+    "source": "https://pokeapi.co/api/v2/pokemon/tauros/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "tentacool": {
+    "name": "tentacool",
+    "species_id": 72,
+    "is_default": true,
+    "types": [
+      "water",
+      "poison"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 40,
+      "defense": 35,
+      "special_attack": 50,
+      "special_defense": 100,
+      "speed": 70
+    },
+    "base_stat_total": 335,
+    "source": "https://pokeapi.co/api/v2/pokemon/tentacool/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "tentacruel": {
+    "name": "tentacruel",
+    "species_id": 73,
+    "is_default": true,
+    "types": [
+      "water",
+      "poison"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 70,
+      "defense": 65,
+      "special_attack": 80,
+      "special_defense": 120,
+      "speed": 100
+    },
+    "base_stat_total": 515,
+    "source": "https://pokeapi.co/api/v2/pokemon/tentacruel/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "vaporeon": {
+    "name": "vaporeon",
+    "species_id": 134,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 130,
+      "attack": 65,
+      "defense": 60,
+      "special_attack": 110,
+      "special_defense": 95,
+      "speed": 65
+    },
+    "base_stat_total": 525,
+    "source": "https://pokeapi.co/api/v2/pokemon/vaporeon/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "venomoth": {
+    "name": "venomoth",
+    "species_id": 49,
+    "is_default": true,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "stats": {
+      "hp": 70,
+      "attack": 65,
+      "defense": 60,
+      "special_attack": 90,
+      "special_defense": 75,
+      "speed": 90
+    },
+    "base_stat_total": 450,
+    "source": "https://pokeapi.co/api/v2/pokemon/venomoth/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "venonat": {
+    "name": "venonat",
+    "species_id": 48,
+    "is_default": true,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "stats": {
+      "hp": 60,
+      "attack": 55,
+      "defense": 50,
+      "special_attack": 40,
+      "special_defense": 55,
+      "speed": 45
+    },
+    "base_stat_total": 305,
+    "source": "https://pokeapi.co/api/v2/pokemon/venonat/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "venusaur": {
+    "name": "venusaur",
+    "species_id": 3,
+    "is_default": true,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 83,
+      "special_attack": 100,
+      "special_defense": 100,
+      "speed": 80
+    },
+    "base_stat_total": 525,
+    "source": "https://pokeapi.co/api/v2/pokemon/venusaur/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "victreebel": {
+    "name": "victreebel",
+    "species_id": 71,
+    "is_default": true,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 80,
+      "attack": 105,
+      "defense": 65,
+      "special_attack": 100,
+      "special_defense": 70,
+      "speed": 70
+    },
+    "base_stat_total": 490,
+    "source": "https://pokeapi.co/api/v2/pokemon/victreebel/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "vileplume": {
+    "name": "vileplume",
+    "species_id": 45,
+    "is_default": true,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 75,
+      "attack": 80,
+      "defense": 85,
+      "special_attack": 110,
+      "special_defense": 90,
+      "speed": 50
+    },
+    "base_stat_total": 490,
+    "source": "https://pokeapi.co/api/v2/pokemon/vileplume/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "voltorb": {
+    "name": "voltorb",
+    "species_id": 100,
+    "is_default": true,
+    "types": [
+      "electric"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 30,
+      "defense": 50,
+      "special_attack": 55,
+      "special_defense": 55,
+      "speed": 100
+    },
+    "base_stat_total": 330,
+    "source": "https://pokeapi.co/api/v2/pokemon/voltorb/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "vulpix": {
+    "name": "vulpix",
+    "species_id": 37,
+    "is_default": true,
+    "types": [
+      "fire"
+    ],
+    "stats": {
+      "hp": 38,
+      "attack": 41,
+      "defense": 40,
+      "special_attack": 50,
+      "special_defense": 65,
+      "speed": 65
+    },
+    "base_stat_total": 299,
+    "source": "https://pokeapi.co/api/v2/pokemon/vulpix/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "wartortle": {
+    "name": "wartortle",
+    "species_id": 8,
+    "is_default": true,
+    "types": [
+      "water"
+    ],
+    "stats": {
+      "hp": 59,
+      "attack": 63,
+      "defense": 80,
+      "special_attack": 65,
+      "special_defense": 80,
+      "speed": 58
+    },
+    "base_stat_total": 405,
+    "source": "https://pokeapi.co/api/v2/pokemon/wartortle/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "weedle": {
+    "name": "weedle",
+    "species_id": 13,
+    "is_default": true,
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "special_attack": 20,
+      "special_defense": 20,
+      "speed": 50
+    },
+    "base_stat_total": 195,
+    "source": "https://pokeapi.co/api/v2/pokemon/weedle/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "weepinbell": {
+    "name": "weepinbell",
+    "species_id": 70,
+    "is_default": true,
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 50,
+      "special_attack": 85,
+      "special_defense": 45,
+      "speed": 55
+    },
+    "base_stat_total": 390,
+    "source": "https://pokeapi.co/api/v2/pokemon/weepinbell/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "weezing": {
+    "name": "weezing",
+    "species_id": 110,
+    "is_default": true,
+    "types": [
+      "poison"
+    ],
+    "stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 120,
+      "special_attack": 85,
+      "special_defense": 70,
+      "speed": 60
+    },
+    "base_stat_total": 490,
+    "source": "https://pokeapi.co/api/v2/pokemon/weezing/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "wigglytuff": {
+    "name": "wigglytuff",
+    "species_id": 40,
+    "is_default": true,
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "stats": {
+      "hp": 140,
+      "attack": 70,
+      "defense": 45,
+      "special_attack": 85,
+      "special_defense": 50,
+      "speed": 45
+    },
+    "base_stat_total": 435,
+    "source": "https://pokeapi.co/api/v2/pokemon/wigglytuff/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "zapdos": {
+    "name": "zapdos",
+    "species_id": 145,
+    "is_default": true,
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "stats": {
+      "hp": 90,
+      "attack": 90,
+      "defense": 85,
+      "special_attack": 125,
+      "special_defense": 90,
+      "speed": 100
+    },
+    "base_stat_total": 580,
+    "source": "https://pokeapi.co/api/v2/pokemon/zapdos/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  },
+  "zubat": {
+    "name": "zubat",
+    "species_id": 41,
+    "is_default": true,
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "special_attack": 30,
+      "special_defense": 40,
+      "speed": 55
+    },
+    "base_stat_total": 245,
+    "source": "https://pokeapi.co/api/v2/pokemon/zubat/",
+    "fixture": "captured PokéAPI facts; not a live response"
+  }
+}

@@ -1,0 +1,922 @@
+{
+  "input_sha256": {
+    "agents/11-builder.yaml": "5366b23b4b103340399d2192c3fc8c311e637845529ea3d580d59d4c44e66c5d",
+    "agents/team-building.md": "248c8108fd15e8cfd07ea0233a9d0f77f6bd0df4075da8e4db6a4c47b8065f31",
+    "agents/eval-setup.sh": "8154dc1fd44f56318fc4d523120be33ca4c4a6a63a456e7310233cc96e03b731",
+    "evals/arena/duplicate-team.json": "9e23d6cdeac0f5877f64d1e13201dc790385a9a4e0e9ee2b19ad1b4d09f2d240",
+    "evals/arena/honest-loss.json": "01cd032f95fb311c5469c53b87f975c57deb2f2978993189a18fcbe0d64fb912",
+    "evals/arena/over-budget.json": "b823826bb2284c4257e0f21639e5b4f8fdf91895a31b168d6fd1877c8ee29f29",
+    "evals/arena/water-beginner.json": "f0b5424655be54de6b4dd87ec72e02cf0e6c13d5f3cda35fb096e067d3e43ed7",
+    "evals/arena/water-proposal.json": "c70f88fd7fd8362f37090430cae70a2cbc72a38057f189b9617dec5cbb3b33b6",
+    "evals/arena-stretch/water-advanced.json": "6e99a1a940050240879793da55d73b3d243df1f4e4a7a4438e45f6833418c6a3",
+    "fixtures/arena-catalog.json": "6ae4f2649d63cd0b2c49c02bf4bbffc66fa2d007b09adfe8e26714e2ff736eb4",
+    "fixtures/arena-challenges.json": "56cf2c67dd75fdb0e9a7616fe4d1ddd4c05c1a33459941a356ebefe39edf7ec0",
+    "fixtures/arena-types.json": "ed0ada1fa80c01783729d2ec3712834cf861a72482e7504f3dea9c170a673ca7"
+  },
+  "cli_version": "docker agent version dev\nCommit: c145f64efc0e78a36c1b5ac7ff99551135c5a81f",
+  "agent_image_id": "sha256:7cc50f4277b6916f0b8fbe061ab7a479abf3e65ea83ed2d84907abf0d7c284eb",
+  "judge_model": "openai/gpt-5.6-terra",
+  "repeat": 5,
+  "concurrency": 5,
+  "effective_config_sha256": {
+    "baseline": "c80ccb37a7c814eaa27f2a226a0928678a2ec5fc37cd5b358c07017fe73009b8",
+    "checked-totals": "c9a5970d5f52ca998a2910267c5fc11762740eb1f35cba9d5c006e43fd469fe1",
+    "alternate-model": "412f790eade1a85482187c9fb9469208258167b0b824b0efca158fe489ea2b10"
+  },
+  "measurements": {
+    "baseline-1": {
+      "run_file": "evals/stability/baseline-1.json",
+      "run_sha256": "47838bc09661935a3416e46b7396286b95c9f597f9aa997253f1a675e1a54238",
+      "source_file": ".state/eval-stability/rehearsal-baseline/gentle-dusk-379.json",
+      "run_name": "gentle-dusk-379",
+      "captured_at": "2026-10-05T17:05:20.056408+02:00",
+      "command": "docker agent eval agents/11-builder.yaml evals/arena --repeat 5 --concurrency 5 --judge-model openai/gpt-5.6-terra --output .state/eval-stability/rehearsal-baseline",
+      "passed": 17,
+      "total": 25,
+      "per_case": {
+        "duplicate-team": [
+          2,
+          5
+        ],
+        "honest-loss": [
+          5,
+          5
+        ],
+        "over-budget": [
+          2,
+          5
+        ],
+        "water-beginner": [
+          5,
+          5
+        ],
+        "water-proposal": [
+          3,
+          5
+        ]
+      },
+      "median_agent_seconds": 7.475,
+      "duration": "1m51.274s",
+      "summary": {
+        "total_evals": 25,
+        "failed_evals": 0,
+        "total_cost": 0.02413935,
+        "sizes_passed": 0,
+        "sizes_total": 0,
+        "tools_f1_sum": 0,
+        "tools_count": 0,
+        "relevance_passed": 32,
+        "relevance_total": 40,
+        "assertions_passed": 109,
+        "assertions_total": 110,
+        "repeat_metrics": {
+          "k": 5,
+          "pass_at_k": 1,
+          "pass_hat_k": 0.4,
+          "total": 5,
+          "evals": [
+            {
+              "input_path": "evals/arena/duplicate-team.json",
+              "status": "flaky",
+              "passed": 2,
+              "total": 5,
+              "errors": 0,
+              "failed_runs": [
+                "Reject duplicate members #1",
+                "Reject duplicate members #4",
+                "Reject duplicate members #5"
+              ],
+              "cost": {
+                "samples": 5,
+                "median": 0.00026967,
+                "min": 0.00020138,
+                "max": 0.000757,
+                "outliers": [
+                  {
+                    "title": "Reject duplicate members #3",
+                    "cost": 0.000757
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/over-budget.json",
+              "status": "flaky",
+              "passed": 2,
+              "total": 5,
+              "errors": 0,
+              "failed_runs": [
+                "Reject an over-budget request #1",
+                "Reject an over-budget request #3",
+                "Reject an over-budget request #4"
+              ],
+              "cost": {
+                "samples": 5,
+                "median": 0.00021579000000000002,
+                "min": 0.00020879,
+                "max": 0.000784915,
+                "outliers": [
+                  {
+                    "title": "Reject an over-budget request #3",
+                    "cost": 0.000784915
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/water-proposal.json",
+              "status": "flaky",
+              "passed": 3,
+              "total": 5,
+              "errors": 0,
+              "failed_runs": [
+                "Propose a legal Water team #3",
+                "Propose a legal Water team #4"
+              ],
+              "cost": {
+                "samples": 5,
+                "median": 0.00125834,
+                "min": 0.0007316600000000001,
+                "max": 0.00224744
+              }
+            },
+            {
+              "input_path": "evals/arena/honest-loss.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.00105331,
+                "min": 0.00033682,
+                "max": 0.00106631
+              }
+            },
+            {
+              "input_path": "evals/arena/water-beginner.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.00170646,
+                "min": 0.001024705,
+                "max": 0.0029664500000000002
+              }
+            }
+          ]
+        }
+      },
+      "tool_error_sessions": []
+    },
+    "baseline-2": {
+      "run_file": "evals/stability/baseline-2.json",
+      "run_sha256": "0df4b7b4c3df03e0722329d7016b485a1531645f4ce8a9b38b0560f3ea89bfdd",
+      "source_file": ".state/eval-stability/rehearsal2-baseline/clever-wave-208.json",
+      "run_name": "clever-wave-208",
+      "captured_at": "2026-10-05T17:10:37.391406+02:00",
+      "command": "docker agent eval agents/11-builder.yaml evals/arena --repeat 5 --concurrency 5 --judge-model openai/gpt-5.6-terra --output .state/eval-stability/rehearsal2-baseline",
+      "passed": 18,
+      "total": 25,
+      "per_case": {
+        "duplicate-team": [
+          3,
+          5
+        ],
+        "honest-loss": [
+          5,
+          5
+        ],
+        "over-budget": [
+          1,
+          5
+        ],
+        "water-beginner": [
+          5,
+          5
+        ],
+        "water-proposal": [
+          4,
+          5
+        ]
+      },
+      "median_agent_seconds": 7.576,
+      "duration": "1m26.799s",
+      "summary": {
+        "total_evals": 25,
+        "failed_evals": 0,
+        "total_cost": 0.019044205,
+        "sizes_passed": 0,
+        "sizes_total": 0,
+        "tools_f1_sum": 0,
+        "tools_count": 0,
+        "relevance_passed": 33,
+        "relevance_total": 40,
+        "assertions_passed": 108,
+        "assertions_total": 110,
+        "repeat_metrics": {
+          "k": 5,
+          "pass_at_k": 1,
+          "pass_hat_k": 0.4,
+          "total": 5,
+          "evals": [
+            {
+              "input_path": "evals/arena/duplicate-team.json",
+              "status": "flaky",
+              "passed": 3,
+              "total": 5,
+              "errors": 0,
+              "failed_runs": [
+                "Reject duplicate members #1",
+                "Reject duplicate members #2"
+              ],
+              "cost": {
+                "samples": 5,
+                "median": 0.00026717000000000006,
+                "min": 0.00019938,
+                "max": 0.0007765,
+                "outliers": [
+                  {
+                    "title": "Reject duplicate members #2",
+                    "cost": 0.0007765
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/over-budget.json",
+              "status": "flaky",
+              "passed": 1,
+              "total": 5,
+              "errors": 0,
+              "failed_runs": [
+                "Reject an over-budget request #1",
+                "Reject an over-budget request #2",
+                "Reject an over-budget request #4",
+                "Reject an over-budget request #5"
+              ],
+              "cost": {
+                "samples": 5,
+                "median": 0.00021429,
+                "min": 0.00020829,
+                "max": 0.000789915,
+                "outliers": [
+                  {
+                    "title": "Reject an over-budget request #4",
+                    "cost": 0.000789915
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/water-proposal.json",
+              "status": "flaky",
+              "passed": 4,
+              "total": 5,
+              "errors": 0,
+              "failed_runs": [
+                "Propose a legal Water team #2"
+              ],
+              "cost": {
+                "samples": 5,
+                "median": 0.00125934,
+                "min": 0.000559295,
+                "max": 0.002358345
+              }
+            },
+            {
+              "input_path": "evals/arena/honest-loss.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.00035831999999999997,
+                "min": 0.00033482,
+                "max": 0.000587535
+              }
+            },
+            {
+              "input_path": "evals/arena/water-beginner.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.00115434,
+                "min": 0.000978685,
+                "max": 0.001491845
+              }
+            }
+          ]
+        }
+      },
+      "tool_error_sessions": [
+        "d8c09c79-03a6-47f8-9a39-30ea75000391"
+      ]
+    },
+    "patch-1": {
+      "run_file": "evals/stability/patch-1.json",
+      "run_sha256": "d21d4388e0281ba887bcd26f7eeada15b2fad2f1844debec11072921b06146c0",
+      "source_file": ".state/eval-stability/rehearsal-patch/sharp-wave-232.json",
+      "run_name": "sharp-wave-232",
+      "captured_at": "2026-10-05T17:07:11.480826+02:00",
+      "command": "docker agent eval agents/11-builder.yaml evals/arena --flavor checked-totals --repeat 5 --concurrency 5 --judge-model openai/gpt-5.6-terra --output .state/eval-stability/rehearsal-patch",
+      "passed": 25,
+      "total": 25,
+      "per_case": {
+        "duplicate-team": [
+          5,
+          5
+        ],
+        "honest-loss": [
+          5,
+          5
+        ],
+        "over-budget": [
+          5,
+          5
+        ],
+        "water-beginner": [
+          5,
+          5
+        ],
+        "water-proposal": [
+          5,
+          5
+        ]
+      },
+      "median_agent_seconds": 9.28,
+      "duration": "1m39.265s",
+      "summary": {
+        "total_evals": 25,
+        "failed_evals": 0,
+        "total_cost": 0.020172729999999996,
+        "sizes_passed": 0,
+        "sizes_total": 0,
+        "tools_f1_sum": 0,
+        "tools_count": 0,
+        "relevance_passed": 40,
+        "relevance_total": 40,
+        "assertions_passed": 110,
+        "assertions_total": 110,
+        "repeat_metrics": {
+          "k": 5,
+          "pass_at_k": 1,
+          "pass_hat_k": 1,
+          "total": 5,
+          "evals": [
+            {
+              "input_path": "evals/arena/duplicate-team.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.00029248999999999996,
+                "min": 0.00028799,
+                "max": 0.000862275,
+                "outliers": [
+                  {
+                    "title": "Reject duplicate members #5",
+                    "cost": 0.000862275
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/honest-loss.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.0004265,
+                "min": 0.00042500000000000003,
+                "max": 0.001145655,
+                "outliers": [
+                  {
+                    "title": "Keep the requested team and report a loss #4",
+                    "cost": 0.001082455
+                  },
+                  {
+                    "title": "Keep the requested team and report a loss #5",
+                    "cost": 0.001145655
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/over-budget.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.00030330000000000005,
+                "min": 0.0002973,
+                "max": 0.000886705,
+                "outliers": [
+                  {
+                    "title": "Reject an over-budget request #4",
+                    "cost": 0.000886705
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/water-beginner.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.00131652,
+                "min": 0.0011147849999999999,
+                "max": 0.00176604
+              }
+            },
+            {
+              "input_path": "evals/arena/water-proposal.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.0007143900000000001,
+                "min": 0.0006715000000000001,
+                "max": 0.0023301700000000003,
+                "outliers": [
+                  {
+                    "title": "Propose a legal Water team #3",
+                    "cost": 0.0023301700000000003
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "tool_error_sessions": []
+    },
+    "patch-2": {
+      "run_file": "evals/stability/patch-2.json",
+      "run_sha256": "8a8f5e0ee4ecc74c447fa2ed6c47b62d595f04bf8ba1bb3c64820b84fad84efd",
+      "source_file": ".state/eval-stability/rehearsal2-patch/smart-spark-208.json",
+      "run_name": "smart-spark-208",
+      "captured_at": "2026-10-05T17:12:04.34082+02:00",
+      "command": "docker agent eval agents/11-builder.yaml evals/arena --flavor checked-totals --repeat 5 --concurrency 5 --judge-model openai/gpt-5.6-terra --output .state/eval-stability/rehearsal2-patch",
+      "passed": 24,
+      "total": 25,
+      "per_case": {
+        "duplicate-team": [
+          4,
+          5
+        ],
+        "honest-loss": [
+          5,
+          5
+        ],
+        "over-budget": [
+          5,
+          5
+        ],
+        "water-beginner": [
+          5,
+          5
+        ],
+        "water-proposal": [
+          5,
+          5
+        ]
+      },
+      "median_agent_seconds": 10.059,
+      "duration": "1m33.296s",
+      "summary": {
+        "total_evals": 25,
+        "failed_evals": 0,
+        "total_cost": 0.01724884,
+        "sizes_passed": 0,
+        "sizes_total": 0,
+        "tools_f1_sum": 0,
+        "tools_count": 0,
+        "relevance_passed": 39,
+        "relevance_total": 40,
+        "assertions_passed": 107,
+        "assertions_total": 110,
+        "repeat_metrics": {
+          "k": 5,
+          "pass_at_k": 1,
+          "pass_hat_k": 0.8,
+          "total": 5,
+          "evals": [
+            {
+              "input_path": "evals/arena/duplicate-team.json",
+              "status": "flaky",
+              "passed": 4,
+              "total": 5,
+              "errors": 0,
+              "failed_runs": [
+                "Reject duplicate members #5"
+              ],
+              "cost": {
+                "samples": 5,
+                "median": 0.00028949,
+                "min": 3.184e-05,
+                "max": 0.00036218000000000003
+              }
+            },
+            {
+              "input_path": "evals/arena/honest-loss.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.00042449999999999996,
+                "min": 0.00035415,
+                "max": 0.001152155,
+                "outliers": [
+                  {
+                    "title": "Keep the requested team and report a loss #2",
+                    "cost": 0.001152155
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/over-budget.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.00030480000000000004,
+                "min": 0.0002998,
+                "max": 0.000955105,
+                "outliers": [
+                  {
+                    "title": "Reject an over-budget request #4",
+                    "cost": 0.000955105
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/water-beginner.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.00113739,
+                "min": 0.001055765,
+                "max": 0.0017620399999999999
+              }
+            },
+            {
+              "input_path": "evals/arena/water-proposal.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.0006720000000000001,
+                "min": 0.0006511599999999999,
+                "max": 0.001423045,
+                "outliers": [
+                  {
+                    "title": "Propose a legal Water team #1",
+                    "cost": 0.001423045
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "tool_error_sessions": []
+    },
+    "model-1": {
+      "run_file": "evals/stability/model-1.json",
+      "run_sha256": "a5fc753cf782587512118f5530ff05f7d821c05b0c05d351c1b95157eef7ce14",
+      "source_file": ".state/eval-stability/rehearsal-model/light-peak-752.json",
+      "run_name": "light-peak-752",
+      "captured_at": "2026-10-05T17:08:50.886623+02:00",
+      "command": "docker agent eval agents/11-builder.yaml evals/arena --flavor alternate-model --repeat 5 --concurrency 5 --judge-model openai/gpt-5.6-terra --output .state/eval-stability/rehearsal-model",
+      "passed": 21,
+      "total": 25,
+      "per_case": {
+        "duplicate-team": [
+          1,
+          5
+        ],
+        "honest-loss": [
+          5,
+          5
+        ],
+        "over-budget": [
+          5,
+          5
+        ],
+        "water-beginner": [
+          5,
+          5
+        ],
+        "water-proposal": [
+          5,
+          5
+        ]
+      },
+      "median_agent_seconds": 9.312,
+      "duration": "1m29.818s",
+      "summary": {
+        "total_evals": 25,
+        "failed_evals": 0,
+        "total_cost": 0.29595950000000004,
+        "sizes_passed": 0,
+        "sizes_total": 0,
+        "tools_f1_sum": 0,
+        "tools_count": 0,
+        "relevance_passed": 36,
+        "relevance_total": 40,
+        "assertions_passed": 110,
+        "assertions_total": 110,
+        "repeat_metrics": {
+          "k": 5,
+          "pass_at_k": 1,
+          "pass_hat_k": 0.8,
+          "total": 5,
+          "evals": [
+            {
+              "input_path": "evals/arena/duplicate-team.json",
+              "status": "flaky",
+              "passed": 1,
+              "total": 5,
+              "errors": 0,
+              "failed_runs": [
+                "Reject duplicate members #1",
+                "Reject duplicate members #2",
+                "Reject duplicate members #3",
+                "Reject duplicate members #4"
+              ],
+              "cost": {
+                "samples": 5,
+                "median": 0.0039076,
+                "min": 0.0037375999999999998,
+                "max": 0.015229999999999999,
+                "outliers": [
+                  {
+                    "title": "Reject duplicate members #3",
+                    "cost": 0.015229999999999999
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/honest-loss.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.0069564,
+                "min": 0.0068164,
+                "max": 0.0212962,
+                "outliers": [
+                  {
+                    "title": "Keep the requested team and report a loss #3",
+                    "cost": 0.0212662
+                  },
+                  {
+                    "title": "Keep the requested team and report a loss #5",
+                    "cost": 0.0212962
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/over-budget.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.004335800000000001,
+                "min": 0.0042258,
+                "max": 0.0157283,
+                "outliers": [
+                  {
+                    "title": "Reject an over-budget request #3",
+                    "cost": 0.0156283
+                  },
+                  {
+                    "title": "Reject an over-budget request #2",
+                    "cost": 0.0157283
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/water-beginner.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.0175411,
+                "min": 0.012979000000000001,
+                "max": 0.017996500000000002
+              }
+            },
+            {
+              "input_path": "evals/arena/water-proposal.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.0106184,
+                "min": 0.0096859,
+                "max": 0.0344759,
+                "outliers": [
+                  {
+                    "title": "Propose a legal Water team #3",
+                    "cost": 0.0344759
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "tool_error_sessions": []
+    },
+    "model-2": {
+      "run_file": "evals/stability/model-2.json",
+      "run_sha256": "907905ac9c7819ce9efd3eb622596f42340aec5e8faf9312d4c6c98531681fb0",
+      "source_file": ".state/eval-stability/rehearsal2-model/cool-frost-327.json",
+      "run_name": "cool-frost-327",
+      "captured_at": "2026-10-05T17:13:37.77627+02:00",
+      "command": "docker agent eval agents/11-builder.yaml evals/arena --flavor alternate-model --repeat 5 --concurrency 5 --judge-model openai/gpt-5.6-terra --output .state/eval-stability/rehearsal2-model",
+      "passed": 24,
+      "total": 25,
+      "per_case": {
+        "duplicate-team": [
+          4,
+          5
+        ],
+        "honest-loss": [
+          5,
+          5
+        ],
+        "over-budget": [
+          5,
+          5
+        ],
+        "water-beginner": [
+          5,
+          5
+        ],
+        "water-proposal": [
+          5,
+          5
+        ]
+      },
+      "median_agent_seconds": 7.931,
+      "duration": "1m28.465s",
+      "summary": {
+        "total_evals": 25,
+        "failed_evals": 0,
+        "total_cost": 0.24141669999999996,
+        "sizes_passed": 0,
+        "sizes_total": 0,
+        "tools_f1_sum": 0,
+        "tools_count": 0,
+        "relevance_passed": 39,
+        "relevance_total": 40,
+        "assertions_passed": 110,
+        "assertions_total": 110,
+        "repeat_metrics": {
+          "k": 5,
+          "pass_at_k": 1,
+          "pass_hat_k": 0.8,
+          "total": 5,
+          "evals": [
+            {
+              "input_path": "evals/arena/duplicate-team.json",
+              "status": "flaky",
+              "passed": 4,
+              "total": 5,
+              "errors": 0,
+              "failed_runs": [
+                "Reject duplicate members #3"
+              ],
+              "cost": {
+                "samples": 5,
+                "median": 0.0038276,
+                "min": 0.0037876,
+                "max": 0.01532,
+                "outliers": [
+                  {
+                    "title": "Reject duplicate members #2",
+                    "cost": 0.01532
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/honest-loss.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.0069464,
+                "min": 0.0067063999999999995,
+                "max": 0.0211962,
+                "outliers": [
+                  {
+                    "title": "Keep the requested team and report a loss #1",
+                    "cost": 0.0211962
+                  }
+                ]
+              }
+            },
+            {
+              "input_path": "evals/arena/over-budget.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.0042658,
+                "min": 0.0040758,
+                "max": 0.0043558
+              }
+            },
+            {
+              "input_path": "evals/arena/water-beginner.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.0174611,
+                "min": 0.016581600000000002,
+                "max": 0.0175911
+              }
+            },
+            {
+              "input_path": "evals/arena/water-proposal.json",
+              "status": "stable",
+              "passed": 5,
+              "total": 5,
+              "errors": 0,
+              "cost": {
+                "samples": 5,
+                "median": 0.0108284,
+                "min": 0.0105909,
+                "max": 0.011105900000000002
+              }
+            }
+          ]
+        }
+      },
+      "tool_error_sessions": []
+    }
+  },
+  "notes": [
+    "Two consecutive final-configuration rehearsal rounds, copied byte-for-byte, not selected for best scores.",
+    "Five unchanged correctness cases, each repeated five times. The unchanged advanced-win case moved to evals/arena-stretch and is explicitly excluded from these totals.",
+    "Input hashes were saved between the first and second rounds; final config and cases were unchanged during both rounds.",
+    "Patch round2 has one incomplete model turn (generation lookup only), retained as a failed repetition; all arithmetic checks that completed passed.",
+    "Repeat5 reduces single-run sensitivity, not nondeterminism. No majority vote or pass@5-based success claim.",
+    "Median agent time uses first-to-last transcript timestamps; run duration includes setup and judge.",
+    "No team entry, state reset, tournament or match registration is performed. DATA-1 and FAIR-1 still apply.",
+    "Sol model is gpt-6-sol, whose explicit none effort is supported by this CLI; previous gpt-6.1-sol did not preserve none.",
+    "Tests/fixtures/backend rules/judge criteria were not weakened.",
+    "Native judge pass counts are not independently audited correctness rates; some passing baseline judgments acknowledge contradictory prose arithmetic.",
+    "Baseline round2 includes an invalid pokemon_retrieve lookup for water-budget returning404, detected by is_error; handling requires DATA-1 review, not an infrastructure-outage claim."
+  ]
+}
